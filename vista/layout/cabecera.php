@@ -30,11 +30,11 @@
     <div class="container">
         <header>
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Potenciar</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">R. Virtual</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Soluciones</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
             </ul>
         </header>
     </div>
