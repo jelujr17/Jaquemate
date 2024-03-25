@@ -1,13 +1,27 @@
-<?php require_once('vista/layout/cabecera.php'); ?> 
-<div class="container px-4 py-5" id="custom-cards" style="background-image: url('vista/assets/vacaciones_dona_rosa.png');">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="vista/css/index.css">
+<div class="container px-4 py-5 h-100 fondoimagen" id="custom-cards">
 
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-5 py-5 pt-5 mt-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 display-7 fw-bold">Short title, long jacket</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">holac aasdasd adsd </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
+
               </li>
             </ul>
           </div>
@@ -16,21 +30,8 @@
 
       <div class="col">
         <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
               </li>
@@ -40,7 +41,7 @@
       </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid mt-5 pt-5">
 <div class="row row-cols-1 row-cols-lg-3 g-3">
   <div class="col">
           <div class="card shadow-sm">
