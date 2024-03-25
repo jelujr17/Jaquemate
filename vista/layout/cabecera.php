@@ -8,12 +8,15 @@
     case 'index.php':
       $titulo_pagina = 'Inicio';
       break;
-    case 'otro_archivo.php':
-      $titulo_pagina = 'Título para otro archivo';
+    case 'contacto.php':
+      $titulo_pagina = 'Contacto';
       break;
-    case 'otro_mas.php':
-      $titulo_pagina = 'Título para otro más';
+    case 'soluciones.php':
+      $titulo_pagina = 'Soluciones';
       break;
+      case 'realidadvirtual.php':
+        $titulo_pagina = 'Realidad Virtual';
+        break;
     default:
       $titulo_pagina = 'Título por defecto';
       break;
@@ -26,7 +29,9 @@
   <link rel="stylesheet" href="css/cabecera.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
+    <link rel="icon" href="assets/icono.png" type="image/png"> <!-- Especifica la ruta de tu ícono y su tipo -->
+
+  </head>
 
 <body>
   <div class="containerCabecera">
@@ -37,43 +42,43 @@
 
 
       <?php
-// Obtener el nombre de la página actual
-$current_page = basename($_SERVER['PHP_SELF']);
-?>
+      // Obtener el nombre de la página actual
+      $current_page = basename($_SERVER['PHP_SELF']);
+      ?>
 
-<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-  <?php if ($current_page === 'potenciar.php') : ?>
-    <div class="menu">
-      <li><a href="potenciar.php" class="nav-link px-2 text-white">Potenciamos tu marca</a></li>
-    </div>
-  <?php else : ?>
-    <li><a href="potenciar.php" class="nav-link px-2 text-white">Potenciamos tu marca</a></li>
-  <?php endif; ?>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <?php if ($current_page === 'potenciar.php'): ?>
+          <div class="menu">
+            <li><a href="potenciar.php" class="nav-link px-2 text-white">Potenciamos tu marca</a></li>
+          </div>
+        <?php else: ?>
+          <li><a href="potenciar.php" class="nav-link px-2 text-white">Potenciamos tu marca</a></li>
+        <?php endif; ?>
 
-  <?php if ($current_page === 'realidadvirtual.php') : ?>
-    <div class="menu">
-      <li><a href="realidadvirtual.php" class="nav-link px-2 text-white">Realidad Virtual</a></li>
-    </div>
-  <?php else : ?>
-    <li><a href="realidadvirtual.php" class="nav-link px-2 text-white">Realidad Virtual</a></li>
-  <?php endif; ?>
+        <?php if ($current_page === 'realidadvirtual.php'): ?>
+          <div class="menu">
+            <li><a href="realidadvirtual.php" class="nav-link px-2 text-white">Realidad Virtual</a></li>
+          </div>
+        <?php else: ?>
+          <li><a href="realidadvirtual.php" class="nav-link px-2 text-white">Realidad Virtual</a></li>
+        <?php endif; ?>
 
-  <?php if ($current_page === 'soluciones.php') : ?>
-    <div class="menu">
-      <li><a href="soluciones.php" class="nav-link px-2 text-white">Soluciones</a></li>
-    </div>
-  <?php else : ?>
-    <li><a href="soluciones.php" class="nav-link px-2 text-white">Soluciones</a></li>
-  <?php endif; ?>
+        <?php if ($current_page === 'soluciones.php'): ?>
+          <div class="menu">
+            <li><a href="soluciones.php" class="nav-link px-2 text-white">Soluciones</a></li>
+          </div>
+        <?php else: ?>
+          <li><a href="soluciones.php" class="nav-link px-2 text-white">Soluciones</a></li>
+        <?php endif; ?>
 
-  <?php if ($current_page === 'contacto.php') : ?>
-    <div class="menu">
-      <li><a href="contacto.php" class="nav-link px-2 text-white">Contacto</a></li>
-    </div>
-  <?php else : ?>
-    <li><a href="contacto.php" class="nav-link px-2 text-white">Contacto</a></li>
-  <?php endif; ?>
-</ul>
+        <?php if ($current_page === 'contacto.php'): ?>
+          <div class="menu">
+            <li><a href="contacto.php" class="nav-link px-2 text-white">Contacto</a></li>
+          </div>
+        <?php else: ?>
+          <li><a href="contacto.php" class="nav-link px-2 text-white">Contacto</a></li>
+        <?php endif; ?>
+      </ul>
 
     </div>
   </div>
