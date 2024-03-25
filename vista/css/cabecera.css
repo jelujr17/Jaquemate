@@ -13,4 +13,14 @@
   .dropdown-toggle:not(:focus) {
     outline: 0;
   }
+
+  .containerCabecera{
+    background-color: black;
+  }
+
+  .menu{
+    background-color: rgb(44, 42, 39);
+    border-radius: 10px; /* Ajusta el radio de los bordes para suavizarlos */
+
+  }
   
