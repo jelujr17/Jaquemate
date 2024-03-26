@@ -218,48 +218,7 @@
                 </ul>
             </div>
         </div>
-        <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item dropdown w-25" data-bs-theme="light">
-                <button class="btn btn-link nav-link py-1 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
-                    id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
-                    data-bs-display="static">
-                    <svg class="bi my-1 theme-icon-active" width="16" height="16" fill="currentColor">
-                        <use href="#circle-half"></use>
-                    </svg>
-                    <span class="d-lg-none ms-2">Toggle theme</span>
-                </button>
-
-                <ul class="dropdown-menu dropdown-menu-end px-1" aria-labelledby="bd-theme">
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center"
-                            data-bs-theme-value="light">
-                            <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
-                                <use href="#sun-fill"></use>
-                            </svg>
-                            Light
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center"
-                            data-bs-theme-value="dark">
-                            <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
-                                <use href="#moon-stars-fill"></use>
-                            </svg>
-                            Dark
-                        </button>
-                    </li>
-                    <li>
-                        <button type="button" class="dropdown-item d-flex align-items-center active"
-                            data-bs-theme-value="auto">
-                            <svg class="bi me-2 opacity-50 theme-icon" width="16" height="16" fill="currentColor">
-                                <use href="#circle-half"></use>
-                            </svg>
-                            Auto
-                        </button>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+       
     </div>
 
 </div>
