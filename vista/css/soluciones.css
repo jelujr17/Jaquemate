@@ -71,3 +71,9 @@
     }
 }
 
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.text-amarillo {
+    color: yellow !important; /* !important se usa para priorizar este estilo sobre los estilos predeterminados */
+}

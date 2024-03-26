@@ -1,4 +1,4 @@
-<?php include 'layout/cabecera.php'; ?>
+<?php include 'vista/layout/cabecera.php'; ?>
 
 <div>
     <div class="p-5 mb-4 bg-body-tertiary rounded-3">
@@ -35,4 +35,4 @@
 </div>
 
 
-<?php include 'layout/footer.php'; ?>
+<?php include 'vista/layout/footer.php'; ?>

@@ -1,4 +1,4 @@
-<?php include 'layout/cabecera.php'; ?>
+<?php include 'vista/layout/cabecera.php'; ?>
 <div class="cont">
     <main class="tituloVidaReal">
         <h1>Vida Real.</h1>
@@ -9,4 +9,4 @@
         </p>
     </main>
 </div>
-<?php include 'layout/footer.php'; ?>
+<?php include 'vista/layout/footer.php'; ?>
