@@ -27,20 +27,17 @@
   </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="vista/css/cabecera.css">
-  <link rel="stylesheet" href="css/realidadvirtual.css">
-  <link rel="stylesheet" href="css/soluciones.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="assets/icono.png" type="image/png"> <!-- Especifica la ruta de tu ícono y su tipo -->
-
+    <link rel="icon" href="vista/assets/icono.png" type="image/png"> <!-- Especifica la ruta de tu ícono y su tipo -->
   </head>
 
 <body>
   <div class="containerCabecera">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
       <a href="index.php" class="d-inline-flex link-body-emphasis text-decoration-none m-3">
-        <img src="assets/icono.png" alt="Logo" width="65" height="50">
+        <img src="vista/assets/icono.png" alt="Logo" width="65" height="50">
       </a>
 
 
