@@ -48,3 +48,12 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+.verMas {
+  color: black; /* Texto negro */
+  background-color: yellow; /* Fondo amarillo */
+  border: 2px solid black; /* Borde negro de 2px */
+  border-radius: 20px; /* Bordes circulares */
+  padding: 10px 20px; /* Espaciado interno */
+  text-decoration: none; /* Quitar subrayado */
+}
