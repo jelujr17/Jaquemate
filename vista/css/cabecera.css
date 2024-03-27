@@ -14,21 +14,30 @@
     outline: 0;
   }
 
+  ul{
+    height: 100% !important;
+    display: flex; /* Utiliza flexbox para distribuir los elementos hijos */
+  align-items: center;
+  }
   .containerCabecera{
     background-color: black;
     position: fixed;
-    z-index: 1;
+    top: 0;
+    z-index: 5;
     width: 100% !important;
     transition: opacity 0.3s ease; /* Animación de transición de opacidad */
-  opacity: 1; /* Asegura que el elemento sea visible inicialmente */
   }
 
-  .menu{
+  ul .menu{
+    flex: 1;
     background-color: rgb(44, 42, 39);
     border-radius: 10px; /* Ajusta el radio de los bordes para suavizarlos */
+    height: 100%;
   }
   .oculto{
     opacity: 0; /* Hace que el elemento se desvanezca cuando se oculta */
     pointer-events: none;
   }
-  
+  #logo{
+    
+  }

@@ -1,7 +1,7 @@
 <?php include 'vista/layout/cabecera.php'; ?>
 
-<div>
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+<div id="uno">
+    <div class="p-5 mb-4">
         <div class="container-fluid py-5">
             <h1 class="display-5 fw-bold">Correo</h1>
             <p class="col-md-8 fs-4">Estamos aquí para ayudarte en todo lo que necesites. Si tienes alguna pregunta,
@@ -33,6 +33,11 @@
         </div>
     </div>
 </div>
-
+<script>
+    var div = document.querySelector('.containerCabecera');
+    var carousel = document.querySelector('#uno');
+    var altura = div.clientHeight;
+    carousel.style.marginTop = altura + 'px';
+</script>
 
 <?php include 'vista/layout/footer.php'; ?>

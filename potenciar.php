@@ -1,8 +1,8 @@
-<?php include 'layout/cabecera.php'; ?> 
+<?php include 'vista/layout/cabecera.php'; ?> 
 
 <div>
 
 </div>
 
 
-<?php include 'layout/footer.php';?>
+<?php include 'vista/layout/footer.php';?>

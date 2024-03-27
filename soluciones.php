@@ -210,6 +210,11 @@
     </div>
 
 </div>
-
+<script>
+    var div = document.querySelector('.containerCabecera');
+    var carousel = document.querySelector('#myCarousel');
+    var altura = div.clientHeight;
+    carousel.style.marginTop = altura + 'px';
+</script>
 
 <?php include 'vista/layout/footer.php'; ?>
