@@ -34,13 +34,11 @@
   </head>
 
 <body>
-  <div class="containerCabecera">
+  <div class="containerCabecera oculto">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
       <a href="index.php" class="d-inline-flex link-body-emphasis text-decoration-none m-3">
         <img src="vista/assets/icono.png" alt="Logo" width="65" height="50">
       </a>
-
-
       <?php
       // Obtener el nombre de la página actual
       $current_page = basename($_SERVER['PHP_SELF']);

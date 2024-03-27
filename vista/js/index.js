@@ -2,16 +2,14 @@ window.addEventListener("load", inicio);
 
 function inicio(){
     let menu = document.querySelector('.containerCabecera');
-    menu.classList.add('oculto');
     document.addEventListener('scroll', function() {
-        /*var menu = document.getElementById('menu');
-        var puntoDeMostrarMenu = document.getElementById('punto-de-mostrar-menu');
-        var puntoOffsetTop = puntoDeMostrarMenu.offsetTop;
+        var div = document.querySelector('.fondoimagen');
+        var mitadAltura = div.offsetHeight / 2;
     
-        if (window.pageYOffset >= puntoOffsetTop) {
-            menu.classList.add('visible');
+        if (window.scrollY >= mitadAltura) {
+            menu.classList.remove('oculto');
         } else {
-            menu.classList.remove('visible');
-        }*/
+            menu.classList.add('oculto');
+        }
     });
 }
