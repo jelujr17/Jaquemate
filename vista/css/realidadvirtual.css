@@ -1,89 +1,114 @@
-/*
- * Globals
- */
-
-
-/* Custom default button */
-.btn-light,
-.btn-light:hover,
-.btn-light:focus {
-  color: #333;
-  text-shadow: none;
-  /* Prevent inheritance from `body` */
-}
-
-
-/*
- * Base structure
- */
-
 body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  overflow-x: hidden;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(221, 221, 221);
+  margin: 0;
+  padding: 0;
+}
+#imgContent {
+  height: 100vh;
+ position: relative;
+ background-color:rgb(255, 255, 255);
+ display: flex;
+ justify-content: flex-end; /* Alinea la imagen a la derecha */  
+ align-items: center; /* Centra verticalmente */
 }
 
-.cover-container {
-  max-width: 42em;
+#imgContent img {
+ width: auto;
+ height:auto;
+ max-height: 100vh;
+ display: block; /* Asegura que la imagen sea un bloque */
+ margin: auto; /* Alinea la imagen al centro */
 }
-
-
-/*
- * Header
- */
-
-.nav-masthead .nav-link {
-  color: rgba(255, 255, 255, .5);
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.nav-masthead .nav-link+.nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-.verMas {
-  color: black;
-  /* Texto negro */
-  background-color: yellow;
-  /* Fondo amarillo */
-  border: 2px solid black;
-  /* Borde negro de 2px */
-  border-radius: 20px;
-  /* Bordes circulares */
-  padding: 10px 20px;
-  /* Espaciado interno */
-  text-decoration: none;
-  /* Quitar subrayado */
-}
-
-.cont {
-  display: flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  height: 100vh; /* Establecer altura del contenedor al 100% del viewport */
-  text-align: center; /* Centrar el texto horizontalmente */
+#imgContent #blanco{
 
 }
-
-.textoVidaReal {
-  max-width: 600px; /* Ancho máximo del texto */
-  margin: 0 auto; /* Centrar horizontalmente */
-  text-align: center; /* Centrar el texto horizontalmente */
-
+#imgContent #blanco::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%,  rgba(79, 105, 118, 0.4) 10% ,rgba(79, 105, 118, 0) 40%);
+  z-index: 2; /* Coloca el fondo detrás del texto y la imagen */
 }
 
+#imgContent p {
+  margin: 0;
+  width: 55vw;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 5;
+  font-weight: 900;
+  transform: scaleX(0.95);
+  font-style: italic;
+  position: absolute; /* Establecemos la posición absoluta para el texto */
+  text-shadow: 7px 5px 5px rgba(0, 0, 0, 0.25);
+}
+#izq, #der{
+  color: #ECEFF1;
+  font-size: 14vh;
+  font-weight: bold;
+  left: 6vw;
+}
+#izq2, #der2{
+  
+  color: rgb(255, 185, 56);
+  font-size: 12vh;
+}
 
-.textoVidaReal, .botonVerMas {
-  margin-top: 20px; /* Espacio entre elementos */
-  text-align: center; /* Centrar el texto horizontalmente */
+#izq {
+  
+ animation: slideIn 2.5s ease-in-out forwards;
+  top: 5vh; /* Ajustamos la posición desde la parte superior */
+   
+  
+}
+#izq2{
+  left: 30vw;
+  animation: slideOn 2.5s ease-in-out forwards;
+  top: 20vh; /* Ajustamos la posición desde la parte superior */
+  
+}
 
+#der {
+  left: 15vw;
+ animation: slideIn 2.5s ease-in-out forwards;
+  top: 43vh; /* Ajustamos la posición desde la parte superior */
+  
+}
+#der2{
+  left: 30vw;
+ animation: slideOn 2.5s ease-in-out forwards;
+  top: 59vh; /* Ajustamos la posición desde la parte superior */
+  
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-60%);
+      opacity: 0;
+  }
+  30% {
+    opacity: 0.0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+@keyframes slideOn {
+  0% {
+      transform: translateX(-60%);
+      opacity: 0;
+  }
+  40% {
+    opacity: 0.0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
 }

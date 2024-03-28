@@ -9,6 +9,7 @@
     bottom: 25%; /* Coloca el div secundario al 75% desde la parte superior del div principal */
     width: 85%; /* Opcional: Ajusta el ancho al 100% del div principal */
     margin: 0 auto;
+    top: 35vh;
   }
 
   .text-container{
@@ -45,6 +46,7 @@
 
 .opacidad{
     opacity: 0.95;
+    padding-top: 0;
 }
 .opacidad svg{
     margin-bottom: 10px;
@@ -58,6 +60,9 @@
 }
 .fondo{
     background-color:#f1f1f1;
+}
+.centrado{
+  margin: 0 auto;
 }
 
 .contenido svg{

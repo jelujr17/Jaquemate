@@ -26,9 +26,9 @@
   <title> <?php echo $titulo_pagina; ?> </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="vista/css/cabecera.css">
-  <link rel="stylesheet" href="vista/css/cabecera.css">
+  <!--<link rel="stylesheet" href="vista/css/cabecera.css">
   <link rel="stylesheet" href="vista/css/realidadvirtual.css">
-  <link rel="stylesheet" href="vista/css/soluciones.css">
+  <link rel="stylesheet" href="vista/css/soluciones.css">-->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -38,7 +38,7 @@
   </head>
 
 <body>
-  <div class="containerCabecera <?php echo ($current_page === 'index.php' ? 'oculto': ''); ?>">
+  <div class="containerCabecera <?php echo ($current_page === 'index.php' || $current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
       <a href="index.php" class="d-inline-flex link-body-emphasis text-decoration-none m-3">
         <img src="vista/assets/icono.png" alt="Logo" width="65" height="50" id="logo">
