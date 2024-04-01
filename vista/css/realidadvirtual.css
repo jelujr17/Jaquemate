@@ -112,3 +112,29 @@ body {
       opacity: 1;
   }
 }
+
+#cuadro {
+  border: 2px solid black; /* Borde negro */
+  background-color: white; /* Fondo blanco */
+  margin: 0 auto;
+  text-align: center;
+}
+
+#cuadro p {
+  font-size: 2.2rem;
+  color: black; /* Texto negro */
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#cuadro a.btn-primary {
+  background-color: rgb(255, 185, 56); /* Amarillo */
+  border-color: rgb(255, 185, 56); /* Amarillo */
+  color: black; /* Texto negro */
+}
+
+#cuadro a.btn-primary:hover {
+  background-color: black; /* Fondo negro al pasar el mouse */
+  border-color: black; /* Borde negro al pasar el mouse */
+  color: white; /* Texto blanco al pasar el mouse */
+}
