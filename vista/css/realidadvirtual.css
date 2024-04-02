@@ -40,7 +40,7 @@ body {
   margin: 0;
   width: 55vw;
   font-family: Arial, Helvetica, sans-serif;
-  z-index: 5;
+  z-index: 2;
   font-weight: 900;
   transform: scaleX(0.95);
   font-style: italic;
@@ -114,27 +114,67 @@ body {
 }
 
 #cuadro {
-  border: 2px solid black; /* Borde negro */
-  background-color: white; /* Fondo blanco */
+  border: 2px solid black;
+  background-color: #f8f9fa; /* Cambié a un tono ligeramente más oscuro de blanco */
   margin: 0 auto;
   text-align: center;
+  padding: 30px; /* Incrementé el relleno para más espacio alrededor del contenido */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
 #cuadro p {
   font-size: 2.2rem;
-  color: black; /* Texto negro */
+  color: black;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
 }
 
 #cuadro a.btn-primary {
-  background-color: rgb(255, 185, 56); /* Amarillo */
-  border-color: rgb(255, 185, 56); /* Amarillo */
-  color: black; /* Texto negro */
+  background-color: #ffd139; /* Amarillo */
+  border-color: #ffd139; /* Amarillo */
+  color: black;
+  width: 50%;
+  height: auto;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Agregué transiciones suaves */
+  display: inline-flex; /* Para que el icono esté alineado con el texto */
+  align-items: center; /* Para centrar verticalmente el icono y el texto */
+  justify-content: center; /* Para centrar horizontalmente el icono y el texto */
+  text-decoration: none; /* Quité la subrayado predeterminado */
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 15px 25px; /* Ajusté el relleno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
 }
 
 #cuadro a.btn-primary:hover {
-  background-color: black; /* Fondo negro al pasar el mouse */
-  border-color: black; /* Borde negro al pasar el mouse */
-  color: white; /* Texto blanco al pasar el mouse */
+  background-color: #000; /* Fondo negro al pasar el mouse */
+  color: #fff; /* Texto blanco al pasar el mouse */
+  border-color: #000;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05); /* Zoom ligeramente al pasar el cursor */
+}
+#cuadro a.btn-primary:hover::before {
+opacity: 0.3; /* Opacidad aumentada al pasar el cursor */
+transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen al pasar el cursor */
+}
+#cuadro a.btn-primary .icono {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#columnas {
+  text-align: justify;    
+}
+
+#columnas p{
+  letter-spacing: 0.5px;
+  line-height: 1.5; /* Espaciado entre líneas */
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,6 +1,7 @@
 .carousel {
     margin-bottom: 4rem;
     position: relative; /* Asegura que el carousel sea un elemento posicionado */
+    border: 3px solid #000;
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -68,4 +69,34 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
 .text-amarillo {
     color: yellow !important; /* !important se usa para priorizar este estilo sobre los estilos predeterminados */
+}
+.carousel-item-expanded {
+    transition: height 2s ease; /* Agrega una transición suave */
+}
+
+.texto-oculto-contenedor {
+    background-color: rgba(25, 26, 25, 0.685);
+    height: 0; /* Establece la altura inicial del texto oculto en 0 */
+    overflow: hidden; /* Oculta el exceso de contenido */
+    transition: height 0.5s ease; /* Agrega una transición suave para la altura del texto oculto */
+}
+.texto-oculto-contenedor p{
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    line-height: 1.5em;
+}
+
+.texto-oculto-contenedor.mostrar-texto {
+    height: 25vh; /* Ajusta la altura del texto oculto al mostrarse */
+}
+
+.blanco{
+    height: 2px;
+    background-color: aliceblue;
+}
+
+
+.visible {
+    display: block; /* Mostrar el texto cuando la clase 'visible' está presente */
 }
