@@ -81,8 +81,17 @@
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">Siempre pensando en el <span
                         class="text-body-secondary">Futuro.</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                    prose here.</p>
+                <p class="lead">En Jaquemate, nuestra visión se centra en impulsar la digitalización para hacer la vida
+                    más fácil y eficiente, tanto en el ámbito laboral como en el ocio. Creemos firmemente en el poder
+                    transformador de la tecnología para simplificar procesos, mejorar la productividad y proporcionar
+                    experiencias más enriquecedoras para todos. Ya sea a través de la creación de software
+                    personalizado, soluciones innovadoras o herramientas digitales intuitivas, nuestro compromiso es
+                    facilitar el acceso a la tecnología y aprovechar su potencial para mejorar la calidad de vida de las
+                    personas en todos los aspectos. En un mundo cada vez más digitalizado, apostamos por la innovación
+                    continua y la adaptabilidad para ofrecer soluciones que satisfagan las necesidades cambiantes de
+                    nuestros clientes y usuarios, contribuyendo así a construir un futuro más conectado y accesible para
+                    todos.
+                </p>
             </div>
             <div class="col-md-5">
                 <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
