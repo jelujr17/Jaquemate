@@ -16,19 +16,11 @@
 
   .containerCabecera{
     background-color: black;
-    position: fixed;
-    z-index: 1;
-    width: 100% !important;
-    transition: opacity 0.3s ease; /* Animación de transición de opacidad */
-  opacity: 1; /* Asegura que el elemento sea visible inicialmente */
   }
 
   .menu{
     background-color: rgb(44, 42, 39);
     border-radius: 10px; /* Ajusta el radio de los bordes para suavizarlos */
-  }
-  .oculto{
-    opacity: 0; /* Hace que el elemento se desvanezca cuando se oculta */
-    pointer-events: none;
+
   }
   
