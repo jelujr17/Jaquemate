@@ -17,13 +17,13 @@
                 <div class="container">
                     <div class="carousel-caption text-start">
                         <h1>Software</h1>
-                        <p class="opacity-75">Some representative placeholder content for the first slide of the
-                            carousel.</p>
+                        <p class="opacity-75">Descubre nuestra gama de software.</p>
                         <p><a class="btn btn-lg btn-warning" onclick="scrollToSection('software')">Ver más</a></p>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
+                <img src="vista/assets/solucionesEmpresa.jpg" class="d-block w-100" alt="...">
                 <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
@@ -31,7 +31,7 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Soluciones empresa</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p>Da un salto de calidad con nuestros productos.</p>
                         <button class="btn btn-lg btn-warning" onclick="scrollToSection('solEmp')">Ver
                             productos</button>
                     </div>
@@ -39,11 +39,11 @@
             </div>
             <div class="carousel-item">
                 <!-- Reemplaza la imagen de fondo aquí -->
-                <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
+                <img src="vista/assets/servicios.jpg" class="d-block w-100" alt="...">
                 <div class="container">
                     <div class="carousel-caption text-end">
                         <h1>Servicios</h1>
-                        <p>Hacemos realidad tus ideas digitales.</p>
+                        <p>Hacemos realidad tus ideas.</p>
                         <button class="btn btn-lg btn-warning" onclick="scrollToSection('servicio')">Ver
                             mas</button>
 
