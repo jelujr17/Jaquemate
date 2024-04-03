@@ -1,3 +1,28 @@
+/* Ancho del scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  
+}
+
+/* Ajusta el tamaño y el color del thumb */
+::-webkit-scrollbar-thumb {
+  background: rgb(193, 196, 198);
+  margin-right: 2px;
+}
+
+/* Ancho y color del track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin-right: 2px;
+}
+
+/* Hovers */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(193, 196, 198);
+  margin-right: 2px;
+}
+
+
 .form-control-dark {
     border-color: var(--bs-gray);
   }

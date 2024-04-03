@@ -7,6 +7,7 @@ body {
   background-color: rgb(221, 221, 221);
   margin: 0;
   padding: 0;
+  
 }
 #imgContent {
   height: 100vh;
@@ -38,7 +39,7 @@ body {
 
 #imgContent p {
   margin: 0;
-  width: 55vw;
+  width: 60vw;
   font-family: Arial, Helvetica, sans-serif;
   z-index: 2;
   font-weight: 900;
@@ -51,20 +52,16 @@ body {
   color: #ECEFF1;
   font-size: 14vh;
   font-weight: bold;
-  left: 6vw;
+  left: 5vw;
 }
 #izq2, #der2{
-  
   color: rgb(255, 185, 56);
   font-size: 12vh;
 }
 
 #izq {
-  
- animation: slideIn 2.5s ease-in-out forwards;
+  animation: slideIn 2.5s ease-in-out forwards;
   top: 5vh; /* Ajustamos la posición desde la parte superior */
-   
-  
 }
 #izq2{
   left: 30vw;
@@ -74,7 +71,6 @@ body {
 }
 
 #der {
-  left: 15vw;
  animation: slideIn 2.5s ease-in-out forwards;
   top: 43vh; /* Ajustamos la posición desde la parte superior */
   
@@ -114,6 +110,7 @@ body {
 }
 
 #cuadro {
+  height: 25vh;
   border: 2px solid black;
   background-color: #f8f9fa; /* Cambié a un tono ligeramente más oscuro de blanco */
   margin: 0 auto;
@@ -123,7 +120,7 @@ body {
 }
 
 #cuadro p {
-  font-size: 2.2rem;
+  font-size: 3rem;
   color: black;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
@@ -170,11 +167,13 @@ transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen al pasar 
 }
 #columnas {
   text-align: justify;    
+  justify-content: center;
 }
 
 #columnas p{
+  width: 45%;
   letter-spacing: 0.5px;
-  line-height: 1.5; /* Espaciado entre líneas */
-  font-size: 1.2rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inherit;
+  font-size: 1.5rem;
+  line-height: 1.6em;
 }

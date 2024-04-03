@@ -1,5 +1,5 @@
 </body>
-  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top container top-5 mb-0">
+  <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top container top-5 mb-0 mx-auto">
     <div class="col">
       <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
         <img src="vista/assets/icono.png" alt="Logo" width="65" height="50">
