@@ -1,0 +1,31 @@
+/* Estilos adicionales */
+#feedback-form-wrapper {
+    position: relative;
+  }
+  
+  #floating-icon {
+    position: fixed;
+    right: 0;
+    bottom: 20px; /* Ajustamos la posición hacia abajo */
+  }
+  
+  /* Estilos para el botón de feedback */
+  #floating-icon > button {
+    position: relative;
+    z-index: 1; /* Aseguramos que el botón esté encima del contenido */
+  }
+  
+  /* Cambiamos el color del botón a amarillo */
+  #floating-icon > button.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+  }
+  
+  /* Estilos adicionales para el botón */
+  #floating-icon > button.btn-warning:hover {
+    background-color: #ffd42a;
+    border-color: #ffd42a;
+    color: #000;
+  }
+  
