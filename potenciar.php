@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="vista/css/potenciar.css">
 
 <div id="marcas" class="">
-<div class="blurry-background"></div>
+    <div class="blurry-background"></div>
     <h1 class="text-center">CONSIGUE LAS VENTAS DE TUS SUEÑOS, GRATIS</h1>
 </div>  
 <div id="texto" class="mt-3 mb-4 mx-auto">
@@ -27,8 +27,8 @@
 <script>
     var div = document.querySelector('.containerCabecera');
     var carousel = document.querySelector('#marcas');
-    var altura = div.clientHeight;
-    carousel.style.marginTop = altura + 'px';
+    var alturaDiv = div.clientHeight;
+    carousel.style.marginTop = alturaDiv + 'px';
 </script>
 
 <?php include 'vista/layout/footer.php';?>
