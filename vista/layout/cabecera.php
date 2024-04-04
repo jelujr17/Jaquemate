@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
   <?php
   $current_page = basename($_SERVER['PHP_SELF']);
@@ -14,9 +16,9 @@
     case 'soluciones.php':
       $titulo_pagina = 'Soluciones';
       break;
-      case 'realidadvirtual.php':
-        $titulo_pagina = 'Realidad Virtual';
-        break;
+    case 'realidadvirtual.php':
+      $titulo_pagina = 'Realidad Virtual';
+      break;
     default:
       $titulo_pagina = 'Título por defecto';
       break;
@@ -29,13 +31,14 @@
   <link rel="stylesheet" href="vista/css/cabecera.css">
   <link rel="stylesheet" href="vista/css/realidadvirtual.css">
   <link rel="stylesheet" href="vista/css/soluciones.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="vista/assets/icono.png" type="image/png"> 
-    <script src="../vista/js/modo.js" defer></script>
+  <link rel="icon" href="vista/assets/icono.png" type="image/png">
+  <script src="../vista/js/modo.js" defer></script>
 
-  </head>
+</head>
 
 <body>
   <div class="containerCabecera">

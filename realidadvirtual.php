@@ -1,4 +1,5 @@
 <?php include 'vista/layout/cabecera.php'; ?>
+
 <div class="cont">
     <main class="tituloVidaReal">
         <h1>Vida Real.</h1>

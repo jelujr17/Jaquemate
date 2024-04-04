@@ -1,6 +1,114 @@
 .fondoimagen{
-    background-image: url('../assets/gentefeliz.png');
-    background-size:cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+    background-image: url('../assets/empresa.jpg');
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
     background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat;
+
 }
+.divSecundario {
+    position: absolute;
+    bottom: 25%; /* Coloca el div secundario al 75% desde la parte superior del div principal */
+    width: 85%; /* Opcional: Ajusta el ancho al 100% del div principal */
+    margin: 0 auto;
+    top: 35vh;
+  }
+
+  .text-container{
+    width: 80%;
+    top: 5%;
+    position: absolute;
+    margin: 0 auto;
+  }
+  .solu{
+    white-space: pre-line;
+  }
+.text-container p {
+    text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
+    color: rgb(255, 175, 46);
+    font-style: italic;
+    font-family: "Segoe UI", "Roboto";
+    font-size: 6vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.text-container h3 {
+    text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.1);
+    color: rgb(255, 175, 46); /* Aplica el color deseado */
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", "Roboto";
+    font-style: italic;
+}
+
+.opacidad{
+    opacity: 0.95;
+    padding-top: 0;
+}
+.opacidad svg{
+    margin-bottom: 10px;
+}
+.contenido{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(85, 89, 92);
+    position: relative;
+    border-radius: 25px;
+}
+.fondo{
+    background-color:#f1f1f1;
+}
+.centrado{
+  margin: 0 auto;
+}
+
+.contenido svg{
+    width: 35%;
+    height: 35%;
+    top: 25%;
+    color: rgb(255, 175, 46); /* Aplica el color deseado */
+}
+.contenido p{
+    font-family: "Segoe UI", "Roboto";
+    font-size: 3vw;
+    font-weight: bold;
+    color: rgb(255, 175, 46); /* Aplica el color deseado */
+}
+.contenido div:hover{
+    cursor: pointer;
+}
+
+.appear-from-bottom {
+    animation: appearFromBottom 0.9s ease-out forwards;
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  
+  @keyframes appearFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.appear-from-right2 {
+    animation: appearFromBottom2 1.2s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes appearFromBottom2 {
+    from {
+      opacity: 0;
+      margin-left: 15%;
+    } to {
+        opacity: 1;
+        margin-left: 0%;
+    }
+  }
