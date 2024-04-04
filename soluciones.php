@@ -33,7 +33,7 @@
                         <h1>Soluciones empresa</h1>
                         <p>Da un salto de calidad con nuestros productos.</p>
                         <button class="btn btn-lg btn-warning" onclick="scrollToSection('solEmp')">Ver
-                            productos</button>
+                            más</button>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                         <h1>Servicios</h1>
                         <p>Hacemos realidad tus ideas.</p>
                         <button class="btn btn-lg btn-warning" onclick="scrollToSection('servicio')">Ver
-                            mas</button>
+                            más</button>
 
                     </div>
                 </div>

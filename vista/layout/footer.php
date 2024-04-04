@@ -91,9 +91,12 @@
                     class="fab fa-google-plus"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/company/jaquemate-mayoristas-sl/about/"
+                  class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
               </li>
+
               <li class="list-inline-item">
                 <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
                     class="fab fa-youtube"></i></a>
