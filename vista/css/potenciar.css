@@ -1,15 +1,10 @@
-body{
-    background-color: #f3f4f5;
-}
-
 #marcas {
     position: relative;
     width: 100%; /* Ancho del contenedor al 30% del ancho de la pantalla */
     height: 30%; /* Altura ajustada automáticamente al contenido */
     border-bottom: 2px solid #e8e8e9;
 }
-
-.blurry-background {
+.blurry-background {  
     position: relative;
     width: 100%;
     height: 100%;
@@ -31,17 +26,17 @@ body{
     text-shadow: 3px 5px 12px #000000e9;
     animation: slideIn 2s ease-in-out forwards;
 }
-
-@media screen and (min-width: 768px) {
-    .blurry-background {  
-        background-image: url('../assets/logos.png');
-    }
-}
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0px) and (max-width: 770px){
     .blurry-background {  
         background-image: url('../assets/logos2.png');
     }
 }
+@media screen and (min-width: 770px) and (max-width: 1920px){
+    .blurry-background {  
+        background-image: url('../assets/logos.png');
+    }
+}
+
 
 @keyframes slideIn {
     0% {

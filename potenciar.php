@@ -23,12 +23,6 @@
     </div>
 </div>
 
-
-<script>
-    var div = document.querySelector('.containerCabecera');
-    var carousel = document.querySelector('#marcas');
-    var alturaDiv = div.clientHeight;
-    carousel.style.marginTop = alturaDiv + 'px';
-</script>
+<script src="vista/js/potenciar.js"></script>
 
 <?php include 'vista/layout/footer.php';?>
