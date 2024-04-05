@@ -23,4 +23,10 @@
     border-radius: 10px; /* Ajusta el radio de los bordes para suavizarlos */
 
   }
-  
+  .NuestraHistoria {
+    font-family: "SedusSansWeb-Light",Arial,sans-serif;
+    color: #1D1D1B;
+    font-weight: normal;
+    margin-bottom: 10;
+    word-break: break-word;
+  }

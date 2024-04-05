@@ -71,13 +71,13 @@
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-warning">jaquemate</h5>
           <p>
-            <a href="nosotros/quienesSomos.php" class="text-white" style="text-decoration: none;"> Quiénes somos</a>
+            <a href="../nosotros/quienesSomos.php" class="text-white" style="text-decoration: none;"> Quiénes somos</a>
           </p>
           <p>
-            <a href="nosotros/compromisos.php" class="text-white" style="text-decoration: none;"> Compromisos</a>
+            <a href="../nosotros/compromisos.php" class="text-white" style="text-decoration: none;"> Compromisos</a>
           </p>
           <p>
-            <a href="nosotros/practicaConNosotros.php" class="text-white" style="text-decoration: none;"> Practica con nosotros</a>
+            <a href="../nosotros/practicaConNosotros.php" class="text-white" style="text-decoration: none;"> Practica con nosotros</a>
           </p>
         </div>
 
