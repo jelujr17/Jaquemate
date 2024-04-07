@@ -103,4 +103,4 @@
   </div>
 </div>
 <script src="vista/js/index.js"></script>
-<?php include 'vista/layout/footer.php';?>
+<?php require_once('vista/layout/footer.php');?>

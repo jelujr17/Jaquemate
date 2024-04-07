@@ -1,3 +1,4 @@
+
 /* Ancho del scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
@@ -28,6 +29,7 @@
   }
   body{
     overflow-x: hidden !important; 
+    height: auto;
   }
   .form-control-dark:focus {
     border-color: #fff;

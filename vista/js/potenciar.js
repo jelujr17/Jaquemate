@@ -1,12 +1,11 @@
 function aplicarEstilosSegunTamanoPantalla() {
     var blurryBackground = document.querySelector('.blurry-background');
+    var fondo = document.querySelector('#fondoDiv');
     var marcasHeading = document.querySelector('#marcas h1');
-    var dpi = Math.max(window.devicePixelRatio || 1, 1);
     var altura = screen.height;
     var anchura = screen.width;
     var ratio = anchura/altura;
     var isHorizontal = window.matchMedia("(orientation: landscape)").matches;
-    console.log(ratio);
     try {
         if (ratio > 1 || isHorizontal) {
             blurryBackground.classList.remove('small-screen');
@@ -16,6 +15,8 @@ function aplicarEstilosSegunTamanoPantalla() {
         } else {
             blurryBackground.classList.remove('large-screen');
             blurryBackground.classList.add('small-screen');
+            fondo.classList.remove('fondo');
+            fondo.classList.add('min-fondo');
             // Ajustar el tamaño del encabezado según la pantalla
             marcasHeading.style.fontSize = "10vw";
         }

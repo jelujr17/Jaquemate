@@ -96,7 +96,37 @@
     margin-top: auto;   
 }
 
-.mitad {
+
+.min-fondo .mitad p{
+    margin: 0;
+    line-height: 2em;
+    font-family: inherit;
+    font-size: 1.5rem;
+    line-height: 1.6em;
+
+}
+
+.min-fondo .mitad img {
+    top: 0;
+    width: 60%; /* Ajusta el tamaño de la imagen según tu preferencia */
+    height: auto;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    
+}
+.min-fondo .mitad {
+    border: 2px solid #cccccc43;
+    width: 95vw;
+    background-color: #f3f4f5;
+    border-radius: 10px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fondo .mitad {
     margin: 0 auto;
     display: flex;
     align-items: center; /* Centra verticalmente los elementos */
@@ -110,7 +140,7 @@
     
 }
 
-.mitad p{
+.fondo .mitad p{
     line-height: 2em;
     font-family: inherit;
     font-size: 1.5rem;
@@ -118,22 +148,10 @@
 
 }
 
-.mitad img {
+.fondo .mitad img {
     width: 40%; /* Ajusta el tamaño de la imagen según tu preferencia */
     height: auto;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-}
-.izq{
-    margin-left: 20px;
-}
-.der{
-    margin-right: 20px;
-}
-
-.drop{
-    border: 0;
-    height: 1px;
-    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
