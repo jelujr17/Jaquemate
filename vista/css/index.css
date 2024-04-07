@@ -4,54 +4,108 @@
     background-position: center; /* Centra la imagen de fondo */
 
 }
-.divSecundario {
-    position: absolute;
-    bottom: 25%; /* Coloca el div secundario al 75% desde la parte superior del div principal */
-    width: 85%; /* Opcional: Ajusta el ancho al 100% del div principal */
-    margin: 0 auto;
-    top: 35vh;
-  }
-
-  .text-container{
+#jaque{
     width: 80%;
-    top: 5%;
+
     position: absolute;
     margin: 0 auto;
-  }
-  .solu{
-    white-space: pre-line;
-  }
+}
+.text-container{
+  top: 5%;
+}
 .text-container p {
-    text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
-    color: rgb(255, 175, 46);
-    font-style: italic;
-    font-family: "Segoe UI", "Roboto";
-    font-size: 6vw;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 0;
-    margin: 0;
+  text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 175, 46);
+  font-style: italic;
+  font-family: "Segoe UI", "Roboto";
+  font-size: 6vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
 }
 
 .text-container h3 {
-    text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.1);
-    color: rgb(255, 175, 46); /* Aplica el color deseado */
-    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
-    padding: 0;
-    margin: 0;
-    font-family: "Segoe UI", "Roboto";
-    font-style: italic;
+  text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.1);
+  color: rgb(255, 175, 46); /* Aplica el color deseado */
+  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", "Roboto";
+  font-style: italic;
 }
 
-.opacidad{
+.min-container{
+
+}
+.min-container p {
+  text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 175, 46);
+  font-style: italic;
+  font-family: "Segoe UI", "Roboto";
+  font-size: 12vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+}
+
+.min-container h3 {
+  text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.1);
+  color: rgb(255, 175, 46); /* Aplica el color deseado */
+  font-size: 4vw; /* Ajusta el tamaño del texto según sea necesario */
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", "Roboto";
+  font-style: italic;
+}
+
+#index{
+    position: absolute;
+    width: 85%;
+    margin: 0 auto !important;
+}
+
+.divSecundario {
+  bottom: 25%;
+     /* Opcional: Ajusta el ancho al 100% del div principal */
+    
+    top: 35vh;
+  }
+  .divSecundario .opacidad{
     opacity: 0.95;
     padding-top: 0;
 }
-.opacidad svg{
+.divSecundario .opacidad svg{
     margin-bottom: 10px;
 }
-.contenido{
+  .movilDiv{
+    display: flex; /* Convertimos #movil en un contenedor flexible */
+    align-items: center;
+  }
+  .caja {
+    padding-top: 26% !important;
+    height: auto;
+  }
+  .caja h3{
+    font-size: 6.5vw;
+    margin-left: 15px;
+  }
+  .caja svg{
+    margin: 15px;
+    width: 10%;
+    height: auto;
+  }
+
+
+  .solu{
+    white-space: pre-line;
+  }
+
+
+.centrado .contenido{
     width: 100%;
     height: 100%;
     background-color: rgb(85, 89, 92);
@@ -64,20 +118,64 @@
 .centrado{
   margin: 0 auto;
 }
+.min-centrado{
+  
+  height: 50vh;
+}
+.min-centrado .contenido{
+  width: 80vw;
+  height: 100%;
+  background-color: rgb(85, 89, 92);
 
-.contenido svg{
+  border-radius: 20px;
+}
+.min-centrado .col{
+  height: 50%;
+  margin: 0 auto !important;
+}
+.min-centrado .row{
+  top: 0;
+  margin-top: 0;
+  min-height: 30%;
+  height: auto;
+  margin: 0 auto !important;
+}
+.min-centrado .smart{
+  display: flex;
+  align-items: center;
+  height: 100%; /* Asegura que el contenedor ocupe toda la altura */
+}
+.min-centrado .contenido svg{
+  margin-left: 5%;
+  width: 15%;
+  height: auto;
+  top: 25%;
+  color: rgb(255, 175, 46); /* Aplica el color deseado */
+}
+.min-centrado .contenido p{
+  margin-left: 5%;
+  font-family: "Segoe UI", "Roboto";
+  font-size: 7vw;
+  font-weight: bold;
+  color: rgb(255, 175, 46); /* Aplica el color deseado */
+}
+.min-centrado .contenido div:hover{
+  cursor: pointer;
+}
+
+.centrado .contenido svg{
     width: 35%;
     height: 35%;
     top: 25%;
     color: rgb(255, 175, 46); /* Aplica el color deseado */
 }
-.contenido p{
+.centrado .contenido p{
     font-family: "Segoe UI", "Roboto";
     font-size: 3vw;
     font-weight: bold;
     color: rgb(255, 175, 46); /* Aplica el color deseado */
 }
-.contenido div:hover{
+.centrado .contenido div:hover{
     cursor: pointer;
 }
 
