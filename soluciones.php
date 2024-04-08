@@ -1,6 +1,6 @@
 <?php include 'vista/layout/cabecera.php'; ?>
 <link rel="stylesheet" href="vista/css/soluciones.css">
-<div>
+
     <div id="cuadroDiv" class="container marketing pt-3">
         <div class="row featurette">
             <div class="col-md-7">
@@ -22,65 +22,73 @@
         <hr class="featurette-divider">
     </div>
     
-    <div id="myCarousel" class="carousel slide h-auto" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active h-75">
-                <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1>1</h1>
-                        <p class="opacity-75">Some representative placeholder content for the first slide of the
-                            carousel.</p>
-                        <p><a class="btn btn-lg btn-warning mostrar-btn">Ver más</a></p>
-                    </div>
+  <!--  <div id="myCarousel" class="carousel slide h-auto">
+    <div class="carousel-inner justify-content-center">
+        <div class="carousel-item active">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <img src="vista/assets/empresa.jpg" class="d-block w-100" alt="...">
                 </div>
-            </div>
-            <div class="carousel-item h-75">
-                <!-- Reemplaza la imagen de fondo aquí -->
-                <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
-                <div class="container">
+                <div class="col-md-4">
+                    <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption">
-                        <h1>2</h1>
-                        <p>Hacemos realidad tus ideas digitales.</p>
+                        <h1>1</h1>
+                        <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
                         <p><a class="btn btn-lg btn-warning mostrar-btn">Ver más</a></p>
                     </div>
                 </div>
-            </div>
-
-            <div class="carousel-item h-75">
-                <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                        <h1>3</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-warning mostrar-btn">Ver productos</a></p>
-                    </div>
+                <div class="col-md-4">
+                    <img src="vista/assets/abuelos_portada.png" class="d-block w-100" alt="...">
                 </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        <div class="carousel-item-expanded h-auto">
-            
-            <div class="texto-oculto-contenedor">
-            <hr class="w-75 mx-auto blanco">
-                <p class="m-3">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-            </div>
-            <div class="texto-oculto-contenedor">
-                <p>Este es el texto oculto de la sección 2.</p>
-            </div>
-            <div class="texto-oculto-contenedor">
-                <p>Este es el texto oculto de la sección 3.</p>
             </div>
         </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>-->
+    
 </div>
-
+<section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="vista/assets/empresa.jpg" alt="1" />
+          <div class="details">
+          <h1>EL Pepito</h1>
+        <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="vista/assets/servicios.png" alt="2" />
+          <div class="details open">
+          <h1>El futuro</h1>
+        <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="vista/assets/abuelos_portada.png" alt="3" />
+          <div class="details">
+          <h1>Hola Jose</h1>
+        <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<script src="vista/js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(".slider-img").find(".details").removeClass("open");
+          $(this).addClass("active");
+          $(this).find(".details").addClass("open");
+        });
+      });
+    </script>
 <script src="vista/js/soluciones.js"></script>
 <?php include 'vista/layout/footer.php'; ?>

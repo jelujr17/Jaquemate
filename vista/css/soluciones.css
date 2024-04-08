@@ -1,3 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+
+
+.slider-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slider-images {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Ajusta el espacio entre las imágenes */
+    overflow-x: auto; /* Agrega scroll horizontal si es necesario */
+    padding: 0.5rem; /* Añade un pequeño espacio interno */
+  }
+  
+  .slider-img {
+    width: 50%;
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+  }
+  
+  .slider-img:not(.active):hover {
+    transform: scale(1.05); /* Aumenta ligeramente la escala al pasar el ratón por encima */
+    transition: transform 0.3s ease; /* Añade una transición suave */
+  }
+  
+  .slider-img.active {
+    width: 100%; /* Ajusta la imagen activa al 100% del contenedor */
+  }
+  
+  .slider-img img {
+    width: 100%;
+    height: auto; /* Ajusta la altura automáticamente según el ancho */
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .details {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para los detalles */
+    padding: 0.5rem;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    overflow: hidden; /* Evita que el texto sobresalga del contenedor */
+    max-height: 0; /* Esconde los detalles por defecto */
+    transition: max-height 0.3s ease; /* Añade una transición suave */
+  }
+  
+  .details.open {
+    max-height: 100px; /* Ajusta la altura máxima para mostrar los detalles */
+  }
+
+  .details h1,
+.details p {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 0.8rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+  color: #fff;
+}
+
+/* Ajusta el tamaño de fuente cuando .details no tiene la clase open */
+.details:not(.open) h1,
+.details:not(.open) p {
+  font-size: 0; /* Esconde el texto cuando no está abierto */
+}
+  
+  .details h2,
+  .details p {
+    margin: 0;
+    font-family: "Jost", sans-serif;
+    font-size: 0.8rem; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    color: #fff;
+  }
+
+
 .carousel {
     margin-bottom: 4rem;
     position: relative; /* Asegura que el carousel sea un elemento posicionado */
@@ -10,9 +94,30 @@
     z-index:2;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Esto hará que el alto del carousel sea dinámico según su contenido */
+}
+
+.carousel-inner {
+    /* Ancho total de los slides, 3 slides * 75% cada uno */
+    transition: transform 0.6s ease;
+}
+
+.carousel-item.active {
+    flex: 0 0 33.333333%; /* Ancho del 33.333333% para cada slide activo */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100%;
 }
 
 /* Center align the text within the three columns below the carousel */
@@ -100,3 +205,45 @@
 .visible {
     display: block; /* Mostrar el texto cuando la clase 'visible' está presente */
 }
+/*h1{
+  font-family: "Jost", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(270deg);
+  transition: 0.7s ease;
+}
+.details{
+  position: absolute;
+  bottom: 43px;
+  left: 43px;
+}
+.details h2{
+  font-family: "Jost", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 44px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}
+.details p{
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  line-height: 33px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.7s ease;
+  display: none;
+}*/
