@@ -22,7 +22,7 @@
         <hr class="featurette-divider">
     </div>
     
-    <div id="myCarousel" class="carousel slide h-auto" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide h-auto" data-bs-ride="carousel" data-bs-pause="false">
         <div class="carousel-inner">
             <div class="carousel-item active h-75">
                 <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
@@ -82,5 +82,7 @@
     </div>
 </div>
 
-<script src="vista/js/soluciones.js"></script>
+<script src="vista/js/soluciones.js">
+
+</script>
 <?php include 'vista/layout/footer.php'; ?>

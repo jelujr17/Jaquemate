@@ -5,16 +5,15 @@ var div = document.querySelector('.containerCabecera');
     var altura = div.clientHeight;
     marketing.style.marginTop = altura + 'px';
         var myCarousel = document.getElementById('myCarousel');
-        var carousel1 = new bootstrap.Carousel(myCarousel);
         var carouselItems = myCarousel.querySelectorAll('.carousel-item');
 
-        // Detener el intervalo de desplazamiento automático cuando se hace clic en un botón del carousel
+        /* Detener el intervalo de desplazamiento automático cuando se hace clic en un botón del carousel
         var carouselControls = myCarousel.querySelectorAll('.btn');
         carouselControls.forEach(function (control) {
             control.addEventListener('click', function () {
                 myCarousel.setAttribute('data-bs-ride', null);
             });
-        });
+        });*/
         var carouselNavButtons  = myCarousel.querySelectorAll('.carousel-control-prev, .carousel-control-next');
         carouselNavButtons .forEach(function (button) {
             button.addEventListener('click', function () {
@@ -26,10 +25,10 @@ var div = document.querySelector('.containerCabecera');
         });
         var botones = document.querySelectorAll('.mostrar-btn');
         var textosOcultos = document.querySelectorAll('.texto-oculto-contenedor');
-
         botones.forEach(function (boton, index) {
             boton.addEventListener('click', function () {
-                carousel1.pause();
+                myCarousel.setAttribute('data-bs-ride', 'true');
+                myCarousel.removeAttribute('data-bs-ride');
                 document.getElementById('myCarousel').classList.add('carousel-item-expanded');
                 if(!textosOcultos[index].classList.contains('mostrar-texto'))
                     textosOcultos[index].classList.add('mostrar-texto');
