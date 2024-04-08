@@ -29,7 +29,6 @@
   }
   body{
     overflow-x: hidden !important; 
-    height: auto;
   }
   .form-control-dark:focus {
     border-color: #fff;
@@ -67,6 +66,7 @@
     height: 100%;
   }
   .oculto{
+    display: none;
     opacity: 0; /* Hace que el elemento se desvanezca cuando se oculta */
     pointer-events: none;
   }

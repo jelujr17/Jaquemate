@@ -9,7 +9,7 @@ body {
   padding: 0;
   
 }
-#imgContent {
+.imagen {
   height: 100vh;
  position: relative;
  background-color:rgb(255, 255, 255);
@@ -18,16 +18,14 @@ body {
  align-items: center; /* Centra verticalmente */
 }
 
-#imgContent img {
+.imagen img {
  width: auto;
  height:auto;
  max-height: 100vh;
  display: block; /* Asegura que la imagen sea un bloque */
  margin: auto; /* Alinea la imagen al centro */
 }
-#imgContent #blanco{
 
-}
 #imgContent #blanco::before {
   content: "";
   position: absolute;
@@ -37,7 +35,7 @@ body {
   z-index: 2; /* Coloca el fondo detrás del texto y la imagen */
 }
 
-#imgContent p {
+.imagen p {
   margin: 0;
   width: 60vw;
   font-family: Arial, Helvetica, sans-serif;
@@ -48,37 +46,97 @@ body {
   position: absolute; /* Establecemos la posición absoluta para el texto */
   text-shadow: 7px 5px 5px rgba(0, 0, 0, 0.25);
 }
-#izq, #der{
+.imagen #izq, #der{
   color: #ECEFF1;
   font-size: 14vh;
   font-weight: bold;
   left: 5vw;
 }
-#izq2, #der2{
+.imagen #izq2, #der2{
   color: rgb(255, 185, 56);
   font-size: 12vh;
 }
 
-#izq {
+.imagen #izq {
   animation: slideIn 2.5s ease-in-out forwards;
   top: 5vh; /* Ajustamos la posición desde la parte superior */
 }
-#izq2{
+.imagen #izq2{
   left: 30vw;
   animation: slideOn 2.5s ease-in-out forwards;
   top: 20vh; /* Ajustamos la posición desde la parte superior */
   
 }
 
-#der {
+.imagen #der {
  animation: slideIn 2.5s ease-in-out forwards;
   top: 43vh; /* Ajustamos la posición desde la parte superior */
   
 }
-#der2{
+.imagen #der2{
   left: 30vw;
  animation: slideOn 2.5s ease-in-out forwards;
   top: 59vh; /* Ajustamos la posición desde la parte superior */
+  
+}
+.min-imagen {
+  height: auto;
+ position: relative;
+ background-color:rgb(255, 255, 255);
+ display: flex;
+ justify-content: flex-end; /* Alinea la imagen a la derecha */  
+ align-items: center; /* Centra verticalmente */
+}
+
+.min-imagen img {
+ width: 100vw;
+ height:auto;
+ display: block; /* Asegura que la imagen sea un bloque */
+ margin: auto; /* Alinea la imagen al centro */
+}
+
+.min-imagen p {
+  margin: 0;
+  width: 60vw;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 2;
+  font-weight: 900;
+  transform: scaleX(0.95);
+  font-style: italic;
+  position: absolute; /* Establecemos la posición absoluta para el texto */
+  text-shadow: 7px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.min-imagen #izq, #der{
+  color: #ECEFF1;
+  font-size: 3.5vh;
+  font-weight: bold;
+  left: 5vw;
+}
+.min-imagen #izq2, #der2{
+  color: rgb(255, 185, 56);
+  font-size: 3vh;
+}
+
+.min-imagen #izq {
+  animation: slideIn 2.5s ease-in-out forwards;
+  top: 10%; /* Ajustamos la posición desde la parte superior */
+}
+.min-imagen #izq2{
+  left: 20vw;
+  animation: slideOn 2.5s ease-in-out forwards;
+  top: 25%; /* Ajustamos la posición desde la parte superior */
+  
+}
+
+.min-imagen #der {
+ animation: slideIn 2.5s ease-in-out forwards;
+  top: 45%; /* Ajustamos la posición desde la parte superior */
+  
+}
+.min-imagen #der2{
+  left: 30vw;
+ animation: slideOn 2.5s ease-in-out forwards;
+  top: 60%; /* Ajustamos la posición desde la parte superior */
   
 }
 
@@ -108,8 +166,58 @@ body {
       opacity: 1;
   }
 }
+.min-cuadro {
+  height: 13vh;
+  border: 2px solid black;
+  background-color: #f8f9fa; /* Cambié a un tono ligeramente más oscuro de blanco */
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px; /* Incrementé el relleno para más espacio alrededor del contenido */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
 
-#cuadro {
+.min-cuadro p {
+  font-size: 3rem;
+  color: black;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.min-cuadro a.btn-primary {
+  background-color: #ffd139; /* Amarillo */
+  border-color: #ffd139; /* Amarillo */
+  color: black;
+  width: 60%;
+  height: auto;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.3s; /* Agregué transiciones suaves */
+  display: inline-flex; /* Para que el icono esté alineado con el texto */
+  align-items: center; /* Para centrar verticalmente el icono y el texto */
+  justify-content: center; /* Para centrar horizontalmente el icono y el texto */
+  text-decoration: none; /* Quité la subrayado predeterminado */
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 15px 25px; /* Ajusté el relleno */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+.min-cuadro a.btn-primary:hover {
+  background-color: #000; /* Fondo negro al pasar el mouse */
+  color: #fff; /* Texto blanco al pasar el mouse */
+  border-color: #000;
+  box-shadow: 0 6px 12px #00000033;
+  transform: scale(1.05); /* Zoom ligeramente al pasar el cursor */
+}
+.min-cuadro a.btn-primary:hover::before {
+opacity: 0.3; /* Opacidad aumentada al pasar el cursor */
+transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen al pasar el cursor */
+}
+.min-cuadro a.btn-primary .icono {
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.cuadro {
   height: 25vh;
   border: 2px solid black;
   background-color: #f8f9fa; /* Cambié a un tono ligeramente más oscuro de blanco */
@@ -119,14 +227,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 
-#cuadro p {
+.cuadro p {
   font-size: 3rem;
   color: black;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
 }
 
-#cuadro a.btn-primary {
+.cuadro a.btn-primary {
   background-color: #ffd139; /* Amarillo */
   border-color: #ffd139; /* Amarillo */
   color: black;
@@ -145,18 +253,18 @@ body {
 
 }
 
-#cuadro a.btn-primary:hover {
+.cuadro a.btn-primary:hover {
   background-color: #000; /* Fondo negro al pasar el mouse */
   color: #fff; /* Texto blanco al pasar el mouse */
   border-color: #000;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transform: scale(1.05); /* Zoom ligeramente al pasar el cursor */
 }
-#cuadro a.btn-primary:hover::before {
+.cuadro a.btn-primary:hover::before {
 opacity: 0.3; /* Opacidad aumentada al pasar el cursor */
 transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen al pasar el cursor */
 }
-#cuadro a.btn-primary .icono {
+.cuadro a.btn-primary .icono {
   margin-right: 10px; /* Espacio entre el icono y el texto */
 }
 .texto {
