@@ -74,9 +74,6 @@
             <a href="../nosotros/quienesSomos.php" class="text-white" style="text-decoration: none;"> Quiénes somos</a>
           </p>
           <p>
-            <a href="../nosotros/compromisos.php" class="text-white" style="text-decoration: none;"> Compromisos</a>
-          </p>
-          <p>
             <a href="../nosotros/practicaConNosotros.php" class="text-white" style="text-decoration: none;"> Practica con nosotros</a>
           </p>
         </div>
@@ -89,10 +86,6 @@
           <p>
             <a href="#" class="text-white" style="text-decoration: none;"> Aviso legal</a>
           </p>
-          <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Privacidad</a>
-          </p>
-
         </div>
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
