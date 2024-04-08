@@ -1,7 +1,7 @@
 <?php include 'vista/layout/cabecera.php'; ?>
 <link rel="stylesheet" href="vista/css/soluciones.css">
 <div>
-    <div class="container marketing pt-3">
+    <div id="cuadroDiv" class="container marketing pt-3">
         <div class="row featurette">
             <div class="col-md-7">
                 <h2 class="featurette-heading fw-normal lh-1">Siempre pensando en el <span
@@ -23,47 +23,35 @@
     </div>
     
     <div id="myCarousel" class="carousel slide h-auto" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner h-75">
-            <div class="carousel-item active h-100">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
+        <div class="carousel-inner">
+            <div class="carousel-item active h-75">
+                <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
                 <div class="container">
                     <div class="carousel-caption text-start">
-                        <h1>Software</h1>
+                        <h1>1</h1>
                         <p class="opacity-75">Some representative placeholder content for the first slide of the
                             carousel.</p>
                         <p><a class="btn btn-lg btn-warning mostrar-btn">Ver más</a></p>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item h-100">
+            <div class="carousel-item h-75">
                 <!-- Reemplaza la imagen de fondo aquí -->
                 <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Servicios</h1>
+                        <h1>2</h1>
                         <p>Hacemos realidad tus ideas digitales.</p>
                         <p><a class="btn btn-lg btn-warning mostrar-btn">Ver más</a></p>
                     </div>
                 </div>
             </div>
 
-            <div class="carousel-item h-100">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
-                </svg>
+            <div class="carousel-item h-75">
+                <img src="vista/assets/servicios.png" class="d-block w-100" alt="...">
                 <div class="container">
                     <div class="carousel-caption text-end">
-                        <h1>Soluciones empresa</h1>
+                        <h1>3</h1>
                         <p>Some representative placeholder content for the third slide of this carousel.</p>
                         <p><a class="btn btn-lg btn-warning mostrar-btn">Ver productos</a></p>
                     </div>
@@ -94,41 +82,5 @@
     </div>
 </div>
 
-<script>
-    var div = document.querySelector('.containerCabecera');
-    var marketing = document.querySelector('.marketing');
-    var altura = div.clientHeight;
-    marketing.style.marginTop = altura + 'px';
-        var myCarousel = document.getElementById('myCarousel');
-        var carouselItems = myCarousel.querySelectorAll('.carousel-item');
-
-        // Detener el intervalo de desplazamiento automático cuando se hace clic en un botón del carousel
-        var carouselControls = myCarousel.querySelectorAll('.btn');
-        carouselControls.forEach(function (control) {
-            control.addEventListener('click', function () {
-                myCarousel.setAttribute('data-bs-ride', null);
-            });
-        });
-        var carouselNavButtons  = myCarousel.querySelectorAll('.carousel-control-prev, .carousel-control-next');
-        carouselNavButtons .forEach(function (button) {
-            button.addEventListener('click', function () {
-                let mostrar = document.querySelector('.mostrar-texto');
-                if(mostrar)
-                    mostrar.classList.remove('mostrar-texto');
-                myCarousel.setAttribute('data-bs-ride', 'carousel');
-            });
-        });
-        var botones = document.querySelectorAll('.mostrar-btn');
-        var textosOcultos = document.querySelectorAll('.texto-oculto-contenedor');
-
-        botones.forEach(function (boton, index) {
-            boton.addEventListener('click', function () {
-                // Agrega una clase para expandir el carousel
-                document.getElementById('myCarousel').classList.add('carousel-item-expanded');
-                // Muestra el texto oculto correspondiente
-                textosOcultos[index].classList.add('mostrar-texto');
-            });
-        });
-</script>
-
+<script src="vista/js/soluciones.js"></script>
 <?php include 'vista/layout/footer.php'; ?>

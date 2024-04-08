@@ -88,7 +88,7 @@
 }
 
 .texto-oculto-contenedor.mostrar-texto {
-    height: 25vh; /* Ajusta la altura del texto oculto al mostrarse */
+    height: auto; /* Ajusta la altura del texto oculto al mostrarse */
 }
 
 .blanco{
