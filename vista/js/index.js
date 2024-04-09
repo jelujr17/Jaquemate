@@ -16,7 +16,6 @@ function aplicarEstilosSegunTamanoPantalla() {
     var divPadre = document.querySelector('.fondoimagen');
     var jaque = document.querySelector('#jaque');
     var extras = document.querySelector('#extras');
-    const movilElements = document.querySelectorAll('.movil'); // Obtener todos los elementos con la clase .movil
     var altura = screen.height;
     var anchura = screen.width;
     var ratio = anchura/altura;
@@ -29,22 +28,19 @@ function aplicarEstilosSegunTamanoPantalla() {
             jaque.classList.remove('min-container');
             divPadre.classList.add('h-100');
             divPadre.style.height= '0';
-            movilElements.forEach(element => {
-                element.classList.remove('movilDiv'); // Agregar la clase movilDiv a cada elemento
-            });
+            extras.classList.add('centrado');
+            extras.classList.add('h-25');
+            extras.classList.remove('min-centrado');
         } else {
             index.classList.remove('divSecundario');
             index.classList.add('caja');
             jaque.classList.remove('text-container');
             jaque.classList.add('min-container');
-            movilElements.forEach(element => {
-                element.classList.add('movilDiv'); // Agregar la clase movilDiv a cada elemento
-            });
             extras.classList.remove('centrado');
             extras.classList.remove('h-25');
             extras.classList.add('min-centrado');
             divPadre.classList.remove('h-100');
-            divPadre.style.height= '60vh';
+            divPadre.style.height= '80vh';
 
         }
     } catch (error) {

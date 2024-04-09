@@ -36,9 +36,6 @@
   font-style: italic;
 }
 
-.min-container{
-
-}
 .min-container p {
   text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
   color: rgb(255, 175, 46);
@@ -74,14 +71,41 @@
     
     top: 35vh;
   }
-  .divSecundario .opacidad{
+  .opacidad{
     opacity: 0.95;
     padding-top: 0;
 }
 .divSecundario .opacidad svg{
-    margin-bottom: 10px;
+    margin-right: 5%;
+    width: 7%;
+    height: auto;
 }
-  .movilDiv{
+#index .row{
+  margin: 10px;
+}
+.divSecundario ul li{
+  font-size: 1.2rem;
+}
+.caja ul li{
+  font-size: 2rem;
+}
+.boton{
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: .5em;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background-color: #212529;
+    transition: background-color 0.3s, color 0.3s;
+}
+.boton:hover{
+  background-color: #ffffff;
+  color: #333333ad
+}
+
+  .movil{
     display: flex; /* Convertimos #movil en un contenedor flexible */
     align-items: center;
   }
@@ -90,7 +114,7 @@
     height: auto;
   }
   .caja h3{
-    font-size: 6.5vw;
+    font-size: 5.7vw;
     margin-left: 15px;
   }
   .caja svg{
@@ -98,7 +122,6 @@
     width: 10%;
     height: auto;
   }
-
 
   .solu{
     white-space: pre-line;
@@ -120,6 +143,7 @@
 }
 .min-centrado{
   height: 50vh;
+  margin: 0 auto;
 }
 .min-centrado .contenido{
   width: 80vw;
@@ -130,6 +154,7 @@
 }
 .min-centrado .col{
   height: 100%;
+  padding: 0;
 }
 .min-centrado .row{
   width: 80%;
@@ -138,6 +163,7 @@
   height: 20%;
   justify-content: center !important;
   margin: 0 auto !important;
+  padding: 0;
 }
 .min-centrado .smart{
   padding-top: 0;
