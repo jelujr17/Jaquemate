@@ -37,30 +37,16 @@
   </head>
 
 <body>
-  <div class="containerCabecera <?php echo ($current_page === 'index.php' || $current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>">
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-      <a href="index.php" class="d-inline-flex link-body-emphasis text-decoration-none m-3">
-        <img src="vista/assets/icono.png" alt="Logo" width="65" height="50" id="logo">
-      </a>
-      
-      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <div class="<?php echo ($current_page === 'index.php' ? 'menu': ''); ?>">
-            <li><a href="index.php" class="nav-link px-2 text-white">indice</a></li>
-          </div>
-          <div class="<?php echo ($current_page === 'potenciar.php' ? 'menu': ''); ?>">
-            <li><a href="potenciar.php" class="nav-link px-2 text-white">Potenciamos tu marca</a></li>
-          </div>
-          <div class="<?php echo ($current_page === 'realidadvirtual.php' ? 'menu': ''); ?>">
-            <li><a href="realidadvirtual.php" class="nav-link px-2 text-white">Realidad Virtual</a></li>
-          </div>
-          <div class="<?php echo ($current_page === 'soluciones.php' ? 'menu': ''); ?>">
-            <li><a href="soluciones.php" class="nav-link px-2 text-white">Soluciones</a></li>
-          </div>
-          <div class="<?php echo ($current_page === 'contacto.php' ? 'menu': ''); ?>">
-            <li><a href="contacto.php" class="nav-link px-2 text-white">Contacto</a></li>
-          </div>
-        </ul>
+<nav class="containerCabecera"<?php echo ($current_page === 'index.php' || $current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>>
+    <ul>
+      <li class="imag"><a href="#"><img src="vista/assets/icono.png" alt="Logo"></a></li>
+      <li><a href="potenciar.php">Potenciamos tu marca</a></li>
+      <li><a href="realidadvirtual.php">Realidad Virtual</a></li>
+      <li><a href="soluciones.php">Soluciones</a></li>
+      <li><a href="contacto.php">Contacto</a></li>
+    </ul>
+  </nav>
 
-    </div>
+  
   </div>
 

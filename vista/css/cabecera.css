@@ -44,26 +44,49 @@
   }
 
   ul{
-    height: 100% !important;
+
     display: flex; /* Utiliza flexbox para distribuir los elementos hijos */
   align-items: center;
   }
   .containerCabecera{
 
     background-color: black;
-    position: -webkit-sticky; /* Para navegadores basados en WebKit */
     position: sticky; /* Para otros navegadores */
     top: 0;
     z-index: 5;
     width: 100% !important;
     transition: opacity 0.3s ease; /* Animación de transición de opacidad */
   }
-
-  ul .menu{
-    flex: 1;
-    background-color: rgb(44, 42, 39);
-    border-radius: 10px; /* Ajusta el radio de los bordes para suavizarlos */
-    height: 100%;
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+  }
+  
+  nav ul li.imag {
+    width: 100px; /* Ancho del logo */
+  }
+  
+  nav ul li.imag img {
+    max-width: 100%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
   }
   .oculto{
     display: none;
