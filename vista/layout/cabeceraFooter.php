@@ -14,7 +14,7 @@
         case 'quienesSomos.php':
             $titulo_pagina = 'Quienes Somos';
             break;
-        case 'realidadvirtual.php':
+        case 'avisolegal.php':
             $titulo_pagina = 'Realidad Virtual';
             break;
         case 'tiemporeal.php':

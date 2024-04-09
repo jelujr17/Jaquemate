@@ -84,7 +84,7 @@
             <a href="../nosotros/politicadeprivacidad.php" class="text-white" style="text-decoration: none;">Politica de privacidad</a>
           </p>
           <p>
-            <a href="#" class="text-white" style="text-decoration: none;"> Aviso legal</a>
+            <a href="../nosotros/avisolegal.php" class="text-white" style="text-decoration: none;"> Aviso legal</a>
           </p>
         </div>
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">

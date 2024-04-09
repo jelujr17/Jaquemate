@@ -81,10 +81,10 @@
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Legal</h5>
           <p>
-            <a href="#" class="text-white" style="text-decoration: none;">Politica de privacidad</a>
+            <a href="nosotros/politicadeprivacidad.php" class="text-white" style="text-decoration: none;">Politica de privacidad</a>
           </p>
           <p>
-            <a href="#" class="text-white" style="text-decoration: none;"> Aviso legal</a>
+            <a href="nosotros/avisolegal.php" class="text-white" style="text-decoration: none;"> Aviso legal</a>
           </p>
 
         </div>
@@ -99,7 +99,6 @@
           <p>
             <i class="fas fa-envelope mr-3"></i> <a href="mailto:informacion@jaquemate.es" class="text-white"
               style="text-decoration: none;">informacion@jaquemate.es</a>
-
           </p>
           <p>
             <i class="fas fa-phone mr-3"></i> <a href="tel:966231926" class="text-white"
