@@ -1,5 +1,16 @@
-    let menu = document.querySelector('.containerCabecera');
-    
+let menu = document.querySelector('.containerCabecera');
+document.addEventListener('scroll', function() {
+    var div = document.querySelector('#imgContent');
+    var mitadAltura = div.offsetHeight / 2;
+
+    if (window.scrollY >= mitadAltura) {
+        menu.classList.remove('oculto');
+    } else {
+        menu.classList.add('oculto');
+    }
+});
+    const inputs = document.querySelectorAll('input[name="slide"]');
+    const descriptions = document.querySelectorAll('.texto .description');
     function aplicarEstilosSegunTamanoPantalla() {
         var imagen = document.querySelector('#imgContent');
         var cuadro = document.querySelector('#cuadroDiv');
