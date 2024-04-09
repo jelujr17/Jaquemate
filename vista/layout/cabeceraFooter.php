@@ -5,8 +5,8 @@
     $titulo_pagina = '';
 
     switch ($current_page) {
-        case 'compromisos.php':
-            $titulo_pagina = 'Compromisos';
+        case 'politicadeprivacidad.php':
+            $titulo_pagina = 'Politica de Privacidad';
             break;
         case 'practicaConNosotros.php':
             $titulo_pagina = 'Practica con Nosotrso';
@@ -43,7 +43,14 @@
     <link rel="icon" href="../vista/assets/icono.png" type="image/png">
 
 </head>
-
+<head>
+  <!-- Aquí va tu metainformación, enlaces a hojas de estilo y otros elementos del encabezado -->
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
 <body>
     <div class="containerCabecera">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">

@@ -39,7 +39,14 @@
   <link rel="icon" href="vista/assets/icono.png" type="image/png">
 
 </head>
-
+<head>
+  <!-- Aquí va tu metainformación, enlaces a hojas de estilo y otros elementos del encabezado -->
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+  </style>
+</head>
 <body>
   <div class="containerCabecera">
     <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">

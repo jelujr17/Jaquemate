@@ -31,13 +31,17 @@
   <div class="col-lg-4 text-center">
     <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
       role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-      <title>Placeholder</title>
-      <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+      <image href="../vista/assets/icono.png" width="140" height="140" />
     </svg>
     <h2 class="fw-normal">Nuestros compromisos</h2>
     <br>
-    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+    <p>En Jaquemate, nos comprometemos a ofrecer un servicio excepcional y a establecer relaciones sólidas basadas en la
+      confianza, la seguridad y el compromiso. Nuestra misión es proporcionar soluciones innovadoras que superen las
+      expectativas de nuestros clientes y promuevan el éxito mutuo. </p>
+    <br>
+    <button type="button" class="btn btn-secondary btn-dark" data-bs-toggle="modal"
       data-bs-target="#modalCompromisos">Descubrenos &raquo;</button>
+
   </div><!-- /.col-lg-4 -->
   <div class="col-lg-4 text-center">
     <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
@@ -58,17 +62,42 @@
 <!-- Modal para Nuestros Compromisos -->
 <div class="modal fade" id="modalCompromisos" tabindex="-1" aria-labelledby="modalCompromisosLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalCompromisosLabel">Nuestros compromisos</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Aquí puedes poner el contenido del modal para Nuestros Compromisos -->
-        <p>Contenido para Nuestros Compromisos...</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-body p-5">
+        <h2 class="fw-bold mb-4">Nuestos compromisos</h2>
+
+        <ul class="d-grid gap-4 my-5 list-unstyled small">
+          <li class="d-flex gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor"
+              class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708z" />
+              <path fill-rule="evenodd"
+                d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+            </svg>
+            <div>
+              <h5 class="mb-0">Crecimiento mutuo</h5>
+              En Jaquemate, priorizamos el crecimiento conjunto de todas las partes involucradas. Creemos en la
+              colaboración para alcanzar metas compartidas. Nuestra misión es fomentar relaciones sólidas y apoyar el
+              progreso mutuo.
+            </div>
+          </li>
+          
+          <li class="d-flex gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-node-plus"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M11 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8M6.025 7.5a5 5 0 1 1 0 1H4A1.5 1.5 0 0 1 2.5 10h-1A1.5 1.5 0 0 1 0 8.5v-1A1.5 1.5 0 0 1 1.5 6h1A1.5 1.5 0 0 1 4 7.5zM11 5a.5.5 0 0 1 .5.5v2h2a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2h-2a.5.5 0 0 1 0-1h2v-2A.5.5 0 0 1 11 5M1.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
+            </svg>
+            <div>
+              <h5 class="mb-0">A largo plazo</h5>
+              Ofrecemos un seguimiento cercano y personalizado en cada etapa de su interacción con nosotros. Desde
+              el primer contacto hasta la entrega final asegurando que cada cliente reciba el mejor servicio posible y
+              se sienta respaldado en todo momento.
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-warning w-100" data-bs-dismiss="modal">Genial, gracias!</button>
       </div>
     </div>
   </div>
