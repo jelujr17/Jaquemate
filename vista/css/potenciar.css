@@ -66,39 +66,45 @@
     }
 }
 
-#texto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+#texto, #texto2 {
+    font-family: "Segoe UI", sans-serif;
+    width: 80vw;
+    padding: 20px;
+}
+ .titulo {
+    font-size: 2rem;
+    text-align: center; /* Centra el texto de los títulos */
+    color: #343a40; /* Color del texto */
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5; /* Altura de línea */
+}
+
+#texto p:not(.titulo) {
+    font-size: 1.4rem;
     border-radius: 5px;
-    
+    color: #3a3e43; /* Color del texto */
+    line-height: 1.5; /* Altura de línea */
+    text-align: left;
+    margin-left: 3%;
+    width: 80%;
+}
+#texto2 p:not(.titulo) {
+    font-size: 1.4rem;
+    border-radius: 5px;
+    color: #3a3e43; /* Color del texto */
+    line-height: 1.5; /* Altura de línea */
+    text-align: center;
+    margin-left: 3%;
+    width: 80%;
 }
 
-#columnas {
-    display: flex;
-    justify-content: space-between;
+#texto p:last-child {
+    margin-bottom: 0; /* Eliminar espaciado inferior del último párrafo */
 }
-
-#texto #columnas p {
-    width: 49%; /* Ajusta el ancho según tu preferencia */
-    padding: 10px; /* Ajusta el espaciado interior según tu preferencia */
-    font-family: inherit;
-    font-size: 1.5rem;
-    line-height: 1.6em;
-    color: #000000; 
-    text-align: justify; /* Alineación justificada */
-}
-
-#texto .p3 {
-    text-decoration: underline;
-    font-size: 2.2rem;
-    margin-top: auto;   
-}
-
 
 .min-fondo .mitad p{
-    margin: 0;
+    margin: 0;  
     line-height: 2em;
     font-family: inherit;
     font-size: 1.5rem;
@@ -126,12 +132,36 @@
   align-items: center;
 }
 
+#ver{
+    text-decoration: none;
+    width: 100% !important;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #333;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255,255,255, 0.6);
+    transition: background-color 0.3s, color 0.3s;
+    border: 2px solid #333;
+}
+#texto2{
+    text-align: center;
+}
+
+#ver:hover{
+    background-color: #333;
+    color: white
+}
+
 .fondo .mitad {
     margin: 0 auto;
     display: flex;
     align-items: center; /* Centra verticalmente los elementos */
     border: 2px solid #cccccc43;
-    width: 95vw;
+    width: 80%;
     background-color: #f3f4f5;
     border-radius: 10px;
 }
@@ -140,12 +170,29 @@
     
 }
 
-.fondo .mitad p{
-    line-height: 2em;
-    font-family: inherit;
+.fondo .mitad{
+    height: auto; 
     font-size: 1.5rem;
-    line-height: 1.6em;
+    line-height: 1.5em;
+}
+.fondo .mitad p{
+    text-align: left;
+    
+    margin-left: 3%;
+}
+.fondo .mitad p:last-of-type{
+    margin-right: 1%;
+}
+.mitad img:last-of-type {
+    right: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
 
+.contenedor {
+    margin: 0 auto !important;
+    display: flex; /* Utilizamos flexbox para crear un contenedor flexible */
+    width: 70%;
 }
 
 .fondo .mitad img {

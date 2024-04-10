@@ -49,7 +49,6 @@
   align-items: center;
   }
   .containerCabecera{
-
     background-color: black;
     position: sticky; /* Para otros navegadores */
     top: 0;
@@ -74,20 +73,22 @@
   }
   
   nav ul li.imag img {
-    max-width: 100%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
+    width: 100%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
     height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
   }
   
   nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    font-size: 1.4rem;
     display: inline-block;
+    padding: 1.1em;
   }
   
   nav ul li a:hover {
     background-color: #555;
   }
+
   .oculto{
     display: none;
     opacity: 0; /* Hace que el elemento se desvanezca cuando se oculta */

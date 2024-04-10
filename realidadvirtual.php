@@ -18,10 +18,8 @@
     </div>
 </div>
 <div class="container-fluid pt-5">
-    <h2 class="text-center">VIDAREAL</h2>
     <div id="columnas" class="row row-cols-sg-1 row-cols-lg-2 pt-2 mx-auto">
-        <p class="p1">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-        <p class="p2">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+        <p class="p1">La realidad virtual no tiene paredes, dónde sea que estés tienes un escape a una realidad personalizada y óptima para tu entorno. Además de proporcionar herramientas sencillas y rápida en el ámbito laboral, también abre puertas de escape a aquellas personas con dificultades en su entorno. ¿Quisiera solucionar sus problemas, y hacerlo de manera innovadora? ¡Únase a la revolución!</p>
     </div>
 </div>
 

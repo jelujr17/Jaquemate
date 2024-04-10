@@ -10,6 +10,8 @@ function aplicarEstilosSegunTamanoPantalla() {
         if (ratio > 1 || isHorizontal) {
             blurryBackground.classList.remove('small-screen');
             blurryBackground.classList.add('large-screen');
+            fondo.classList.add('fondo');
+            fondo.classList.remove('min-fondo');
             // Ajustar el tamaño del encabezado según la pantalla
             marcasHeading.style.fontSize = "6vw";
         } else {
