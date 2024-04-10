@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="row row-cols-sg-1 row-cols-lg-2 g-5 start-50 h-auto mx-auto container-fluid min-ds">
+    <div class="row row-cols-sg-1 row-cols-lg-2 g-5 start-50 h-auto mx-auto /*w-75 container-fluid*/ min-ds">
         <div class="col">
             <div class="h-100 p-4 text-bg-dark rounded-3">
                 <div class="d-flex justify-content-center align-items-center mb-3">
