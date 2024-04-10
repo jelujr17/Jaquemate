@@ -9,7 +9,7 @@
             $titulo_pagina = 'Politica de Privacidad';
             break;
         case 'practicaConNosotros.php':
-            $titulo_pagina = 'Practica con Nosotrso';
+            $titulo_pagina = 'Practica con Nosotros';
             break;
         case 'quienesSomos.php':
             $titulo_pagina = 'Quienes Somos';
@@ -35,7 +35,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="../vista/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../vista/css/quienesSomos.css">
+    <link rel="stylesheet" href="../vista/css/practicaconnosotros.css">
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -54,7 +54,7 @@
 <body>
     <div class="containerCabecera">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
-            <a href="index.php" class="d-inline-flex link-body-emphasis text-decoration-none m-3">
+            <a href="../index.php" class="d-inline-flex link-body-emphasis text-decoration-none m-3">
                 <img src="../vista/assets/icono.png" alt="Logo" width="65" height="50">
             </a>
 

@@ -1,8 +1,8 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
+<!--
 <div id="feedback-form-wrapper">
-  <div id="floating-icon" class="mt-5"> <!-- Agregamos un margen superior al contenedor -->
+  <div id="floating-icon" class="mt-5"> 
     <button type="button" class="btn btn-warning btn-sm rounded-0" data-toggle="modal" data-target="#exampleModal">
-      <!-- Cambiamos la clase a btn-warning -->
       Feedback
     </button>
   </div>
@@ -57,6 +57,7 @@
     </div>
   </div>
 </div>
+-->
 </body>
 
 <div class="container-fluid p-0 m-0">

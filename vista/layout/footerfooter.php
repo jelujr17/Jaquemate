@@ -1,8 +1,8 @@
 <!-- Remove the container if you want to extend the Footer to full width. -->
+<!--
 <div id="feedback-form-wrapper">
-  <div id="floating-icon" class="mt-5"> <!-- Agregamos un margen superior al contenedor -->
+  <div id="floating-icon" class="mt-5">
     <button type="button" class="btn btn-warning btn-sm rounded-0" data-toggle="modal" data-target="#exampleModal">
-      <!-- Cambiamos la clase a btn-warning -->
       Feedback
     </button>
   </div>
@@ -57,6 +57,7 @@
     </div>
   </div>
 </div>
+-->
 </body>
 
 <div class="container-fluid p-0 m-0">
@@ -74,14 +75,16 @@
             <a href="../nosotros/quienesSomos.php" class="text-white" style="text-decoration: none;"> Quiénes somos</a>
           </p>
           <p>
-            <a href="../nosotros/practicaConNosotros.php" class="text-white" style="text-decoration: none;"> Practica con nosotros</a>
+            <a href="../nosotros/practicaConNosotros.php" class="text-white" style="text-decoration: none;"> Practica
+              con nosotros</a>
           </p>
         </div>
 
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Legal</h5>
           <p>
-            <a href="../nosotros/politicadeprivacidad.php" class="text-white" style="text-decoration: none;">Politica de privacidad</a>
+            <a href="../nosotros/politicadeprivacidad.php" class="text-white" style="text-decoration: none;">Politica de
+              privacidad</a>
           </p>
           <p>
             <a href="../nosotros/avisolegal.php" class="text-white" style="text-decoration: none;"> Aviso legal</a>
@@ -140,12 +143,17 @@
                     class="fab fa-facebook"></i></a>
               </li>
               <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-twitter"></i></a>
+                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="currentColor"
+                    class="fab fa-twitter-x" viewBox="0 0 16 16">
+                    <path
+                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                  </svg>
+                </a>
               </li>
               <li class="list-inline-item">
                 <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-google-plus"></i></a>
+                    class="fab fa-instagram"></i></a>
               </li>
               <li class="list-inline-item">
                 <a href="https://www.linkedin.com/company/jaquemate-mayoristas-sl/about/"
@@ -153,24 +161,16 @@
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
-
               <li class="list-inline-item">
                 <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
                     class="fab fa-youtube"></i></a>
               </li>
             </ul>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </footer>
-
-
 </div>
 <!-- End of .container -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
