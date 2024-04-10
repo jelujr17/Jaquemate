@@ -34,7 +34,7 @@
 <body>
 <nav class="containerCabecera"<?php echo ($current_page === 'index.php' || $current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>>
     <ul>
-      <li class="imag"><a href="index.php"><img src="vista/assets/icono.png" alt="Logo"></a></li>
+      <li class="imag"><a href="index.php"><img src="vista/assets/icono.png" alt="Inicio" class="ico"></a></li>
       <li><a href="potenciar.php">Potenciamos tu marca</a></li>
       <li><a href="realidadvirtual.php">Realidad Virtual</a></li>
       <li><a href="soluciones.php">Soluciones</a></li>

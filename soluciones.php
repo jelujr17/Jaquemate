@@ -35,10 +35,6 @@
         </div>
     </div>
 </div>
-
-<script src="vista/js/soluciones.js">
-
-</script>
       </div>
 <script src="vista/js/soluciones.js"></script>
 <?php include 'vista/layout/footer.php'; ?>

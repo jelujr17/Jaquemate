@@ -1,29 +1,28 @@
-    const inputs = document.querySelectorAll('input[name="slide"]');
-    const descriptions = document.querySelectorAll('.texto .description');
+    const ds = document.querySelectorAll('ds2');
+    const tel = document.querySelector('.row');
     function aplicarEstilosSegunTamanoPantalla() {
-        var imagen = document.querySelector('#imgContent');
-        var cuadro = document.querySelector('#cuadroDiv');
+
         var altura = screen.height;
         var anchura = screen.width;
         var ratio = anchura/altura;
         var isHorizontal = window.matchMedia("(orientation: landscape)").matches;
         try {
             if (ratio > 1 || isHorizontal) {
-                imagen.classList.add('imagen');
-                imagen.classList.remove('min-imagen');
-                cuadro.classList.add('cuadro');
-                cuadro.classList.remove('min-cuadro');
+                ds.classList.add('ds2');
+                ds.classList.remove('min-ds');
+                tel.classList.remove('container-fluid');
+                tel.classList.add('w-75');
                 menu.classList.add('oculto');
             } else {
-                imagen.classList.remove('imagen');
-                imagen.classList.add('min-imagen');
-                cuadro.classList.remove('cuadro');
-                cuadro.classList.add('min-cuadro');
+                ds.classList.remove('ds2');
+                ds.classList.add('min-ds');
+                tel.classList.add('container-fluid');
+                tel.classList.remove('w-75');
                 menu.classList.remove('oculto');
                 //marcasHeading.style.fontSize = "10vw";
             }
         } catch (error) {
-            alert("Error al aplicar estilos:", error);
+            
         }
     }
     

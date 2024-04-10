@@ -54,6 +54,7 @@
     top: 0;
     z-index: 5;
     width: 100% !important;
+    height: 15vh;
     transition: opacity 0.3s ease; /* Animación de transición de opacidad */
   }
   nav ul {
@@ -73,21 +74,30 @@
   }
   
   nav ul li.imag img {
-    width: 100%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    width: 95%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */ 
   }
   
   nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;  
     display: inline-block;
-    padding: 1.1em;
+    padding: 1.2em;
   }
   
-  nav ul li a:hover {
+  nav ul li a:hover:not(:has(img)) {
     background-color: #555;
   }
+  nav ul li a:hover:has(img){
+    transition:
+transform 0.3s;
+    transform: scale(1.05); /* Zoom ligeramente al pasar el cursor */
+  }
+  nav ul li a:hover:has(img)::before {
+    opacity: 0.3; /* Opacidad aumentada al pasar el cursor */
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen al pasar el cursor */
+    }
 
   .oculto{
     display: none;
