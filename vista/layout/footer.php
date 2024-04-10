@@ -69,99 +69,96 @@
       <div class="row text-center text-md-left">
 
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">jaquemate</h5>
-          <p>
-            <a href="nosotros/quienesSomos.php" class="text-white" style="text-decoration: none;"> Quiénes somos</a>
-          </p>
-          <p>
-            <a href="nosotros/practicaConNosotros.php" class="text-white" style="text-decoration: none;"> Practica con nosotros</a>
-          </p>
-        </div>
-
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Legal</h5>
-          <p>
-            <a href="nosotros/politicadeprivacidad.php" class="text-white" style="text-decoration: none;">Politica de privacidad</a>
-          </p>
-          <p>
-            <a href="nosotros/avisolegal.php" class="text-white" style="text-decoration: none;"> Aviso legal</a>
-          </p>
-
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
-            <a href="contacto.php" class="text-warning" style="text-decoration: none;">Contacto</a>
-          </h5>
-          <p>
-            <i class="fas fa-home mr-3"></i> <a href="https://www.google.com/maps?q=Calle+Jose+Aldeguer,+7,+03016"
-              target="_blank" class="text-white" style="text-decoration: none;">Calle Jose Aldeguer, 7, 03016</a>
-          </p>
-          <p>
-            <i class="fas fa-envelope mr-3"></i> <a href="mailto:informacion@jaquemate.es" class="text-white"
-              style="text-decoration: none;">informacion@jaquemate.es</a>
-          </p>
-          <p>
-            <i class="fas fa-phone mr-3"></i> <a href="tel:966231926" class="text-white"
-              style="text-decoration: none;">966
-              231 926</a>
-          </p>
-        </div>
-
-
-
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">jaquemate</h5>
+        <p>
+          <a href="Quienes-Somos" class="text-white" style="text-decoration: none;"> Quiénes somos</a>
+        </p>
+        <p>
+          <a href="Practica-con-Nosotros" class="text-white" style="text-decoration: none;"> Practica con nosotros</a>
+        </p>
       </div>
 
-      <hr class="mb-4">
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Legal</h5>
+        <p>
+          <a href="Politica-de-Privacidad" class="text-white" style="text-decoration: none;">Politica de privacidad</a>
+        </p>
+        <p>
+          <a href="Aviso-Legal" class="text-white" style="text-decoration: none;"> Aviso legal</a>
+        </p>
 
-      <div class="row align-items-center">
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+          <a href="Contacto" class="text-warning" style="text-decoration: none;">Contacto</a>
+        </h5>
+        <p>
+          <i class="fas fa-home mr-3"></i> <a href="https://www.google.com/maps?q=Calle+Jose+Aldeguer,+7,+03016"
+            target="_blank" class="text-white" style="text-decoration: none;">Calle Jose Aldeguer, 7, 03016</a>
+        </p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> <a href="mailto:informacion@jaquemate.es" class="text-white"
+            style="text-decoration: none;">informacion@jaquemate.es</a>
+        </p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> <a href="tel:966231926" class="text-white"
+            style="text-decoration: none;">966
+            231 926</a>
+        </p>
+      </div>
 
-        <div class="col-md-7 col-lg-8">
-          <p class="d-inline-block mb-0">© <span id="current-year"></span> Jaquemate. Todos los derechos reservados.</p>
-        </div>
-
-        <script>
-          // Obtén el elemento donde se mostrará el año actual
-          var currentYearElement = document.getElementById('current-year');
-
-          // Obtiene el año actual
-          var currentYear = new Date().getFullYear();
-
-          // Actualiza el contenido del elemento con el año actual
-          currentYearElement.textContent = currentYear;
 
 
-        </script>
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-right">
+    </div>
 
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-facebook"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-google-plus"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://www.linkedin.com/company/jaquemate-mayoristas-sl/about/"
-                  class="btn-floating btn-sm text-white" style="font-size: 23px;">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
+    <hr class="mb-4">
 
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
-                    class="fab fa-youtube"></i></a>
-              </li>
-            </ul>
+    <div class="row align-items-center">
 
-          </div>
+      <div class="col-md-7 col-lg-8">
+        <p class="d-inline-block mb-0">© <span id="current-year"></span> Jaquemate. Todos los derechos reservados.</p>
+      </div>
+
+      <script>
+        // Obtén el elemento donde se mostrará el año actual
+        var currentYearElement = document.getElementById('current-year');
+
+        // Obtiene el año actual
+        var currentYear = new Date().getFullYear();
+
+        // Actualiza el contenido del elemento con el año actual
+        currentYearElement.textContent = currentYear;
+
+
+      </script>
+      <div class="col-md-5 col-lg-4">
+        <div class="text-center text-md-right">
+
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                  class="fab fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                  class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                  class="fab fa-google-plus"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/company/jaquemate-mayoristas-sl/about/"
+                class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+
+            <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                  class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
 
         </div>
 
@@ -169,7 +166,9 @@
 
     </div>
 
-  </footer>
+</div>
+
+</footer>
 
 
 </div>

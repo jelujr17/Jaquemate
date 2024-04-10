@@ -1,13 +1,9 @@
+php_value upload_max_fiesize 30M
+php_flag short_open_tag on
 RewriteEngine On
 
-# Redirigir la URL principal a contacto.php
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^(.*)$ /contacto.php [L]
-
 # Redirigir jaquemate.es/Contacto a jaquemate.es/contacto.php
-RewriteRule ^Contacto$ /contacto.php [R=301,L]
+RewriteRule ^Contacto$ contacto.php
+RewriteRule ^Contacto$ contacto.php
 
-# Opcional: redirigir las solicitudes directas a index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /contacto.php [L]
+RewriteRule ^Realidad-Virtual$ realidadvirtual.php

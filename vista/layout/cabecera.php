@@ -87,10 +87,10 @@
 
         <?php if ($current_page === 'contacto.php'): ?>
           <div class="menu">
-            <li><a href="contacto.php" class="nav-link px-2 text-white">Contacto</a></li>
+            <li><a href="Contacto" class="nav-link px-2 text-white">Contacto</a></li>
           </div>
         <?php else: ?>
-          <li><a href="contacto.php" class="nav-link px-2 text-white">Contacto</a></li>
+          <li><a href="Contacto" class="nav-link px-2 text-white">Contacto</a></li>
         <?php endif; ?>
       </ul>
 
