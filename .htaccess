@@ -1,9 +1,15 @@
-php_value upload_max_fiesize 30M
-php_flag short_open_tag on
 RewriteEngine On
 
 # Redirigir jaquemate.es/Contacto a jaquemate.es/contacto.php
-RewriteRule ^Contacto$ contacto.php
-RewriteRule ^Contacto$ contacto.php
+RewriteRule ^Contacto$ /contacto.php [L]
+RewriteRule ^Potenciamos-tu-marca$ /potenciar.php [L]
+RewriteRule ^Realidad-Virtual$ /realidadvirtual.php [L]
+RewriteRule ^Soluciones$ /soluciones.php [L]
+RewriteRule ^$ /index.php [L]
 
-RewriteRule ^Realidad-Virtual$ realidadvirtual.php
+
+RewriteRule ^Aviso-Legal$ /avisolegal.php [L]
+RewriteRule ^Politica-de-Privacidad$ /politicadeprivacidad.php [L]
+
+RewriteRule ^Quienes-Somos$ /quienesSomos.php [L]
+RewriteRule ^Practica-con-Nosotros$ /practicaConNosotros.php [L]
