@@ -1,7 +1,7 @@
 <?php include 'vista/layout/cabecera.php'; ?>
 <link rel="stylesheet" href="vista/css/soluciones.css">
 
-  <div id="cuadroDiv" class="container-fluid marketing pb-5 mb-5">
+  <div id="cuadroDiv" class="container-fluid marketing pt-5 pb-5 mb-4">
     <div class="row featurette">
       <div class="col-7 text">
         <h2 class="featurette-heading fw-normal">¿Tienes algún problema que no sabes resolver?</h2>

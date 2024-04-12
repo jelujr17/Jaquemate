@@ -1,10 +1,11 @@
     const ds = document.querySelectorAll('ds2');
     const tel = document.querySelector('.row');
+    var div = document.querySelector('.containerCabecera ul');
+    var marketing = document.querySelector('.dos');
+    var altura = div.clientHeight;
+    marketing.style.marginTop = altura + 'px';
     function aplicarEstilosSegunTamanoPantalla() {
-
-        var altura = screen.height;
-        var anchura = screen.width;
-        var ratio = anchura/altura;
+        var ratio = screen.width/screen.height;
         var isHorizontal = window.matchMedia("(orientation: landscape)").matches;
         try {
             if (ratio > 1 || isHorizontal) {
@@ -21,8 +22,7 @@
                 menu.classList.remove('oculto');
                 //marcasHeading.style.fontSize = "10vw";
             }
-        } catch (error) {
-            
+        } catch (error) {    
         }
     }
     

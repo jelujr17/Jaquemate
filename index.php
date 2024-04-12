@@ -5,7 +5,6 @@
   <div id="jaque" class="text-container row-cols-1 start-75 align-items-stretch g-5 py-5 start-50 translate-middle-x appear-from-right2 pb-sg-0">
       <p class="col">JaqueMate</p>
       <h3 class="col">Mayoristas S.L</h3>
-      <hr>
   </div>
 
   <div id="index" class="row row-cols-lg-3 align-items-stretch g-5 py-5 start-50 translate-middle-x divSecundario">

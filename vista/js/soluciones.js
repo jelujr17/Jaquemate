@@ -1,9 +1,8 @@
-var div = document.querySelector('.containerCabecera');
+var div = document.querySelector('.containerCabecera ul');
 var wrapper = document.querySelector('.wrapper');
 var cuadro = document.querySelector('#cuadroDiv');
-    var marketing = document.querySelector('.marketing');
     var altura = div.clientHeight;
-    marketing.style.marginTop = altura + 'px';
+    cuadro.style.marginTop = altura + 'px';
     const inputs = document.querySelectorAll('input[name="slide"]');
     const descriptions = document.querySelectorAll('.texto .description');
   
@@ -20,7 +19,7 @@ var cuadro = document.querySelector('#cuadroDiv');
     }
   
     // Agrega un evento change a los inputs para mostrar la descripción correspondiente
-    inputs.forEach((input, index) => {
+    inputs.forEach((input) => {
       input.addEventListener('change', showCheckedDescription);
     });
 function aplicarEstilosSegunTamanoPantalla() {

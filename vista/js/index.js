@@ -1,24 +1,22 @@
-    window.addEventListener('load', aplicarEstilosSegunTamanoPantalla);
-    window.addEventListener('resize', aplicarEstilosSegunTamanoPantalla);
-    let menu = document.querySelector('.containerCabecera');
-    document.addEventListener('scroll', function() {
-        var div = document.querySelector('.fondoimagen');
-        var mitadAltura = div.offsetHeight / 2;
-    
-        if (window.scrollY >= mitadAltura) {
-            menu.classList.remove('oculto');
-        } else {
-            menu.classList.add('oculto');
-        }
-    });
-function aplicarEstilosSegunTamanoPantalla() {
+
     var index = document.querySelector('#index');
     var divPadre = document.querySelector('.fondoimagen');
     var jaque = document.querySelector('#jaque');
     var extras = document.querySelector('#extras');
-    var altura = screen.height;
-    var anchura = screen.width;
-    var ratio = anchura/altura;
+    let menu = document.querySelector('.containerCabecera');
+    var div = document.querySelector('.fondoimagen');
+function handleScroll() {
+    var mitadAltura = div.offsetHeight / 2;
+    
+    // Verificar si el scroll supera la mitad de la altura del div
+    if (window.scrollY >= mitadAltura) {
+        menu.classList.remove('oculto');
+    } else {
+        menu.classList.add('oculto');
+    }
+}
+function aplicarEstilosSegunTamanoPantalla() {
+    var ratio = screen.width/screen.height;
     var isHorizontal = window.matchMedia("(orientation: landscape)").matches;
     try {
         if (ratio > 1 || isHorizontal) {
@@ -44,6 +42,10 @@ function aplicarEstilosSegunTamanoPantalla() {
 
         }
     } catch (error) {
-        alert("Error al aplicar estilos:", error);
     }
 }
+    document.addEventListener('scroll', function() {
+    requestAnimationFrame(handleScroll);
+});
+window.addEventListener('load', aplicarEstilosSegunTamanoPantalla);
+window.addEventListener('resize', aplicarEstilosSegunTamanoPantalla);

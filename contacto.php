@@ -1,6 +1,6 @@
 <?php include 'vista/layout/cabecera.php'; ?>
     <link rel="stylesheet" href="vista/css/contacto.css">
-    <div class="p-5 pt-2 pb-0 uno">
+    <div class="p-5 pb-0 uno">
         <div class="container-fluid py-5 ds2 dos">
             <div class="fila">
                 <p>Correo</p>
@@ -45,5 +45,5 @@
             </div>
         </div>
     </div>
-
+    <script src="vista/js/contacto.js"></script>
 <?php include 'vista/layout/footer.php'; ?>

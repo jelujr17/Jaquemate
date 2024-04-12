@@ -1,4 +1,6 @@
 let menu = document.querySelector('.containerCabecera');
+var imagen = document.querySelector('#imgContent');
+var cuadro = document.querySelector('#cuadroDiv');
 document.addEventListener('scroll', function() {
     var div = document.querySelector('#imgContent');
     var mitadAltura = div.offsetHeight / 2;
@@ -12,11 +14,7 @@ document.addEventListener('scroll', function() {
     const inputs = document.querySelectorAll('input[name="slide"]');
     const descriptions = document.querySelectorAll('.texto .description');
     function aplicarEstilosSegunTamanoPantalla() {
-        var imagen = document.querySelector('#imgContent');
-        var cuadro = document.querySelector('#cuadroDiv');
-        var altura = screen.height;
-        var anchura = screen.width;
-        var ratio = anchura/altura;
+        var ratio = screen.width/screen.height;
         var isHorizontal = window.matchMedia("(orientation: landscape)").matches;
         try {
             if (ratio > 1 || isHorizontal) {

@@ -48,15 +48,16 @@
     display: flex; /* Utiliza flexbox para distribuir los elementos hijos */
   align-items: center;
   }
-  .containerCabecera{
+.containerCabecera {
     background-color: black;
-    position: sticky; /* Para otros navegadores */
+    position: fixed; /* Fija el menú en la parte superior de la ventana */
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 5;
-    width: 100% !important;
-    height: 15vh;
-    transition: opacity 0.3s ease; /* Animación de transición de opacidad */
-  }
+    width: 100%;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Añade transición de transform */
+}
   nav ul {
     list-style-type: none;
     margin: 0;
@@ -91,7 +92,7 @@
   }
   nav ul li a:hover:has(img){
     transition:
-transform 0.3s;
+    transform 0.3s;
     transform: scale(1.05); /* Zoom ligeramente al pasar el cursor */
   }
   nav ul li a:hover:has(img)::before {
@@ -99,10 +100,14 @@ transform 0.3s;
     transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen al pasar el cursor */
     }
 
-  .oculto{
-    display: none;
-    opacity: 0; /* Hace que el elemento se desvanezca cuando se oculta */
-    pointer-events: none;
+    .oculto {
+      transform: translateY(-100%); /* Oculta el menú moviéndolo hacia arriba */
+      opacity: 0; /* Hace que el menú sea transparente cuando está oculto */
+      pointer-events: none;
+  }
+  
+  .oculto ul li a {
+      pointer-events: none; /* Desactiva los enlaces del menú oculto */
   }
   #logo{
     
