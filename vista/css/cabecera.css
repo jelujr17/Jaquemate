@@ -1,5 +1,34 @@
+
+/* Ancho del scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+  
+}
+
+/* Ajusta el tamaño y el color del thumb */
+::-webkit-scrollbar-thumb {
+  background: rgb(193, 196, 198);
+  margin-right: 2px;
+}
+
+/* Ancho y color del track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin-right: 2px;
+}
+
+/* Hovers */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(193, 196, 198);
+  margin-right: 2px;
+}
+
+
 .form-control-dark {
     border-color: var(--bs-gray);
+  }
+  body{
+    overflow-x: hidden !important; 
   }
   .form-control-dark:focus {
     border-color: #fff;
@@ -14,19 +43,57 @@
     outline: 0;
   }
 
+  ul{
+
+    display: flex; /* Utiliza flexbox para distribuir los elementos hijos */
+  align-items: center;
+  }
   .containerCabecera{
     background-color: black;
+    position: sticky; /* Para otros navegadores */
+    top: 0;
+    z-index: 5;
+    width: 100% !important;
+    transition: opacity 0.3s ease; /* Animación de transición de opacidad */
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+  }
+  
+  nav ul li.imag {
+    width: 100px; /* Ancho del logo */
+  }
+  
+  nav ul li.imag img {
+    width: 100%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: 1.1em;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
   }
 
-  .menu{
-    background-color: rgb(44, 42, 39);
-    border-radius: 10px; /* Ajusta el radio de los bordes para suavizarlos */
-
+  .oculto{
+    display: none;
+    opacity: 0; /* Hace que el elemento se desvanezca cuando se oculta */
+    pointer-events: none;
   }
-  .NuestraHistoria {
-    font-family: "SedusSansWeb-Light",Arial,sans-serif;
-    color: #1D1D1B;
-    font-weight: normal;
-    margin-bottom: 10;
-    word-break: break-word;
+  #logo{
+    
   }
