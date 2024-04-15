@@ -43,7 +43,7 @@
     outline: 0;
   }
 
-  ul{
+  .containerCabecera  ul{
 
     display: flex; /* Utiliza flexbox para distribuir los elementos hijos */
   align-items: center;
@@ -79,7 +79,7 @@
     height: auto; /* La altura se ajustará automáticamente para mantener la proporción */ 
   }
   
-  nav ul li a {
+   nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;  
@@ -88,17 +88,19 @@
   }
   
   nav ul li a:hover:not(:has(img)) {
-    background-color: #555;
+    transform: scale(1.1); /* Escalar el elemento al 110% de su tamaño original */
+    transition: transform 0.3s; /* Transición suave */ 
   }
+
   nav ul li a:hover:has(img){
-    transition:
-    transform 0.3s;
+    
+    transition: transform 0.3s;
     transform: scale(1.05); /* Zoom ligeramente al pasar el cursor */
   }
   nav ul li a:hover:has(img)::before {
     opacity: 0.3; /* Opacidad aumentada al pasar el cursor */
     transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen al pasar el cursor */
-    }
+  }
 
     .oculto {
       transform: translateY(-100%); /* Oculta el menú moviéndolo hacia arriba */

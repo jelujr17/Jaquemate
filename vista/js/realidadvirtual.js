@@ -18,7 +18,7 @@ document.addEventListener('scroll', function() {
         var isHorizontal = window.matchMedia("(orientation: landscape)").matches;
         try {
             if (ratio > 1 || isHorizontal) {
-                imagen.classList.add('imagen');
+                imagen.classList.add('imagen'); 
                 imagen.classList.remove('min-imagen');
                 cuadro.classList.add('cuadro');
                 cuadro.classList.remove('min-cuadro');

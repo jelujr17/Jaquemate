@@ -19,7 +19,7 @@
         $titulo_pagina = 'Realidad Virtual';
         break;
     default:
-      $titulo_pagina = 'Título por defecto';
+      $titulo_pagina = 'Potencia tu marca';
       break;
   }
   $current_page = basename($_SERVER['PHP_SELF']);  ?>
