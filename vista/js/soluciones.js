@@ -10,9 +10,11 @@ var cuadro = document.querySelector('#cuadroDiv');
     function showCheckedDescription() {
       inputs.forEach((input, index) => {
         if (input.checked) {
-          descriptions.forEach(description => {
+          descriptions.forEach((description, index2) => {
             description.style.display = 'none';
+            document.querySelector(`[for="c${index2+1}"] h4`).style.display = 'none';
           });
+          document.querySelector(`[for="c${index + 1}"] h4`).style.display = 'block';
           document.getElementById(`description-c${index + 1}`).style.display = 'block';
         }
       });

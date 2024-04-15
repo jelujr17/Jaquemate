@@ -1,3 +1,13 @@
+.marketing{
+  text-align: center;
+}
+.marketing h2{
+  font-size: 3rem;
+}
+.marketing p{
+  font-size: 2rem;
+}
+
 .min-wrapper {
   padding-top: 5vh;
   width: 100%;
@@ -29,20 +39,6 @@
   justify-content: start;
 }
 
-.marketing{
-  text-align: center;
-}
-.marketing h2{
-  font-size: 3rem;
-}
-.marketing p{
-  font-size: 2rem;
-}
-
-.image {
-  height: 200px; /* Ajusta la altura de la imagen según sea necesario */
-  background-size: cover;
-}
 
 .card {
   width: 20%;
@@ -53,14 +49,30 @@
   border-radius: 2rem;
   margin: 0 10px;
   display: flex;
-  align-items: flex-end;
   transition: .6s cubic-bezier(.28,-0.03,0,.99);
   box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
   flex-direction: column; /* Cambia la dirección a columna */
   justify-content: flex-end; /* Alinea los elementos al final */
   align-items: center; 
 }
+.card h4{
+  display: none;
+  color: #fff;
+  overflow: hidden;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  animation: slideUp 0.5s ease forwards;
+}
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Mover hacia abajo 50px */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%); /* Sin desplazamiento vertical */
+  }
+}
 
 input {
   display: none;

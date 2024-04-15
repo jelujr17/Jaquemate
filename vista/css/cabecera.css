@@ -75,7 +75,7 @@
   }
   
   nav ul li.imag img {
-    width: 95%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
+    width: 50%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
     height: auto; /* La altura se ajustará automáticamente para mantener la proporción */ 
   }
   
@@ -86,8 +86,11 @@
     display: inline-block;
     padding: 1.2em;
   }
+  nav ul li a:has(.ico) {
+    padding: 0;
+  }
   
-  nav ul li a:hover:not(:has(img)) {
+  nav ul li a:hover:not(:has(.ico)) {
     transform: scale(1.1); /* Escalar el elemento al 110% de su tamaño original */
     transition: transform 0.3s; /* Transición suave */ 
   }
