@@ -73,13 +73,13 @@ input:checked + label {
 }
 
 .card[for="c1"] {
-  background-image: url('../assets/empresa.jpg');
+  background-image: url('../assets/software.jpg');
 }
 .card[for="c2"] {
   background-image: url('../assets/abuelos_portada.png');
 }
 .card[for="c3"] {
-  background-image: url('../assets/servicios.png');
+  background-image: url('../assets/solouciones.jpg');
 }
 
 
