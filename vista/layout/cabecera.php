@@ -30,9 +30,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="vista/assets/icono.png" type="image/png">
   </head>
-
 <body>
-<nav class="containerCabecera <?php echo ($current_page === 'index.php' || $current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>">
+<nav id="cabecera" class="containerCabecera <?php echo ($current_page === 'index.php' || $current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>">
     <ul>
       <li class="imag"><a href="index.php"><img src="vista/assets/icono.png" alt="Inicio" class="ico"></a></li>
       <li><a href="potenciar.php">Potenciamos tu marca</a></li>

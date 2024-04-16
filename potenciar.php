@@ -12,14 +12,14 @@
 </div>
 <div id="fondoDiv" class="fondo p-3">
     <div class="mitad mt-4 p-2">
-        <img src="vista/assets/abuelos_portada.png" alt="">
+        <img src="vista/assets/manos.jpg" alt="">
         <p>En Jaquemate tenemos el "win-win" como regla prioritaria en nuestras relaciones. Nuestra inventiva nos ha brindado 20 años en el mercado, vendiendo al por mayor.
         A veces, el mayor obstáculo de una marca al crecer es saber evolucionar con el mercado y no contra él.
         </p>
     </div>
     <div class="mitad mt-5 p-2">
         <p>¡Bienvenido al mundo de oportunidades que ofrece nuestra red de distribución europea! Después de años de dedicación en el mercado europeo, hemos construido una sólida estructura de distribución y relaciones privilegiadas con proveedores de confianza. Ahora, queremos compartir esos recursos contigo de forma completamente gratuita para que puedas potenciar tu negocio y alcanzar nuevos horizontes.</p>
-        <img src="vista/assets/abuelos_portada.png" alt="">
+        <img src="vista/assets/felices.jpg" alt="">
     </div>
 </div>
 <div id="texto2" class="pt-5 mb-4 pb-4 container-fluid">

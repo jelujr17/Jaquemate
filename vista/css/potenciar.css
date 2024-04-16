@@ -113,14 +113,10 @@
 }
 
 .min-fondo .mitad img {
-    top: 0;
-    width: 60%; /* Ajusta el tamaño de la imagen según tu preferencia */
-    height: auto;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    display: none;
     
 }
+
 .min-fondo .mitad {
     border: 2px solid #cccccc43;
     width: 95vw;

@@ -43,12 +43,12 @@
     outline: 0;
   }
 
-  .containerCabecera  ul{
+  #cabecera  ul{
 
     display: flex; /* Utiliza flexbox para distribuir los elementos hijos */
   align-items: center;
   }
-.containerCabecera {
+nav {
     background-color: black;
     position: fixed; /* Fija el menú en la parte superior de la ventana */
     top: 0;
@@ -58,31 +58,31 @@
     width: 100%;
     transition: opacity 0.3s ease, transform 0.3s ease; /* Añade transición de transform */
 }
-  nav ul {
+ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
   }
   
-  nav ul li {
+nav ul li {
     display: inline-block;
     vertical-align: middle; /* Alinea verticalmente los elementos */
   }
-  
-  nav ul li.imag {
+    
+  .containerCabecera ul li.imag {
     width: 100px; /* Ancho del logo */
   }
   
-  nav ul li.imag img {
-    width: 50%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
+  .containerCabecera ul li.imag img {
+    width: 60%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
     height: auto; /* La altura se ajustará automáticamente para mantener la proporción */ 
   }
   
    nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;  
+    font-size: 1.5rem;  
     display: inline-block;
     padding: 1.2em;
   }

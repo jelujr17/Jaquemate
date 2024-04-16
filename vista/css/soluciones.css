@@ -43,8 +43,10 @@
 .card {
   width: 20%;
   border-radius: .75rem;
+  font-size: 5em;
   background-size: cover;
   cursor: pointer;
+
   overflow: hidden;
   border-radius: 2rem;
   margin: 0 10px;
@@ -59,18 +61,24 @@
   display: none;
   color: #fff;
   overflow: hidden;
-  transition: .6s cubic-bezier(.28,-0.03,0,.99);
-  animation: slideUp 0.5s ease forwards;
+  font-size:inherit;
+  text-align: center;
+  width: 100%;
+  pointer-events: none;
+  animation: appearFromBottom2 1.5s ease forwards;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  margin: 0;
+  padding: .2em;
 }
 
-@keyframes slideUp {
-  0% {
+@keyframes appearFromBottom2 {
+  from {
     opacity: 0;
-    transform: translateY(100%); /* Mover hacia abajo 50px */
+    transform: translateY(50px);
   }
-  100% {
+  to {
     opacity: 1;
-    transform: translateY(0%); /* Sin desplazamiento vertical */
+    transform: translateY(0);
   }
 }
 

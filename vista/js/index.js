@@ -3,7 +3,7 @@
     var divPadre = document.querySelector('.fondoimagen');
     var jaque = document.querySelector('#jaque');
     var extras = document.querySelector('#extras');
-    let menu = document.querySelector('.containerCabecera');
+    let menu = document.getElementById('cabecera');
     var div = document.querySelector('.fondoimagen');
 function handleScroll() {
     var mitadAltura = div.offsetHeight / 2;
@@ -30,6 +30,8 @@ function aplicarEstilosSegunTamanoPantalla() {
             extras.classList.add('h-25');
             extras.classList.remove('min-centrado');
         } else {
+            menu.classList.remove('containerCabecera');
+            menu.classList.add('min-cabecera');
             index.classList.remove('divSecundario');
             index.classList.add('caja');
             jaque.classList.remove('text-container');

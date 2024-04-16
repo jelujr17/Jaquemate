@@ -14,7 +14,7 @@
             <input type="radio" name="slide" id="c1" checked>
             <label for="c1" class="card"><h4>Nuestro software, adaptado a tí</h4></label>
             <input type="radio" name="slide" id="c2" >
-            <label for="c2" class="card"><h4>¿Qué aplicación necesita? ¡Nosotros nos encargamos!</h4></label>
+            <label for="c2" class="card"><h4>¿Qué aplicación necesitas? <br> ¡Nosotros nos encargamos!</h4></label>
             <input type="radio" name="slide" id="c3" >
             <label for="c3" class="card"><h4>Globalization</h4></label>
         </div>
