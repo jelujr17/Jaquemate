@@ -30,8 +30,8 @@ function aplicarEstilosSegunTamanoPantalla() {
             extras.classList.add('h-25');
             extras.classList.remove('min-centrado');
         } else {
-            menu.classList.remove('containerCabecera');
-            menu.classList.add('min-cabecera');
+            //menu.classList.remove('containerCabecera');
+            //menu.classList.add('min-cabecera');
             index.classList.remove('divSecundario');
             index.classList.add('caja');
             jaque.classList.remove('text-container');

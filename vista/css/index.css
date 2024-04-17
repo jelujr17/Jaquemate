@@ -1,12 +1,13 @@
 .fondoimagen{
-    background-image: url('../assets/empresa.jpg');
+    background-image: url('../assets/empresa.png');
     background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
     background-position: center; /* Centra la imagen de fondo */
 
 }
 #jaque{
     width: 80%;
-
+    font-family: "Segoe UI", "Roboto";
+    font-style: italic;
     position: absolute;
     margin: 0 auto;
 }
@@ -14,26 +15,25 @@
   top: 5%;
 }
 .text-container p {
-  text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
   color: rgb(255, 175, 46);
-  font-style: italic;
-  font-family: "Segoe UI", "Roboto";
   font-size: 6vw;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0;
   margin: 0;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 .text-container h3 {
-  text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.1);
+
   color: rgb(255, 175, 46); /* Aplica el color deseado */
-  font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+  font-size: 3vw;
   padding: 0;
   margin: 0;
-  font-family: "Segoe UI", "Roboto";
-  font-style: italic;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 .min-container p {
