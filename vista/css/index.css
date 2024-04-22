@@ -1,10 +1,13 @@
-@font-face {
+/*@font-face {
   font-family: grotesk;
   src : url(../../fuentes/BebasLepasDemoRegular.ttf);
-}
+}*/
 @media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
   .boton{
     font-size: 2rem;
+  }
+  body{
+    width: 100% !important;
   }
   .divSecundario .col{
     font-size: 3.8vw !important;
@@ -19,7 +22,8 @@
     font-size: 10vw;
   }
     .divSecundario {
-      padding-top: 27% !important;
+      width: 100vw;
+      bottom: 0;
       height: auto;
     }
     .divSecundario h3{
@@ -107,11 +111,10 @@
     background-image: url('../assets/empresa.png');
     background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
     background-position: center; /* Centra la imagen de fondo */
-
 }
 #jaque{
     width: 80%;
-    font-family: "grotesk";
+  
     position: absolute;
     letter-spacing: 10px;
     margin: 0 auto;

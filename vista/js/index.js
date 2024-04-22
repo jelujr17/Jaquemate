@@ -2,6 +2,7 @@ const divPadre = document.querySelector('.divSecundario');
 const extras = document.querySelector('#extras');
 const menu = document.querySelector('nav');
 const div = document.querySelector('.fondoimagen');
+const jaque = document.querySelector('#jaque');
 
 function handleScroll() {
     const mitadAltura = div.offsetHeight / 2;
@@ -30,7 +31,7 @@ function aplicarEstilosSegunTamanoPantalla() {
             div.style.paddingTop = menu.clientHeight + 'px';
             extras.classList.remove('h-25');
             div.classList.remove('h-100');
-            div.style.height = '80vh';
+            div.style.height = '90vh';
         }
     } catch (error) {
         console.error("Error al aplicar estilos:", error);
