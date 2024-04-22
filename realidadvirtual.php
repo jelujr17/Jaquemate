@@ -12,9 +12,7 @@
 <div id="myCarousel" class="carousel slide pt-3 mt-4 mb-6" data-bs-ride="carousel">
     <div id="cuadroDiv" class="cuadro w-75 p-4 rounded shadow">
         <p class="lead">¿Quieres conocernos mejor?</p>
-        <a href="#" class="btn btn-primary btn-lg mt-5">
-            Visita nuestra web
-        </a>
+        <a href="#" class="btn btn-primary btn-lg mt-4">Visita nuestra web</a>
     </div>
 </div>
 <div class="container-fluid pt-5">

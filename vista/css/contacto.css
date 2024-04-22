@@ -1,7 +1,36 @@
-.ds2 svg{
-    height: auto;
-    width: 4%;
+@media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
+    .ds2 svg{
+        height: auto;
+        padding-top: 0.7rem;
+        width: 10%;
+    }
+    .ds2 p{
+        padding: 0.7rem;
+        text-align: left;
+    }
+    .dos:not(.fila) > p{
+        font-size: 2.5rem;
+    }
+    
+    .ds2 .col, .ds .col-ld-6{
+        text-align: center;
+    }
+    .ds2 a{
+        margin-bottom: 0.7rem;
+        font-size: 2.8rem;
+    }
+    #iconos svg{
+        width: 10%;
+    }
+    #iconos p{
+        font-size: 2.7rem;
+    }
+    #iconos a{
+        font-size: 2.8rem;
+    }
 }
+
+
 
 .fila {
     display: flex; /* Utilizamos flexbox para alinear los elementos en la misma fila */
@@ -22,42 +51,28 @@
     justify-content: center;
     align-content: center;
 }
-.dos a{
-    font-size: 2rem;
-}
-.dos:not(.fila) > p{
-    font-size: 2rem;
-}
+
 .dos .fila p{
     font-size: 4.5rem;
 }
-.uno .fila svg{
-    width: 8%;
-}
 
-/* TELEFONO MAPA */
-.ds svg{
-    height: auto;
-    width: 10%;
-}
 
-.min-ds{
-    
-}
-.min-ds svg{
-    height: auto;
-    padding-top: 0.7rem;
-    width: 10%;
-}
-.min-ds p{
-    padding: 0.7rem;
-    text-align: left;
-    font-size: 2.5rem;
-}
-.min-ds .col, .min-ds .col-ld-6{
-    text-align: center;
-}
-.min-ds a{
-    margin-bottom: 0.7rem;
-    font-size: 2.7rem;
+
+@media only screen and (orientation: landscape), (min-aspect-ratio: 1/1) {
+    .ds2 svg{
+        height: auto;
+        width: 4%;
+    }
+    .dos:not(.fila) > p{
+        font-size: 1.6rem;
+    }
+    .dos a{
+        font-size: 1.8rem;
+    }
+    #iconos a{
+        font-size: 1.8rem;
+    }
+    .uno .fila svg{
+        width: 6%;
+    }
 }

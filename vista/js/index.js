@@ -1,53 +1,53 @@
+const divPadre = document.querySelector('.fondoimagen');
+const extras = document.querySelector('#extras');
+const menu = document.getElementById('cabecera');
+const div = document.querySelector('.fondoimagen');
 
-    var index = document.querySelector('#index');
-    var divPadre = document.querySelector('.fondoimagen');
-    var jaque = document.querySelector('#jaque');
-    var extras = document.querySelector('#extras');
-    let menu = document.getElementById('cabecera');
-    var div = document.querySelector('.fondoimagen');
 function handleScroll() {
-    var mitadAltura = div.offsetHeight / 2;
-    
+    const mitadAltura = div.offsetHeight / 2;
+    const scrollY = window.scrollY || window.scrollX;
+
     // Verificar si el scroll supera la mitad de la altura del div
-    if (window.scrollY >= mitadAltura) {
+    if (scrollY >= mitadAltura) {
         menu.classList.remove('oculto');
     } else {
         menu.classList.add('oculto');
     }
 }
+
 function aplicarEstilosSegunTamanoPantalla() {
-    var ratio = screen.width/screen.height;
-    var isHorizontal = window.matchMedia("(orientation: landscape)").matches;
+    const ratio = screen.width / screen.height;
+    const isHorizontal = window.matchMedia("(orientation: landscape)").matches;
+
     try {
         if (ratio > 1 || isHorizontal) {
-            index.classList.remove('caja');
-            index.classList.add('divSecundario');
-            jaque.classList.add('text-container');
-            jaque.classList.remove('min-container');
             divPadre.classList.add('h-100');
-            divPadre.style.height= '0';
-            extras.classList.add('centrado');
+            divPadre.style.height = '0';
             extras.classList.add('h-25');
-            extras.classList.remove('min-centrado');
         } else {
-            //menu.classList.remove('containerCabecera');
-            //menu.classList.add('min-cabecera');
-            index.classList.remove('divSecundario');
-            index.classList.add('caja');
-            jaque.classList.remove('text-container');
-            jaque.classList.add('min-container');
-            extras.classList.remove('centrado');
             extras.classList.remove('h-25');
-            extras.classList.add('min-centrado');
             divPadre.classList.remove('h-100');
-            divPadre.style.height= '80vh';
-
+            divPadre.style.height = '80vh';
         }
     } catch (error) {
+        console.error("Error al aplicar estilos:", error);
     }
 }
-    document.addEventListener('scroll', function() {
-    requestAnimationFrame(handleScroll);
-});
+
+function optimizedScrollHandler() {
+    let ticking = false;
+
+    return function () {
+        if (!ticking) {
+            requestAnimationFrame(function () {
+                handleScroll();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    };
+}
+
+document.addEventListener('scroll', optimizedScrollHandler());
 window.addEventListener('load', aplicarEstilosSegunTamanoPantalla);
 window.addEventListener('resize', aplicarEstilosSegunTamanoPantalla);

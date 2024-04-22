@@ -4,6 +4,7 @@
     }
     #texto, #texto2{
         width: 95vw;
+
     }
     #texto .titulo, #texto2 .titulo {
         font-size: 3rem;
@@ -12,10 +13,9 @@
         font-size: 2.5rem;
     }
     #fondoDiv .mitad p{
-        margin: 0;  
-        line-height: 2.5em;
+        margin: 1em;  
         font-family: inherit;
-        font-size: 1.8rem;
+        font-size: 2.3rem;
         line-height: 1.5em;
         text-align: justify;
     }
@@ -27,7 +27,10 @@
         border-radius: 10px;
         justify-content: space-between;
         align-items: center;
+    }
 
+    .mitad img{
+        width: 50%;
     }
 
     .mitad:nth-of-type(1) img{
@@ -44,7 +47,8 @@
         font-size: 3.5rem;
     }
     #texto2 p:not(.titulo) {
-        font-size: 2rem;
+        margin: 0 auto;
+        font-size: 2.7rem;
         line-height: 1.5; /* Altura de línea */
         width: 80%;
     }
@@ -194,7 +198,6 @@
 }
 
 .mitad img {
-    width: 40%; /* Ajusta el tamaño de la imagen según tu preferencia */
     height: auto;
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
@@ -209,7 +212,7 @@
         font-size: 2rem;
     }
     #texto p:not(.titulo) {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         margin-left: 3%;
         width: 80%;
     }
@@ -219,5 +222,24 @@
         width: 80%;
         font-size: 1.5rem;
         line-height: 1.5em;
+    }
+    .aa{
+        margin: 2rem;
+        text-align: center;
+    }
+    .ver{
+        padding: 10px 20px;
+        font-size: 2.8rem;
+    }
+    .mitad img{
+        width: 40%;
+    }
+    #texto2 .titulo {
+        font-size: 2rem;
+    }
+    #texto2 p:not(.titulo) {
+        font-size: 1.6rem;
+        margin-left: 3%;
+        width: 80%;
     }
 }

@@ -1,3 +1,92 @@
+@media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
+  .divSecundario ul li{
+    font-size: 2rem;
+  }
+    .divSecundario {
+      padding-top: 26% !important;
+      height: auto;
+    }
+    .divSecundario h3{
+      font-size: 5.7vw;
+      margin-left: 15px;
+    }
+    .divSecundario svg{
+      margin: 15px;
+      width: 10%;
+      height: auto;
+    }
+    .text-container p {
+      text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
+      color: rgb(255, 175, 46);
+      font-style: italic;
+      font-family: "Segoe UI", "Roboto";
+      font-size: 12vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .text-container h3 {
+      text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.1);
+      color: rgb(255, 175, 46); /* Aplica el color deseado */
+      font-size: 4vw; /* Ajusta el tamaño del texto según sea necesario */
+      padding: 0;
+      margin: 0;
+      font-family: "Segoe UI", "Roboto";
+      font-style: italic;
+    }
+    .centrado{
+      height: 50vh;
+      margin: 0 auto;
+    }
+    .centrado .contenido{
+      width: 80vw;
+      height: 100%;
+      background-color: rgb(85, 89, 92);
+    
+      border-radius: 20px;
+    }
+    .centrado .col{
+      height: 100%;
+      padding: 0;
+    }
+    .centrado .row{
+      width: 80%;
+      top: 0;
+      margin-top: 0;
+      height: 20%;
+      justify-content: center !important;
+      margin: 0 auto !important;
+      padding: 0;
+    }
+    .centrado .smart{
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+      height: 100%; /* Asegura que el contenedor ocupe toda la altura */
+    }
+    .centrado .contenido svg{
+      margin-left: 9%;
+      width: 15%;
+      height: auto;
+      top: 25%;
+      color: rgb(255, 175, 46); /* Aplica el color deseado */
+    }
+    .centrado .contenido p{
+      text-align: center;
+      width: 80%;
+      font-family: "Segoe UI", "Roboto";
+      font-size: 7vw;
+      font-weight: bold;
+      color: rgb(255, 175, 46); /* Aplica el color deseado */
+    }
+    .centrado .contenido div:hover{
+      cursor: pointer;
+    }
+}
+
 .fondoimagen{
     background-image: url('../assets/empresa.png');
     background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
@@ -11,84 +100,23 @@
     position: absolute;
     margin: 0 auto;
 }
-.text-container{
-  top: 5%;
-}
-.text-container p {
-  color: rgb(255, 175, 46);
-  font-size: 6vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 0;
-  margin: 0;
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #ffffff;
-}
 
-.text-container h3 {
-
-  color: rgb(255, 175, 46); /* Aplica el color deseado */
-  font-size: 3vw;
-  padding: 0;
-  margin: 0;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffffff;
-}
-
-.min-container p {
-  text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
-  color: rgb(255, 175, 46);
-  font-style: italic;
-  font-family: "Segoe UI", "Roboto";
-  font-size: 12vw;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 0;
-  margin: 0;
-}
-
-.min-container h3 {
-  text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.1);
-  color: rgb(255, 175, 46); /* Aplica el color deseado */
-  font-size: 4vw; /* Ajusta el tamaño del texto según sea necesario */
-  padding: 0;
-  margin: 0;
-  font-family: "Segoe UI", "Roboto";
-  font-style: italic;
-}
 
 #index{
     position: absolute;
     width: 85%;
     margin: 0 auto !important;
 }
-
-.divSecundario {
-  bottom: 25%;
-     /* Opcional: Ajusta el ancho al 100% del div principal */
-    
-    top: 35vh;
-  }
   .opacidad{
     opacity: 0.95;
     padding-top: 0;
 }
-.divSecundario .opacidad svg{
-    margin-right: 5%;
-    width: 7%;
-    height: auto;
-}
+
 #index .row{
   margin: 10px;
 }
-.divSecundario ul li{
-  font-size: 1.2rem;
-}
-.caja ul li{
-  font-size: 2rem;
-}
+
+
 .boton{
   width: fit-content;
     font-weight: bold;
@@ -110,109 +138,16 @@
     display: flex; /* Convertimos #movil en un contenedor flexible */
     align-items: center;
   }
-  .caja {
-    padding-top: 26% !important;
-    height: auto;
-  }
-  .caja h3{
-    font-size: 5.7vw;
-    margin-left: 15px;
-  }
-  .caja svg{
-    margin: 15px;
-    width: 10%;
-    height: auto;
-  }
+
 
   .solu{
     white-space: pre-line;
   }
 
-
-.centrado .contenido{
-    width: 100%;
-    height: 50%;
-    background-color: rgb(85, 89, 92);
-    position: relative;
-    border-radius: 25px;
-}
-.centrado .contenido div{
-  height: 100%;
-}
-
 .fondo{
     background-color:#f1f1f1;
 }
-.centrado{
-  margin: 0 auto;
-}
-.centrado svg{
-  height: 100%;
-}
-.min-centrado{
-  height: 50vh;
-  margin: 0 auto;
-}
-.min-centrado .contenido{
-  width: 80vw;
-  height: 100%;
-  background-color: rgb(85, 89, 92);
 
-  border-radius: 20px;
-}
-.min-centrado .col{
-  height: 100%;
-  padding: 0;
-}
-.min-centrado .row{
-  width: 80%;
-  top: 0;
-  margin-top: 0;
-  height: 20%;
-  justify-content: center !important;
-  margin: 0 auto !important;
-  padding: 0;
-}
-.min-centrado .smart{
-  padding-top: 0;
-  display: flex;
-  align-items: center;
-  height: 100%; /* Asegura que el contenedor ocupe toda la altura */
-}
-.min-centrado .contenido svg{
-  margin-left: 9%;
-  width: 15%;
-  height: auto;
-  top: 25%;
-  color: rgb(255, 175, 46); /* Aplica el color deseado */
-}
-.min-centrado .contenido p{
-  text-align: center;
-  width: 80%;
-  font-family: "Segoe UI", "Roboto";
-  font-size: 7vw;
-  font-weight: bold;
-  color: rgb(255, 175, 46); /* Aplica el color deseado */
-}
-.min-centrado .contenido div:hover{
-  cursor: pointer;
-}
-
-.centrado .contenido svg{
-    width: 35%;
-    height: 35%;
-    top: 25%;
-    color: rgb(255, 175, 46); /* Aplica el color deseado */
-}
-.centrado .contenido p{
-    font-family: "Segoe UI", "Roboto";
-    font-size: 3vw;
-    font-weight: bold;
-    color: rgb(255, 175, 46); /* Aplica el color deseado */
-}
-.centrado .contenido div:hover{
-    cursor: pointer;
-}
 
 .appear-from-bottom {
     animation: appearFromBottom 0.9s ease-out forwards;
@@ -244,4 +179,78 @@
         opacity: 1;
         margin-left: 0%;
     }
+  }
+
+  @media only screen and (orientation: landscape), (min-aspect-ratio: 1/1) {
+    .divSecundario {
+      bottom: 25%;
+         /* Opcional: Ajusta el ancho al 100% del div principal */
+        
+        top: 35vh;
+      }
+
+    .divSecundario ul li{
+      font-size: 1.2rem;
+    }
+    .divSecundario .opacidad svg{
+      margin-right: 5%;
+      width: 7%;
+      height: auto;
+  }
+
+    .text-container h3 {
+
+      color: rgb(255, 175, 46); /* Aplica el color deseado */
+      font-size: 3vw;
+      padding: 0;
+      margin: 0;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #ffffff;
+    }
+    .text-container p {
+      color: rgb(255, 175, 46);
+      font-size: 6vw;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 0;
+      margin: 0;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: #ffffff;
+    }
+    .centrado .contenido{
+      width: 100%;
+      height: 50%;
+      background-color: rgb(85, 89, 92);
+      position: relative;
+      border-radius: 25px;
+  }
+  .centrado .contenido div{
+    height: 100%;
+  }
+  .centrado{
+    margin: 0 auto;
+  }
+  .centrado svg{
+    height: 100%;
+  }
+  .text-container{
+    top: 5%;
+  }
+  
+  .centrado .contenido svg{
+      width: 35%;
+      height: 35%;
+      top: 25%;
+      color: rgb(255, 175, 46); /* Aplica el color deseado */
+  }
+  .centrado .contenido p{
+      font-family: "Segoe UI", "Roboto";
+      font-size: 3vw;
+      font-weight: bold;
+      color: rgb(255, 175, 46); /* Aplica el color deseado */
+  }
+  .centrado .contenido div:hover{
+      cursor: pointer;
+  }
   }

@@ -1,6 +1,6 @@
 <?php include 'vista/layout/cabecera.php'; ?>
     <link rel="stylesheet" href="vista/css/contacto.css">
-    <div class="p-5 pb-0 uno">
+    <div class="p-5 pb-0 uno mt-2">
         <div class="container-fluid py-5 ds2 dos">
             <div class="fila">
                 <p>Correo</p>
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <div class="row row-cols-sg-1 row-cols-lg-2 g-5 start-50 h-auto mx-auto w-75">
+    <div id="iconos" class="row row-cols-sg-1 row-cols-lg-2 g-5 start-50 h-auto mx-auto w-75">
         <div class="col">
             <div class="h-100 p-4 text-bg-dark rounded-3">
                 <div class="d-flex justify-content-center align-items-center mb-3">
