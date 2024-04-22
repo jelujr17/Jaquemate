@@ -1,9 +1,25 @@
+@font-face {
+  font-family: grotesk;
+  src : url(../../fuentes/BebasLepasDemoRegular.ttf);
+}
 @media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
-  .divSecundario ul li{
+  .boton{
     font-size: 2rem;
   }
+  .divSecundario .col{
+    font-size: 3.8vw !important;
+  }  
+  #jaque{
+    padding-top: 0 !important;
+  }
+  #jaque p{
+    font-size: 15vw;
+  }
+  #jaque h3{
+    font-size: 10vw;
+  }
     .divSecundario {
-      padding-top: 26% !important;
+      padding-top: 27% !important;
       height: auto;
     }
     .divSecundario h3{
@@ -15,15 +31,15 @@
       width: 10%;
       height: auto;
     }
+    
     .text-container p {
       text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
       color: rgb(255, 175, 46);
-      font-style: italic;
-      font-family: "Segoe UI", "Roboto";
+      font-family: "grotesk";
       font-size: 12vw;
-      font-weight: bold;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 10px;
       padding: 0;
       margin: 0;
     }
@@ -34,8 +50,8 @@
       font-size: 4vw; /* Ajusta el tamaño del texto según sea necesario */
       padding: 0;
       margin: 0;
-      font-family: "Segoe UI", "Roboto";
-      font-style: italic;
+      font-family: "grotesk";
+      letter-spacing: 7px;
     }
     .centrado{
       height: 50vh;
@@ -79,7 +95,7 @@
       width: 80%;
       font-family: "Segoe UI", "Roboto";
       font-size: 7vw;
-      font-weight: bold;
+      font-weight: 600;
       color: rgb(255, 175, 46); /* Aplica el color deseado */
     }
     .centrado .contenido div:hover{
@@ -95,12 +111,12 @@
 }
 #jaque{
     width: 80%;
-    font-family: "Segoe UI", "Roboto";
-    font-style: italic;
+    font-family: "grotesk";
     position: absolute;
+    letter-spacing: 10px;
     margin: 0 auto;
-}
 
+}
 
 #index{
     position: absolute;
@@ -115,23 +131,26 @@
 #index .row{
   margin: 10px;
 }
-
+.divSecundario a{
+  text-decoration: none;
+}
 
 .boton{
-  width: fit-content;
-    font-weight: bold;
-    color: #ffffff;
+    width: fit-content;
+    font-weight: 600;
+    color: #ffffff ;
     text-transform: uppercase;
     padding: .5em .5em .5em;
     cursor: pointer;
     border-radius: 10px;
     border: 2px solid #ffffff;
-    background-color: #212529;
+    background-color: #333333ad;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .boton:hover{
   background-color: #ffffff;
-  color: #333333ad
+  color: #333333da !important;
 }
 
   .movil{
@@ -182,16 +201,21 @@
   }
 
   @media only screen and (orientation: landscape), (min-aspect-ratio: 1/1) {
+    #jaque h3{
+      font-size: 3.5vw;
+    }
     .divSecundario {
       bottom: 25%;
          /* Opcional: Ajusta el ancho al 100% del div principal */
-        
         top: 35vh;
-      }
-
-    .divSecundario ul li{
-      font-size: 1.2rem;
     }
+
+    .boton{
+      font-size: 1.2rem ;
+    }
+    .divSecundario .col{
+      font-size: 1.2vw !important;
+    }    
     .divSecundario .opacidad svg{
       margin-right: 5%;
       width: 7%;
@@ -204,19 +228,15 @@
       font-size: 3vw;
       padding: 0;
       margin: 0;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #ffffff;
     }
     .text-container p {
       color: rgb(255, 175, 46);
-      font-size: 6vw;
-      font-weight: bold;
+      font-size: 10vw;
+      font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 2px;
       padding: 0;
       margin: 0;
-      -webkit-text-stroke-width: 3px;
-      -webkit-text-stroke-color: #ffffff;
     }
     .centrado .contenido{
       width: 100%;
@@ -247,7 +267,7 @@
   .centrado .contenido p{
       font-family: "Segoe UI", "Roboto";
       font-size: 3vw;
-      font-weight: bold;
+      font-weight: 600;
       color: rgb(255, 175, 46); /* Aplica el color deseado */
   }
   .centrado .contenido div:hover{

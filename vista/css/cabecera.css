@@ -1,8 +1,11 @@
-
+@font-face {
+  font-family: roboto;
+  src : url(../../fuentes/Genesize\ Grotesk\ Demo.otf);
+}
 /* Ancho del scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
-  
+
 }
 
 /* Ajusta el tamaño y el color del thumb */
@@ -24,96 +27,106 @@
 }
 
 
-.form-control-dark {
-    border-color: var(--bs-gray);
-  }
-  body{
-    overflow-x: hidden !important; 
-  }
-  .form-control-dark:focus {
-    border-color: #fff;
-    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
-  }
-  
-  .text-small {
-    font-size: 85%;
-  }
-  
-  .dropdown-toggle:not(:focus) {
-    outline: 0;
-  }
-
-  #cabecera  ul{
-
-    display: flex; /* Utiliza flexbox para distribuir los elementos hijos */
-  align-items: center;
-  }
-nav {
-    background-color: black;
-    position: fixed; /* Fija el menú en la parte superior de la ventana */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 5;
-    width: 100%;
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Añade transición de transform */
+nav{
+  background: #212529;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 80px;
+  width: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
- nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  
-nav ul li {
-    display: inline-block;
-    vertical-align: middle; /* Alinea verticalmente los elementos */
-  }
-    
-  .containerCabecera ul li.imag {
-    width: 100px; /* Ancho del logo */
-  }
-  
-  .containerCabecera ul li.imag img {
-    width: 60%; /* La imagen del logo se ajustará al 100% del ancho del contenedor */
-    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */ 
-  }
-  
-   nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5rem;  
-    display: inline-block;
-    padding: 1.2em;
-  }
-  nav ul li a:has(.ico) {
-    padding: 0;
-  }
-  
-  nav ul li a:hover:not(:has(.ico)) {
-    transform: scale(1.1); /* Escalar el elemento al 110% de su tamaño original */
-    transition: transform 0.3s; /* Transición suave */ 
-  }
+.enlace{
+  float: left;
+  padding: 0 50px;
+}
+.logo{
+  height: 90%;
+}
+nav ul{
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 7px 13px;
+  border-radius: 3px;
+text-decoration: none;
+  text-transform: uppercase;
+}
+li a.active, li a:hover{
+  background: #000090;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  padding: 20px 50px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
 
-  nav ul li a:hover:has(img){
-    
-    transition: transform 0.3s;
-    transform: scale(1.05); /* Zoom ligeramente al pasar el cursor */
-  }
-  nav ul li a:hover:has(img)::before {
-    opacity: 0.3; /* Opacidad aumentada al pasar el cursor */
-    transform: scale(1.1); /* Aumentar ligeramente el tamaño de la imagen al pasar el cursor */
-  }
+.oculto{
+  display: none;
+}
 
-    .oculto {
-      transform: translateY(-100%); /* Oculta el menú moviéndolo hacia arriba */
-      opacity: 0; /* Hace que el menú sea transparente cuando está oculto */
-      pointer-events: none;
+@media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
+  .checkbtn{
+    display: block;
+
   }
-  
-  .oculto ul li a {
-      pointer-events: none; /* Desactiva los enlaces del menú oculto */
+  .logo{
+    border-radius: 30px;
   }
-  #logo{
-    
+  .checkbtn li{
+    font-size: 2.9em;
   }
+  nav{
+    height: 120px;
+  }
+  nav ul{
+      position: fixed;
+      z-index: 10;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 120px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    padding-top: 4%;
+  }
+  nav ul li a{
+      
+      font-size: 4vw;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}

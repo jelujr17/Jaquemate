@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <?php
   $current_page = basename($_SERVER['PHP_SELF']);
@@ -15,30 +16,66 @@
     case 'soluciones.php':
       $titulo_pagina = 'Soluciones';
       break;
-      case 'realidadvirtual.php':
-        $titulo_pagina = 'Realidad Virtual';
-        break;
+    case 'realidadvirtual.php':
+      $titulo_pagina = 'Realidad Virtual';
+      break;
+    case 'practicaConNosotros.php':
+      $titulo_pagina = 'Practica con Nosotros';
+      break;
+    case 'avisolegal.php':
+      $titulo_pagina = 'Aviso Legal';
+      break;
+    case 'politicadeprivacidad.php':
+      $titulo_pagina = 'Politica de Privacidad';
+      break;
+    case 'quienesSomos.php':
+      $titulo_pagina = 'Quienes Somos';
+      echo '<link rel="stylesheet" href="vista/css/quienesSomos.css">';
+      break;
+    case 'potenciar.php':
+      $titulo_pagina = 'Potenciamos tu marca';
+      break;
     default:
-      $titulo_pagina = 'Potencia tu marca';
+      $titulo_pagina = 'Pagina no encontrada';
       break;
   }
-  $current_page = basename($_SERVER['PHP_SELF']);  ?>
+  $current_page = basename($_SERVER['PHP_SELF']); ?>
+
   <title> <?php echo $titulo_pagina; ?> </title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="vista/css/cabecera.css">
+  <link rel="stylesheet" href="vista/css/footer.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="icon" href="vista/assets/icono.png" type="image/png">
-  </head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" href="vista/assets/icono.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="vista/css/practicaconnosotros.css">
+
+</head>
+
 <body>
-<nav id="cabecera" class="containerCabecera <?php echo ($current_page === 'index.php' || $current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>">
-    <ul>
-      <li class="imag"><a href="index.php"><img src="vista/assets/icono.png" alt="Inicio" class="ico"></a></li>
-      <li><a href="potenciar.php">Potenciamos tu marca</a></li>
-      <li><a href="realidadvirtual.php">Realidad Virtual</a></li>
-      <li><a href="soluciones.php">Soluciones</a></li>
-      <li><a href="contacto.php">Contacto</a></li>
+ <nav id="cabecera" class="containerCabecera <?php echo ($current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <li class="fas fa-bars"></li>
+    </label>
+    <a href="index.php" class="enlace">
+      <img src="vista/assets/icono.png" alt="" class="logo m-1">
+    </a>
+    
+    <ul class="primary">
+      <li><a href="Potenciamos-tu-Marca" <?php echo ($current_page === 'potenciar.php' ? 'class="active"' : ''); ?>>Potenciamos
+          tu marca</a></li>
+      <li><a href="Realidad-Virtual" <?php echo ($current_page === 'realidadvirtual.php' ? 'class="active"' : ''); ?>>Realidad
+          Virtual</a></li>
+      <li><a href="Soluciones" <?php echo ($current_page === 'soluciones.php' ? 'class="active"' : ''); ?>>Soluciones</a>
+      </li>
+      <li><a href="Contacto" <?php echo ($current_page === 'contacto.php' ? 'class="active"' : ''); ?>>Contacto</a></li>
     </ul>
-</nav>
+  </nav>
+	
 
-
+<main class="main-container">

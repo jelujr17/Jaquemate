@@ -1,6 +1,6 @@
-const divPadre = document.querySelector('.fondoimagen');
+const divPadre = document.querySelector('.divSecundario');
 const extras = document.querySelector('#extras');
-const menu = document.getElementById('cabecera');
+const menu = document.querySelector('nav');
 const div = document.querySelector('.fondoimagen');
 
 function handleScroll() {
@@ -21,13 +21,16 @@ function aplicarEstilosSegunTamanoPantalla() {
 
     try {
         if (ratio > 1 || isHorizontal) {
-            divPadre.classList.add('h-100');
-            divPadre.style.height = '0';
+            menu.classList.add('oculto');
+            window.addEventListener('scroll', optimizedScrollHandler());
+            div.classList.add('h-100');
+            div.style.height = '0';
             extras.classList.add('h-25');
         } else {
+            div.style.paddingTop = menu.clientHeight + 'px';
             extras.classList.remove('h-25');
-            divPadre.classList.remove('h-100');
-            divPadre.style.height = '80vh';
+            div.classList.remove('h-100');
+            div.style.height = '80vh';
         }
     } catch (error) {
         console.error("Error al aplicar estilos:", error);
@@ -48,6 +51,6 @@ function optimizedScrollHandler() {
     };
 }
 
-document.addEventListener('scroll', optimizedScrollHandler());
+
 window.addEventListener('load', aplicarEstilosSegunTamanoPantalla);
 window.addEventListener('resize', aplicarEstilosSegunTamanoPantalla);

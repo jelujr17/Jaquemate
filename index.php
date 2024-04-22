@@ -23,9 +23,9 @@
             </ul>
             <ul class="list-unstyled">
               <li class="col">Alcanza tus metas</li>
-              </ul>
-              <ul class="list-unstyled">
-                <li class="boton">GRATIS</li>
+            </ul>
+            <ul class="list-unstyled mt-4">
+                <li><a href="potenciar.php" class="boton">GRATIS</a></li>
             </ul>
           </div>
         </div>
@@ -49,8 +49,8 @@
           <ul class="list-unstyled">
             <li class="col">Una realidad digital para todos</li>
           </ul>
-          <ul class="list-unstyled">
-            <li class="boton">ÚNETE</li>
+          <ul class="list-unstyled mt-4">
+            <li><a href="realidadvirtual.php" class="boton">ÚNETE</a></li>
           </ul>
         </div>
         </div>
@@ -74,8 +74,8 @@
           <ul class="list-unstyled">
             <li class="col">La nueva realidad</li>
           </ul>
-          <ul class="list-unstyled">
-            <li class="boton">PARA TÍ</li>
+          <ul class="list-unstyled mt-4">
+            <li><a href="soluciones.php" class="boton">PARA TÍ</a></li>
           </ul>
         </div>
         </div>
