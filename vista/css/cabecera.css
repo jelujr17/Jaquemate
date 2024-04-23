@@ -25,7 +25,9 @@
   background: rgb(193, 196, 198);
   margin-right: 2px;
 }
-
+body{
+  overflow-x: hidden !important; 
+}
 
 
 nav{

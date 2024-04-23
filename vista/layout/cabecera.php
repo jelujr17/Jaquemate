@@ -52,7 +52,6 @@
   <link rel="icon" href="vista/assets/icono.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="vista/css/practicaconnosotros.css">
 
 </head>
 
@@ -73,9 +72,8 @@
           Virtual</a></li>
       <li><a href="Soluciones" <?php echo ($current_page === 'soluciones.php' ? 'class="active"' : ''); ?>>Soluciones</a>
       </li>
-      <li><a href="Contacto" <?php echo ($current_page === 'contacto.php' ? 'class="active"' : ''); ?>>Contacto</a></li>
+      <li><a href="contacto.php" <?php echo ($current_page === 'contacto.php' ? 'class="active"' : ''); ?>>Contacto</a></li>
     </ul>
   </nav>
 	
 
-<main class="main-container">

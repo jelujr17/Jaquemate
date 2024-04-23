@@ -1,7 +1,7 @@
 <?php require_once('vista/layout/cabecera.php'); ?>
 
 <link rel="stylesheet" href="vista/css/index.css">
-<div class="container-fluid py-lg-5 fondoimagen position-relative h-100" id="custom-cards">
+<div class="py-lg-5 fondoimagen position-relative h-100" id="custom-cards">
   <div id="jaque" class="text-container row-cols-1 start-75 align-items-stretch g-5 py-5 start-50 translate-middle-x appear-from-right2 pb-sg-0">
       <p class="col">JaqueMate</p>
       <h3 class="col">Mayoristas S.L</h3>

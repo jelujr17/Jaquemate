@@ -1,4 +1,4 @@
-</main>
+
 <!--
 <div id="feedback-form-wrapper">
   <div id="floating-icon" class="mt-5">

@@ -3,11 +3,11 @@
   src : url(../../fuentes/BebasLepasDemoRegular.ttf);
 }*/
 @media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
+  html{
+    width: 100vw !important;
+  }
   .boton{
     font-size: 2rem;
-  }
-  body{
-    width: 100% !important;
   }
   .divSecundario .col{
     font-size: 3.8vw !important;
@@ -113,7 +113,6 @@
     background-position: center; /* Centra la imagen de fondo */
 }
 #jaque{
-    width: 80%;
   
     position: absolute;
     letter-spacing: 10px;

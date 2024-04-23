@@ -1,78 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 1vw;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.contenedor-textarea {
+    position: relative;
+}
+
+#mensaje {
+    width: 100% !important;
+    height: 200px; /* Ajusta la altura según sea necesario */
+  }
+  
+  #contador-caracteres {
+    position: absolute;
+    bottom: 5px; /* Ajusta la posición vertical */
+    right: 5px; /* Ajusta la posición horizontal */
+    color: #999; /* Color del contador */
+    font-size: 0.8em; /* Tamaño de fuente del contador */
+  }
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: orange;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+    background: #e39403;
+}
+
 @media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
-    .ds2 svg{
-        height: auto;
-        padding-top: 0.7rem;
-        width: 10%;
+    .container-form {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Alineación vertical al centro */
+        text-align: center;
+        align-items: flex-start; /* Cambia de 'stretch' a 'flex-start' */
     }
-    .ds2 p{
-        padding: 0.7rem;
+    .info-form h2{
+        font-size: 6vw;
+    }
+    .info-form p{
+        padding-top: 3%;
+        font-size: 4vw;
+        width: 70%;
         text-align: left;
+        margin: 2rem;
+        margin: 0 auto;
     }
-    .dos:not(.fila) > p{
-        font-size: 2.5rem;
+    .info-form a{
+        padding-top: 3%;
+        font-size: 4vw;
+        width: 70%;
+        text-align: left;
+        margin: 2rem;
+        margin: 0 auto;
     }
     
-    .ds2 .col, .ds .col-ld-6{
-        text-align: center;
+    .info-form, form {
+        margin: auto; /* Esto centra horizontalmente los elementos */
     }
-    .ds2 a{
-        margin-bottom: 0.7rem;
-        font-size: 2.8rem;
+    .contenedor-textarea {
+        margin: 0 auto;
+        width: 80%;
+        position: relative;
     }
-    #iconos svg{
-        width: 10%;
+    .container-form form .campo{
+        width: 80%;
+        padding: 1.8rem 2rem;
+        font-size: 3.8vw;
+        
     }
-    #iconos p{
-        font-size: 2.7rem;
+    #mensaje {
+        padding: 1.8rem 2rem;
+        font-size: 3.8vw;
+        width: 100% !important;
+        height: 400px !important;
     }
-    #iconos a{
-        font-size: 2.8rem;
+    .container-form .btn-enviar{
+        padding: 2rem;
+        font-size: 3.8vw;
+        border: none;
+        outline: 0px;
+        background: orange;
+        color: white;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 300ms ease;
     }
-}
-
-
-
-.fila {
-    display: flex; /* Utilizamos flexbox para alinear los elementos en la misma fila */
-    align-items: center; /* Alinea verticalmente los elementos al centro */
-}
-
-:not(.uno).fila p {
-    margin-right: 10px; /* Añade un margen a la derecha para separar el texto del icono */
-    margin: 0;
-    margin-right: 2%;
-}
-:not(.fila) p {
-    font-size: 1.3rem;
-}
-.dos{
-    padding: none !important;
-    margin: 0 auto !important;
-    justify-content: center;
-    align-content: center;
-}
-
-.dos .fila p{
-    font-size: 4.5rem;
-}
-
-
-
-@media only screen and (orientation: landscape), (min-aspect-ratio: 1/1) {
-    .ds2 svg{
-        height: auto;
-        width: 4%;
-    }
-    .dos:not(.fila) > p{
-        font-size: 1.6rem;
-    }
-    .dos a{
-        font-size: 1.8rem;
-    }
-    #iconos a{
-        font-size: 1.8rem;
-    }
-    .uno .fila svg{
-        width: 6%;
-    }
+    #contador-caracteres {
+        font-size: 3.5vw; /* Tamaño de fuente del contador */
+      }
 }
