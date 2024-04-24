@@ -105,6 +105,9 @@
         margin: 2rem;
         margin: 0 auto;
     }
+    .info-form i{
+        font-size: 4vw;
+    }
     
     .info-form, form {
         margin: auto; /* Esto centra horizontalmente los elementos */
