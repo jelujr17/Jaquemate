@@ -16,15 +16,15 @@
 }
 .container-form h2{
     margin-bottom: 15px;
-    font-size: 35px
+    font-size: 50px;
 }
 .container-form p{
-    font-size: 17px;
+    font-size: 25px;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 .container-form a{
-    font-size: 17px;
+    font-size: 20px;
     display: inline-block;
     text-decoration: none;
     width: 100%;
@@ -33,6 +33,7 @@
     font-weight: 700;
 }
 .container-form a i{
+    font-size: 20px;
     color: orange;
     margin-right: 10px;
 }
@@ -87,7 +88,7 @@
         align-items: flex-start; /* Cambia de 'stretch' a 'flex-start' */
     }
     .info-form h2{
-        font-size: 6vw;
+        font-size: 8vw;
     }
     .info-form p{
         padding-top: 3%;
