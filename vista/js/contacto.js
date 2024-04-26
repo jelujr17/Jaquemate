@@ -1,6 +1,41 @@
     var div = document.querySelector('.containerCabecera');
     var marketing = document.querySelector('.container-form');
 
+    document.getElementById('formulario').addEventListener('submit', function (event) {
+        event.preventDefault(); // Previene el envío del formulario por defecto
+        
+        const datosFormulario = {
+            nombre: document.getElementById('nombre').value,
+            email: document.getElementById('email').value,
+            asunto: document.getElementById('asunto').value,
+            mensaje: document.getElementById('mensaje').value,
+        };
+    
+        const xhr = new XMLHttpRequest();
+    
+        xhr.open('POST', 'correo.php', true);
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        xhr.setRequestHeader('Content-Type', 'application/json');
+    
+        // Agrega un listener para el evento 'readystatechange' para manejar la respuesta cuando esté lista
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                // Verifica que la solicitud se haya completado satisfactoriamente
+                if (xhr.status === 200) {
+                    console.log('La solicitud se completó correctamente.');
+                    document.getElementById('nombre').value = '';
+            document.getElementById('email').value  = '';
+            document.getElementById('asunto').value = '';
+            document.getElementById('mensaje').value = '';
+                    // Aquí puedes manejar la respuesta del servidor si es necesario
+                } else {
+                    console.log('Error al enviar la solicitud. Código de estado:', xhr.status);
+                    // Aquí puedes manejar el error de la solicitud si es necesario
+                }
+            }
+        };
+    
+    });
     function aplicarEstilosSegunTamanoPantalla() {
         var ratio = screen.width/screen.height;
         var isHorizontal = window.matchMedia("(orientation: landscape)").matches;

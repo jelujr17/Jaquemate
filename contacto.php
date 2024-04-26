@@ -9,10 +9,10 @@
             <a href="#"><i class="fa fa-envelope"></i> email@tudominio.com</a>
             <a href="#"><i class="fa fa-map-marked"></i> Ciudad, Pais</a>
         </div>
-        <form action="#" autocomplete="off">
-            <input type="text" name="nombre" placeholder="Tu Nombre" class="campo">
-            <input type="emal" name="email" placeholder="Tu Email" class="campo">
-            <input type="text" name="asunto" placeholder="Asunto" class="campo">
+        <form action="#" autocomplete="off" id="formulario">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" class="campo">
+            <input type="email" id="email" name="email" placeholder="Tu Email" class="campo">
+            <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="campo">
             <div class="contenedor-textarea">
                 <textarea name="mensaje" id="mensaje" maxlength="700" placeholder="Tu Mensaje..."></textarea>
                 <div id="contador-caracteres">0/700</div>
