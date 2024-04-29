@@ -40,7 +40,7 @@
 .container-form form .campo, textarea{
     width: 100%;
     padding: 15px 10px;
-    font-size: 1vw;
+    font-size: 1.5em;
     border: 1px solid #dbdbdb;
     margin-bottom: 20px;
     border-radius: 3px;

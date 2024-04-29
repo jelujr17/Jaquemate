@@ -3,7 +3,7 @@
 
     document.getElementById('formulario').addEventListener('submit', function (event) {
         event.preventDefault(); // Previene el envío del formulario por defecto
-        
+    
         const datosFormulario = {
             nombre: document.getElementById('nombre').value,
             email: document.getElementById('email').value,
@@ -21,20 +21,22 @@
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4) {
                 // Verifica que la solicitud se haya completado satisfactoriamente
-                if (xhr.status === 200) {
+                const response = JSON.parse(xhr.responseText);
+                if (response.success) {
                     console.log('La solicitud se completó correctamente.');
                     document.getElementById('nombre').value = '';
-            document.getElementById('email').value  = '';
-            document.getElementById('asunto').value = '';
-            document.getElementById('mensaje').value = '';
+                    document.getElementById('email').value  = '';
+                    document.getElementById('asunto').value = '';
+                    document.getElementById('mensaje').value = '';
                     // Aquí puedes manejar la respuesta del servidor si es necesario
                 } else {
                     console.log('Error al enviar la solicitud. Código de estado:', xhr.status);
-                    // Aquí puedes manejar el error de la solicitud si es necesario
                 }
             }
         };
     
+        // Envía los datos del formulario como JSON
+        xhr.send(JSON.stringify(datosFormulario));
     });
     function aplicarEstilosSegunTamanoPantalla() {
         var ratio = screen.width/screen.height;
