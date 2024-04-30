@@ -20,18 +20,16 @@
         </div>
     </div>
     <div class="texto mt-5">
-            <div class="description" id="description-c1">
-              <p>Utiliza programas, herramientas y soluciones ingeniadas por nosotros, y preparadas para moldearse a tu situación. Desde herramientas de gestión de stock, gestión de usuarios y permisos para empresa, APIs especializadas y mucho más.</p>
-            </div>
-          <div class="description" id="description-c2">
-              <p>¿Tu empresa necesita de software especializado? ¿Quieres automatizar procesos que normalmente se llevan manualmente? ¿Has soñado con una aplicación que te permita vivir echado en una hamaca con un piña colada en mano? Nuestro equipo de desarrollo de aplicaciones hará tu idea realidad, a tu medida, para tu entorno, accesible y preparado para pisar mercado. </p>
-            </div>
-          <div class="description" id="description-c3">
-              <p>Winter has so much to offer -creative activities</p>
-            </div>
-        </div>
-    </div>
-</div>
+      <div class="description" id="description-c1">
+        <p>Utiliza programas, herramientas y soluciones ingeniadas por nosotros, y preparadas para moldearse a tu situación. Desde herramientas de gestión de stock, gestión de usuarios y permisos para empresa, APIs especializadas y mucho más.</p>
       </div>
+      <div class="description" id="description-c2">
+        <p>¿Tu empresa necesita de software especializado? ¿Quieres automatizar procesos que normalmente se llevan manualmente? ¿Has soñado con una aplicación que te permita vivir echado en una hamaca con un piña colada en mano? Nuestro equipo de desarrollo de aplicaciones hará tu idea realidad, a tu medida, para tu entorno, accesible y preparado para pisar mercado. </p>
+      </div>
+      <div class="description" id="description-c3">
+        <p>Winter has so much to offer -creative activities</p>
+      </div>
+    </div>
+
 <script src="vista/js/soluciones.js"></script>
 <?php include 'vista/layout/footer.php'; ?>

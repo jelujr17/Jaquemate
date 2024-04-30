@@ -1,57 +1,68 @@
 const divPadre = document.querySelector('.divSecundario');
-const extras = document.querySelector('#extras');
 const menu = document.querySelector('nav');
 const div = document.querySelector('.fondoimagen');
 const jaque = document.querySelector('#jaque');
-
-function handleScroll() {
-    const mitadAltura = div.offsetHeight / 2;
-    const scrollY = window.scrollY || window.scrollX;
-
-    // Verificar si el scroll supera la mitad de la altura del div
-    if (scrollY >= mitadAltura) {
-        menu.classList.remove('oculto');
-    } else {
-        menu.classList.add('oculto');
-    }
-}
+var marketing = document.getElementById('marcas');
+var marcasHeading = marketing.querySelector('h1');
+var divMitad = document.querySelectorAll('.mitad')[1];
+var imagen = divMitad.querySelector('img');
+var parrafo = divMitad.querySelector('p');
+const inputs = document.querySelectorAll('input[name="slide"]');
+const descriptions = document.querySelectorAll('.texto .description');
+var cuadroDiv = document.getElementById('cuadroDiv');
+var form = document.querySelector('.container-form');
 
 function aplicarEstilosSegunTamanoPantalla() {
     const ratio = screen.width / screen.height;
     const isHorizontal = window.matchMedia("(orientation: landscape)").matches;
+    div.style.marginTop = menu.clientHeight/2 + 'px';
+    marketing.style.marginTop = menu.clientHeight + 'px';
 
     try {
         if (ratio > 1 || isHorizontal) {
-            menu.classList.add('oculto');
-            window.addEventListener('scroll', optimizedScrollHandler());
-            div.classList.add('h-100');
-            div.style.height = '0';
-            extras.classList.add('h-25');
+            $(imagen).before($(parrafo));
+            marcasHeading.style.fontSize = "6vw";
         } else {
-            div.style.paddingTop = menu.clientHeight + 'px';
-            extras.classList.remove('h-25');
-            div.classList.remove('h-100');
-            div.style.height = '90vh';
+            $(parrafo).before($(imagen));
+            marcasHeading.style.fontSize = "10vw";
+            divPadre.style.top = jaque.clientHeight + menu.clientHeight + 'px';
         }
     } catch (error) {
         console.error("Error al aplicar estilos:", error);
     }
 }
 
-function optimizedScrollHandler() {
-    let ticking = false;
+function showCheckedDescription() {
+    inputs.forEach((input, index) => {
+      if (input.checked) {
+        descriptions.forEach((description, index2) => {
+          description.style.display = 'none';
+          document.querySelector(`[for="c${index2+1}"] h4`).style.display = 'none';
+        });
+        document.querySelector(`[for="c${index + 1}"] h4`).style.display = 'block';
+        document.getElementById(`description-c${index + 1}`).style.display = 'block';
+      }
+    });
+  }
 
-    return function () {
-        if (!ticking) {
-            requestAnimationFrame(function () {
-                handleScroll();
-                ticking = false;
-            });
-            ticking = true;
-        }
-    };
-}
+  // Agrega un evento change a los inputs para mostrar la descripción correspondiente
+  inputs.forEach((input) => {
+    input.addEventListener('change', showCheckedDescription);
+  });
 
+showCheckedDescription();
+
+const textarea = document.getElementById('mensaje');
+const contador = document.getElementById('contador-caracteres');
+
+// Agregar un event listener para el evento de entrada de texto
+textarea.addEventListener('input', () => {
+    // Obtener el número de caracteres escritos
+    const caracteresEscritos = textarea.value.length;
+    
+    // Actualizar el contador de caracteres
+    contador.textContent = caracteresEscritos + '/700';
+});
 
 window.addEventListener('load', aplicarEstilosSegunTamanoPantalla);
 window.addEventListener('resize', aplicarEstilosSegunTamanoPantalla);

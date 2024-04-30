@@ -1,6 +1,7 @@
 <?php require_once('vista/layout/cabecera.php'); ?>
 
 <link rel="stylesheet" href="vista/css/index.css">
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 <div class="py-lg-5 fondoimagen position-relative h-100" id="custom-cards">
   <div id="jaque" class="text-container row-cols-1 start-75 align-items-stretch g-5 py-5 start-50 translate-middle-x appear-from-right2 pb-sg-0">
       <p class="col">JaqueMate</p>
@@ -83,48 +84,81 @@
     </div>
   </div>
 </div>
+<div id="marcas" class="">
+    <div class="blurry-background"></div>
+    <h1 class="text-center">CONSIGUE LAS VENTAS DE TUS SUEÑOS, GRATIS</h1>
+</div>  
+<div id="texto" class="pt-5 mb-4 pb-4 container-fluid">
+        <p class="titulo">¿Desearías exponer tu marca establecida a un mercado nuevo? ¿Verla en las corrientes de venta populares? <br> ¿Querrías vender donde venden las más grandes marcas? ¿Esperarías poder conseguir todo esto gratuitamente?</p>
+        <div class="aa"><a class="ver" href="contacto.php">CONTACTA YA!!</a></div>
+        <p>Imagina tener acceso inmediato a una red de distribución establecida, con todos los contactos y recursos necesarios para llevar tus productos al mercado europeo de manera eficiente y exitosa, ¡y todo esto sin coste alguno para ti! Con nosotros, no solo obtendrás acceso a una infraestructura probada, sino también a un equipo comprometido que se encargará de todos los aspectos logísticos, desde el almacenamiento hasta la entrega final.</p>
+</div>
+<div id="fondoDiv" class="p-3">
+    <div class="mitad mt-4 p-2">
+        <img src="vista/assets/manos.jpg" alt="">
+        <p>En Jaquemate tenemos el "win-win" como regla prioritaria en nuestras relaciones. Nuestra inventiva nos ha brindado 20 años en el mercado, vendiendo al por mayor.
+        A veces, el mayor obstáculo de una marca al crecer es saber evolucionar con el mercado y no contra él.</p>
+    </div>
+    <div class="mitad mt-5 p-2">
+        <p>¡Bienvenido al mundo de oportunidades que ofrece nuestra red de distribución europea! Después de años de dedicación en el mercado europeo, hemos construido una sólida estructura de distribución y relaciones privilegiadas con proveedores de confianza. Ahora, queremos compartir esos recursos contigo de forma completamente gratuita para que puedas potenciar tu negocio y alcanzar nuevos horizontes.</p>
+        <img src="vista/assets/felices.jpg" alt="">
+    </div>
+</div>
+<div id="texto2" class="pt-5 mb-4 pb-4 container-fluid">
+        <p class="titulo">¿Estás listo para llevar tu negocio al siguiente nivel sin ningún coste adicional? ¡Únete a nosotros y descubre cómo nuestra experiencia y nuestra red de distribución pueden impulsar tu éxito en el mercado europeo, sin que te cueste nada!</p>
+        <p class="mb-5">¡Contáctanos hoy mismo y comienza tu viaje hacia el crecimiento y la expansión, sin desembolsar ni un euro!</p>
+        <a class="ver" href="contacto.php">CONTACTA YA!!</a>
+</div>
 
-<!-- CONTACTO INFORMATE TERMINOS -->
-<div id="extras" class="container-fluid mt-5 pt-lg-5 row row-cols-1 row-cols-lg-3 g-2 centrado">
-  <div class="row">
-  <div class="col">
-    <div class="card shadow-sm contenido">
-      <div class="d-flex align-items-center smart">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" fill="currentColor" class="bi bi-chat-right-dots h-75" viewBox="0 0 16 16" >
-          <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
-          <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-        </svg>
-        <p class="mb-0">CONTACTO</p>
+<div id="cuadroDiv" class="container-fluid marketing pt-5 pb-5 mb-4">
+    <div class="row featurette">
+      <div class="col-7 text">
+        <h2 class="featurette-heading fw-normal">¿Tienes algún problema que no sabes resolver?</h2>
+        <p class="lead">¡Nosotros tenemos la solución!</p>
       </div>
     </div>
   </div>
-  </div>
-  <div class="row">
-  <div class="col ">
-    <div class="card shadow-sm contenido">
-      <div class="d-flex align-items-center smart">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-info-circle h-75" viewBox="0 0 16 16">
-          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
-          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
-        </svg>
-        <p class="mb-0">INFÓRMATE</p>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card"><h4>Nuestro software, adaptado a tí</h4></label>
+            <input type="radio" name="slide" id="c2" >
+            <label for="c2" class="card"><h4>¿Qué aplicación necesitas? <br> ¡Nosotros nos encargamos!</h4></label>
+            <input type="radio" name="slide" id="c3" >
+            <label for="c3" class="card"><h4>Globalization</h4></label>
+        </div>
+    </div>
+    <div class="texto mt-5">
+      <div class="description" id="description-c1">
+        <p>Utiliza programas, herramientas y soluciones ingeniadas por nosotros, y preparadas para moldearse a tu situación. Desde herramientas de gestión de stock, gestión de usuarios y permisos para empresa, APIs especializadas y mucho más.</p>
+      </div>
+      <div class="description" id="description-c2">
+        <p>¿Tu empresa necesita de software especializado? ¿Quieres automatizar procesos que normalmente se llevan manualmente? ¿Has soñado con una aplicación que te permita vivir echado en una hamaca con un piña colada en mano? Nuestro equipo de desarrollo de aplicaciones hará tu idea realidad, a tu medida, para tu entorno, accesible y preparado para pisar mercado. </p>
+      </div>
+      <div class="description" id="description-c3">
+        <p>Winter has so much to offer -creative activities</p>
       </div>
     </div>
-  </div>
-</div>
-  <div class="row">
-  <div class="col ">
-    <div class="card shadow-sm contenido">
-      <div class="d-flex align-items-center smart">
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-file-earmark-medical h-75" viewBox="0 0 16 16">
-          <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z"/>
-          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
-        </svg>
-        <p class="mb-0">TÉRMINOS</p>
-      </div>
+    
+    
+    <div class="container-form h-auto">
+        <div class="info-form">
+            <h2>Contáctanos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eligendi est voluptates quae ipsam eius, in quasi odio porro aut vel beatae aperiam.</p>
+            <a href="#"><i class="fa fa-phone"></i> 123-456-789</a>
+            <a href="#"><i class="fa fa-envelope"></i> email@tudominio.com</a>
+            <a href="#"><i class="fa fa-map-marked"></i> Ciudad, Pais</a>
+        </div>
+        <form action="#" autocomplete="off" id="formulario">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" class="campo">
+            <input type="email" id="email" name="email" placeholder="Tu Email" class="campo">
+            <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="campo">
+            <div class="contenedor-textarea">
+                <textarea name="mensaje" id="mensaje" maxlength="700" placeholder="Tu Mensaje..."></textarea>
+                <div id="contador-caracteres">0/700</div>
+            </div>
+            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+        </form>
     </div>
-  </div>
-  </div>
-</div>
 <script src="vista/js/index.js"></script>
 <?php require_once('vista/layout/footer.php');?>

@@ -56,7 +56,7 @@
 </head>
 
 <body>
- <nav id="cabecera" class="containerCabecera <?php echo ($current_page === 'realidadvirtual.php' ? 'oculto': ''); ?>">
+ <nav id="cabecera" class="containerCabecera">
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
       <li class="fas fa-bars"></li>
@@ -66,11 +66,11 @@
     </a>
     
     <ul class="primary">
-      <li><a href="Potenciamos-tu-Marca" <?php echo ($current_page === 'potenciar.php' ? 'class="active"' : ''); ?>>Potenciamos
+      <li><a href="potenciar.php" <?php echo ($current_page === 'potenciar.php' ? 'class="active"' : ''); ?>>Potenciamos
           tu marca</a></li>
-      <li><a href="Realidad-Virtual" <?php echo ($current_page === 'realidadvirtual.php' ? 'class="active"' : ''); ?>>Realidad
+      <li><a href="realidadvirtual.php" <?php echo ($current_page === 'realidadvirtual.php' ? 'class="active"' : ''); ?>>Realidad
           Virtual</a></li>
-      <li><a href="Soluciones" <?php echo ($current_page === 'soluciones.php' ? 'class="active"' : ''); ?>>Soluciones</a>
+      <li><a href="soluciones.php" <?php echo ($current_page === 'soluciones.php' ? 'class="active"' : ''); ?>>Soluciones</a>
       </li>
       <li><a href="contacto.php" <?php echo ($current_page === 'contacto.php' ? 'class="active"' : ''); ?>>Contacto</a></li>
     </ul>
