@@ -2,7 +2,27 @@
   font-family: grotesk;
   src : url(../../fuentes/BebasLepasDemoRegular.ttf);
 }*/
+/* -----------------
+  PANTALLAS PEQUEÑAS
+  -----------------*/
 @media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
+  .color {
+    width: 100%; /* Aumenta el ancho para aprovechar todo el espacio */
+    padding: 1em; /* Ajusta el padding para dar más espacio */
+  }
+
+  .img-hover {
+    max-width: 100%; /* Ajusta el ancho para evitar imágenes grandes */
+  }
+
+  .texto-hover {
+    font-size: 2.2rem; /* Reduce el tamaño de la fuente para móviles */
+  }
+
+  .textos {
+    font-size: 2rem !important; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+  }
+
   .wrapper {
     padding-top: 2vh;
     width: 100%;
@@ -45,7 +65,7 @@
     font-size: 8vw;
   }
     .divSecundario {
-      width: 100vw;
+      width: 90vw;
       height: auto;
     }
     .divSecundario h3{
@@ -99,28 +119,7 @@
       line-height: 1.5em;
       text-align: justify;
   }
-  
-  #fondoDiv .mitad {
-      border: 2px solid #cccccc43;
-      width: 95vw;
-      background-color: #f3f4f5;
-      border-radius: 10px;
-      justify-content: space-between;
-      align-items: center;
-  }
 
-  .mitad img{
-      width: 50%;
-  }
-
-  .mitad:nth-of-type(1) img{
-      float: left;
-      margin-right: 20px;
-  }
-  .mitad:nth-of-type(2) img{
-      float: right;
-      margin-left: 20px;
-  }
 
   .ver{
       padding: 20px 40px;
@@ -258,6 +257,7 @@ html{
 }
 
 #index{
+  bottom: 0;
     position: absolute;
     width: 85%;
     margin: 0 auto !important;
@@ -342,7 +342,6 @@ html{
     position: relative;
     width: 100%;
     height: 30%;
-    border-bottom: 2px solid #e8e8e9;
     overflow: hidden; /* Evita que el contenido excedente se muestre fuera del contenedor */
     display: flex; /* Usa flexbox para centrar verticalmente el contenido */
     justify-content: center; /* Centra horizontalmente el contenido */
@@ -367,7 +366,7 @@ html{
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.6);
+
     animation: slideOn 2s ease-in-out forwards;
 }
 
@@ -452,11 +451,6 @@ html{
 }
 
 #fondoDiv .mitad {
-    margin: 0 auto;
-    align-items: center; /* Centra verticalmente los elementos */
-    border: 2px solid #cccccc43;
-    background-color: #f3f4f5;
-    border-radius: 10px;
     line-height: 1.5em;
 }
 #fondoDiv {
@@ -689,8 +683,97 @@ html{
 .container-form .btn-enviar:hover{
   background: #e39403;
 }
+.color{
+  
+  margin: 0 auto;
+  align-items: center; /* Centra verticalmente los elementos */
+  border: 2px solid #cccccc43;
+  background-color: #f3f4f5;
+  border-radius: 10px;
+  
+}
+.mitad {
+  display: flex;  /* Para mantener los elementos en una fila */
+  justify-content: space-between;  /* Imágenes en esquinas opuestas */
+  padding: 10px;
+}
+
+.img-hover {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.img-hover img {
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.img-hover:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.img-hover:hover::after {
+  opacity: 1;
+}
+
+.texto-hover {
+  position: absolute; /* Absoluto para mantener el texto dentro de la imagen */
+  bottom: 0; /* Alinea con la parte inferior */
+  left: 50%; /* Centra horizontalmente */
+  width: 100%;
+  transform: translateX(-50%); /* Ajusta la posición para centrar */
+  color: #fff; /* Contraste para visibilidad */
+  font-size: 2rem; /* Tamaño de fuente adecuado */
+  text-align: center !important; /* Centra el texto */
+  padding: 0.5em; /* Añade padding para legibilidad */
+  margin: 0 !important;
+  transition: opacity 0.3s;
+  opacity: 0; /* Por defecto, el texto está oculto */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.img-hover:hover .texto-hover {
+  opacity: 1;
+}
+
+.textos-container {
+  text-align: justify;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem !important;
+}
+
+.textos {
+  max-height: 0; /* Oculto por defecto, sin espacio visible */
+  overflow: hidden; /* Asegura que el contenido no salga de la caja */
+  padding: 0; /* Sin espacio por defecto */
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; /* Transición suave */
+}
+
+/* Cuando el texto está visible */
+.textos.mostrar {
+  max-height: fit-content; /* Ajusta el valor según lo necesario, dependiendo de cuánto se necesita expandir */
+  padding: 1.2em; /* Restaura el padding cuando se muestra */
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Transición más lenta para expansión */
+}
+
+/* -----------------------------
+  PANTALLAS CUADRADAS O ANCHAS
+  -------------------------------*/
+
 
   @media only screen and (orientation: landscape), (min-aspect-ratio: 1/1) {
+    .color{
+      width: 70%;
+    }
     #jaque h3{
       font-size: 3.5vw;
     }
@@ -699,6 +782,7 @@ html{
          /* Opcional: Ajusta el ancho al 100% del div principal */
         top: 35vh;
     }
+    
 
     .boton{
       font-size: 1.2rem ;
@@ -740,12 +824,7 @@ html{
       width: 80%;
   }
 
-  #fondoDiv .mitad {
-      display: flex;
-      width: 80%;
-      font-size: 1.5rem;
-      line-height: 1.5em;
-  }
+  
   .aa{
       margin: 2rem;
       text-align: center;
@@ -753,9 +832,6 @@ html{
   .ver{
       padding: 10px 20px;
       font-size: 2.8rem;
-  }
-  .mitad img{
-      width: 40%;
   }
   #texto2 .titulo {
       font-size: 2rem;

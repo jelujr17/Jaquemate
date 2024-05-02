@@ -4,9 +4,6 @@ const div = document.querySelector('.fondoimagen');
 const jaque = document.querySelector('#jaque');
 var marketing = document.getElementById('marcas');
 var marcasHeading = marketing.querySelector('h1');
-var divMitad = document.querySelectorAll('.mitad')[1];
-var imagen = divMitad.querySelector('img');
-var parrafo = divMitad.querySelector('p');
 const inputs = document.querySelectorAll('input[name="slide"]');
 const descriptions = document.querySelectorAll('.texto .description');
 var cuadroDiv = document.getElementById('cuadroDiv');
@@ -15,23 +12,39 @@ var form = document.querySelector('.container-form');
 function aplicarEstilosSegunTamanoPantalla() {
     const ratio = screen.width / screen.height;
     const isHorizontal = window.matchMedia("(orientation: landscape)").matches;
-    div.style.marginTop = menu.clientHeight/2 + 'px';
+    div.style.marginTop = menu.clientHeight + 'px';
     marketing.style.marginTop = menu.clientHeight + 'px';
 
     try {
         if (ratio > 1 || isHorizontal) {
-            $(imagen).before($(parrafo));
             marcasHeading.style.fontSize = "6vw";
         } else {
-            $(parrafo).before($(imagen));
             marcasHeading.style.fontSize = "10vw";
-            divPadre.style.top = jaque.clientHeight + menu.clientHeight + 'px';
         }
     } catch (error) {
         console.error("Error al aplicar estilos:", error);
     }
 }
 
+function toggleText(id) {
+  var allTextElements = document.querySelectorAll('.textos');
+
+  // Encuentra el elemento de texto correspondiente
+  var textElement = document.getElementById('textos-' + id);
+
+  // Comprueba si el elemento ya tiene la clase 'mostrar'
+  if (textElement.classList.contains('mostrar')) {
+    // Si tiene la clase, la quita (oculta el texto)
+    textElement.classList.remove('mostrar');
+  } else {
+    // Si no la tiene, oculta todos los textos y muestra el seleccionado
+    allTextElements.forEach(function(el) {
+      el.classList.remove('mostrar'); // Oculta todos los textos
+    });
+
+    textElement.classList.add('mostrar'); // Muestra el texto correspondiente
+  }
+}
 function showCheckedDescription() {
     inputs.forEach((input, index) => {
       if (input.checked) {
