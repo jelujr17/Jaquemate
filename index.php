@@ -86,7 +86,7 @@
 </div>  
 <div id="texto" class="pt-5 mb-4 pb-4 container-fluid">
         <p class="titulo">¿Desearías exponer tu marca establecida a un mercado nuevo? ¿Verla en las corrientes de venta populares? <br> ¿Querrías vender donde venden las más grandes marcas? ¿Esperarías poder conseguir todo esto gratuitamente?</p>
-        <p class="mt-5">Imagínate tener acceso directo a una red que ya tiene todo listo para distribuir tus productos en Europa. Todos los contactos, recursos y logística están ahí para que los uses, ¡y sin que te cueste nada! Con nosotros, no solo podrás aprovechar una infraestructura probada, sino también contar con un equipo que se encarga de todo, desde el almacenamiento hasta la entrega al cliente.</p>
+        <p id="ordenador" class="mt-5">Imagínate tener acceso directo a una red que ya tiene todo listo para distribuir tus productos en Europa. Todos los contactos, recursos y logística están ahí para que los uses, ¡y sin que te cueste nada! Con nosotros, no solo podrás aprovechar una infraestructura probada, sino también contar con un equipo que se encarga de todo, desde el almacenamiento hasta la entrega al cliente.</p>
 </div>
 <div id="fondoDiv" class="p-3 mb-5">
     <div class="color mt-4 p-2">
@@ -114,7 +114,7 @@
         <p class="titulo mb-5 pb-5">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo, ¡sin coste adicional!</p>
         <a class="ver" href="contacto.php">CONTACTA YA!!</a>
 </div>
-<div id="solucionar" class="mb-5"></div>
+<div id="solucionar" class="mb-5 pb-5"></div>
 <div id="cuadroDiv" class="container-fluid marketing mt-5 pt-5 pb-3 mb-4">
     <div class="row featurette">
       <div class="col-7 text">

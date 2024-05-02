@@ -66,15 +66,12 @@
     </a>
     
     <ul class="primary">
-      <li><a href="#potenciar" <?php echo ($current_page === 'potenciar.php' ? 'class="active"' : ''); ?>>Potenciamos
-          tu marca</a></li>
-      <li><a href="realidadvirtual.php" <?php echo ($current_page === 'realidadvirtual.php' ? 'class="active"' : ''); ?>>Realidad
-          Virtual</a></li>
-      <li><a href="#solucionar" <?php echo ($current_page === 'soluciones.php' ? 'class="active"' : ''); ?>>Soluciones</a>
-      </li>
-      <li><a href="solucionar" <?php echo ($current_page === 'soluciones.php' ? 'class="active"' : ''); ?>>Venta Online</a>
-      </li>
-      <li><a href="#contactar" <?php echo ($current_page === 'contacto.php' ? 'class="active"' : ''); ?>>Contacto</a></li>
+    <li><a href="index.php">Inicio</a></li>
+      <li><a href="index.php#potenciar">Potenciamos tu marca</a></li>
+      <li><a href="realidadvirtual.php">Realidad Virtual</a></li>
+      <li><a href="index.php#solucionar">Soluciones</a></li>
+      <li><a href="https://store.jaquemate.es/">Venta Online</a></li>
+      <li><a href="index.php#contactar">Contacto</a></li>
     </ul>
   </nav>
 	

@@ -8,6 +8,7 @@ const inputs = document.querySelectorAll('input[name="slide"]');
 const descriptions = document.querySelectorAll('.texto .description');
 var cuadroDiv = document.getElementById('cuadroDiv');
 var form = document.querySelector('.container-form');
+var ordenador = document.getElementById('ordenador');
 
 function aplicarEstilosSegunTamanoPantalla() {
     const ratio = screen.width / screen.height;
@@ -18,8 +19,10 @@ function aplicarEstilosSegunTamanoPantalla() {
     try {
         if (ratio > 1 || isHorizontal) {
             marcasHeading.style.fontSize = "6vw";
+            ordenador.style.display = "block";
         } else {
             marcasHeading.style.fontSize = "10vw";
+            ordenador.style.display = "none";
         }
     } catch (error) {
         console.error("Error al aplicar estilos:", error);

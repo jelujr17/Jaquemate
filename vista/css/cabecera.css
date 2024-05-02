@@ -65,12 +65,14 @@ nav ul li a{
   font-size: 1.5rem;
   padding: 7px 13px;
   border-radius: 3px;
-text-decoration: none;
+  text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.3s ease;  
 }
 li a.active, li a:hover{
-  background: #000090;
-  transition: .5s;
+  background: rgba(255, 255, 255, 0.2);  /* Fondo semitransparente para el hover */
+  color: #ffffff;  /* Mantiene el texto blanco */
+  transform: scale(1.05); 
 }
 .checkbtn{
   font-size: 30px;
@@ -122,12 +124,7 @@ li a.active, li a:hover{
     padding-top: 4%;
   }
   nav ul li a{
-      
       font-size: 4vw;
-  }
-  li a:hover, li a.active{
-      background: none;
-      color: red;
   }
   #check:checked ~ ul{
       left:0;
