@@ -91,13 +91,13 @@
 <div id="fondoDiv" class="p-3 mb-5">
     <div class="color mt-4 p-2">
       <div class="mitad">
-        <div class="img-hover" onclick="toggleText(1)">
-          <img src="vista/assets/manos.jpg" alt="">
+        <div class="img-hover" onclick="toggleText(this, 1)">
           <p class="texto-hover">Win-Win</p>
+          <p class="texto-nohover">...</p>
         </div>
-        <div class="img-hover" onclick="toggleText(2)">
-          <img src="vista/assets/felices.jpg" alt="">
+        <div class="img-hover" onclick="toggleText(this, 2)" >
           <p class="texto-hover">Mundo de oportunidades</p>
+          <p class="texto-nohover">...</p>
         </div>
       </div>
       <div class="textos-container">
@@ -111,16 +111,17 @@
     </div>
 </div>
 <div id="texto2" class="pt-5 mb-5 pb-5 container-fluid">
-        <p class="titulo mb-5 pb-5">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo, ¡sin coste adicional!</p>
-        <a class="ver" href="#contactar">CONTACTA YA!!</a>
+      <p class="titulo mb-5 pb-5">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo, ¡sin coste adicional!</p>
+      <a class="ver" href="#contactar">CONTACTA YA!!</a>
 </div>
 <div id="solucionar" class="mb-5 pb-5"></div>
 <div id="cuadroDiv" class="container-fluid marketing mt-5 pt-5 pb-3 mb-4">
     <div class="row featurette">
       <div class="col-7 text">
         <h2 class="featurette-heading fw-normal">¿Tienes algún problema que no sabes resolver?</h2>
-        <p class="lead">¡Nosotros tenemos la solución!</p>
+        
       </div>
+      <p class="lead">¡Nosotros tenemos la solución!</p>
     </div>
   </div>
     <div class="wrapper">
@@ -149,9 +150,9 @@
     <div id="contactar" class="container-form h-auto">
         <div class="info-form">
             <h2>Contáctanos</h2>
-            <a href="#"><i class="fa fa-phone mt-3"></i> 123-456-789</a>
-            <a href="#"><i class="fa fa-envelope"></i> email@tudominio.com</a>
-            <a href="#"><i class="fa fa-map-marked"></i> Ciudad, Pais</a>
+            <a><i class="fa fa-phone mt-3"></i><img src="vista/assets/telefono2.png"></a>
+            <a><i class="fa fa-envelope"></i><img src="vista/assets/correo2.png"></a>
+            <a><i class="fa fa-map-marked"></i> Alicante, España</a>
         </div>
         <form action="#" autocomplete="off" id="formulario">
             <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" class="campo">

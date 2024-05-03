@@ -1,26 +1,41 @@
-/*@font-face {
-  font-family: grotesk;
-  src : url(../../fuentes/BebasLepasDemoRegular.ttf);
-}*/
+
 /* -----------------
   PANTALLAS PEQUEÑAS
   -----------------*/
 @media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
-  .color {
-    width: 100%; /* Aumenta el ancho para aprovechar todo el espacio */
-    padding: 1em; /* Ajusta el padding para dar más espacio */
+  .mitad{
+    height: 20% !important;
+  }
+  .texto-nohover {
+    position: absolute; /* Absoluto para mantener el texto dentro de la imagen */
+    bottom: 0; /* Alinea con la parte inferior */
+    left: 50%; /* Centra horizontalmente */
+    width: 95%;
+    transform: translateX(-50%); /* Ajusta la posición para centrar */
+    font-size: 10rem !important; /* Tamaño de fuente adecuado */
+    padding: 0 !important;
+  }
+  .texto-hover{
+    font-size: 4rem !important; /* Tamaño de fuente adecuado */
+  }
+  .textos-container .textos{
+    font-size: 3rem !important;
   }
 
-  .img-hover {
-    max-width: 100%; /* Ajusta el ancho para evitar imágenes grandes */
+  .transition {
+    transition: all 0.6s cubic-bezier(.28, -0.03, 0, .99);
   }
-
-  .texto-hover {
-    font-size: 2.2rem; /* Reduce el tamaño de la fuente para móviles */
+  
+  .img-hover img {
+    height: 100%; /* Asegura que la imagen ocupe el máximo height */
+    width: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Ajusta para cubrir todo el área */
+    transition: all 0.6s cubic-bezier(.28, -0.03, 0, .99);
   }
-
-  .textos {
-    font-size: 2rem !important; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+  
+  
+  #fondoDiv .textos.mostrar {
+    max-height: fit-content;
   }
 
   .wrapper {
@@ -151,6 +166,7 @@
     text-align: center;
     align-items: flex-start; /* Cambia de 'stretch' a 'flex-start' */
 }
+
 .info-form h2{
     font-size: 9vw !important;
 }
@@ -172,6 +188,10 @@
 }
 .info-form i{
     font-size: 4vw !important;
+}
+.info-form img{
+  width: 70%;
+  transform-origin: center;
 }
 
 .info-form, form {
@@ -220,11 +240,12 @@ html{
     background-position: center; /* Centra la imagen de fondo */
 }
 #jaque{
-  
     position: absolute;
     letter-spacing: 10px;
     margin: 0 auto;
-
+}
+.lead {
+  width: 100%;
 }
 
 #index{
@@ -375,7 +396,7 @@ h1.active {
 }
 
 #texto, #texto2 {
-    text-align: center;
+    text-align: center !important;
     font-family: "Segoe UI", sans-serif;
     padding: 20px;
 }
@@ -386,11 +407,10 @@ h1.active {
     font-weight: 400;
     line-height: 1.6; /* Altura de línea */
 }
-#texto p:not(.titulo) {
+#texto #ordenador {
     border-radius: 5px;
     color: #3a3e43; /* Color del texto */
     line-height: 1.5; /* Altura de línea */
-    text-align: left;
 }
 
 #texto2 p:not(.titulo) {
@@ -428,24 +448,55 @@ h1.active {
     color: #ffc107;
 }
 
-#fondoDiv .mitad {
-    line-height: 1.5em;
+.mitad {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+
+}
+.img-hover {
+  flex: 2;
+  width: 20% !important;
+  border-radius: .75rem;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(.28, -0.03, 0, .99);
+  background-image: url("path/to/image.jpg");
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8); /* Sombra para efecto 3D */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-hover:first-child{
+  background-image: url('../assets/manos.jpg');
+}
+.img-hover:last-child{
+  background-image: url('../assets/felices.jpg');
 }
 #fondoDiv {
     background-color: #ffffff;
+}
+.img-hover.selected {
+  flex: 3; /* Aumenta el tamaño del contenedor cuando está seleccionado */
+  transition: all 0.6s cubic-bezier(.28, -0.03, 0, .99); /* Transición suave */
+  background-size: cover; /* Asegura que la imagen siga cubriendo todo el contenedor */
+  background-position: center; /* Mantiene la imagen centrada */
+}
+
+.img-hover.selected ~ 
+
+.img-hover:not(.selected) {
+  flex: 2; /* Disminuye el tamaño del contenedor cuando no está seleccionado */
 }
 
 #fondoDiv .mitad p{
     text-align: left;
     margin-left: 3%;
 }
-#fondoDiv .mitad p:last-of-type{
-    margin-right: 1%;
-}
-.mitad img:last-of-type {
-    right: 0;
-    padding-right: 0;
-}
+
 
 .contenedor {
     margin: 0 auto !important;
@@ -453,12 +504,6 @@ h1.active {
     width: 70%;
 }
 
-.mitad img {
-    height: auto;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-}
 .marketing{
   text-align: center;
 }
@@ -670,11 +715,7 @@ h1.active {
   border-radius: 10px;
   
 }
-.mitad {
-  display: flex;  /* Para mantener los elementos en una fila */
-  justify-content: space-between;  /* Imágenes en esquinas opuestas */
-  padding: 10px;
-}
+
 
 .img-hover {
   position: relative;
@@ -688,7 +729,7 @@ h1.active {
   height: auto; /* Mantiene la proporción de la imagen */
 }
 
-.img-hover:hover::after {
+.img-hover::after {
   content: '';
   position: absolute;
   top: 0;
@@ -697,11 +738,55 @@ h1.active {
   bottom: 0;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
   transition: opacity 0.3s;
+  opacity: 0; /* Por defecto, el ::after es invisible */
+}
+.img-hover.selected .texto-hover {
+  opacity: 1;
+}
+.img-hover.selected .texto-nohover {
   opacity: 0;
 }
-
+/* Al hacer hover, la opacidad cambia, pero solo si no está seleccionado */
 .img-hover:hover::after {
-  opacity: 1;
+  opacity: 1; /* Hace visible el ::after cuando se pasa el ratón por encima */
+}
+
+/* Cuando el elemento tiene la clase 'selected', se mantiene visible */
+.img-hover.selected::after {
+  opacity: 1; /* La opacidad se mantiene en 1 cuando está seleccionado */
+}
+
+/* Si quieres que no cambie con hover cuando está seleccionado */
+.img-hover.selected:hover::after {
+  opacity: 1; /* Mantén la opacidad constante para 'selected' */
+}
+
+.texto-nohover {
+  position: absolute; /* Absoluto para mantener el texto dentro de la imagen */
+  bottom: 0; /* Alinea con la parte inferior */
+  left: 50%; /* Centra horizontalmente */
+  width: 95%;
+  transform: translateX(-50%); /* Ajusta la posición para centrar */
+  color: #ffffff; /* Contraste para visibilidad */
+  font-size: 5rem; /* Tamaño de fuente adecuado */
+  text-align: center !important; /* Centra el texto */
+  padding: 0.5em; /* Añade padding para legibilidad */
+  margin: 0 !important;
+  -webkit-text-stroke: .5px rgb(0, 0, 0); /* Borde negro de 1px */
+  transition: opacity 0.3s;
+  opacity: 1; /* Por defecto, el texto está oculto */
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.texto-nohover::before {
+  content: attr(data-contour);  
+  position: absolute;  
+  top: -12px;  
+  left: -12px;
+  right: 12px;
+  bottom: 12px;
+  color: rgb(255, 255, 255);  
+  z-index: -1;  
 }
 
 .texto-hover {
@@ -722,6 +807,9 @@ h1.active {
 
 .img-hover:hover .texto-hover {
   opacity: 1;
+}
+.img-hover:hover .texto-nohover {
+  opacity: 0;
 }
 
 .img-hover:last-child {
@@ -754,6 +842,9 @@ h1.active {
 
 
   @media only screen and (orientation: landscape), (min-aspect-ratio: 1/1) {
+    p.ordenador{
+      text-align: center !important;
+    }
     .color{
       width: 70%;
     }
@@ -805,9 +896,10 @@ h1.active {
       font-size: 2rem;
   }
   #texto p:not(.titulo) {
+    margin: 0 auto;
       font-size: 1.5rem;
-      margin-left: 3%;
       width: 80%;
+      
   }
 
   
@@ -853,5 +945,6 @@ h1.active {
     color: #666; /* Color del texto */
     margin-left: 3%;
   }
+
   
   }

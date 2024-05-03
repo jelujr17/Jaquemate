@@ -59,10 +59,20 @@ function activateAnimation() {
   }
 }
 
-// Puedes activar la función cuando ocurra un evento, como un clic, un desplazamiento, etc.
 
-
-function toggleText(id) {
+function toggleText(img, id) {
+  const allImgHover = document.querySelectorAll('.img-hover'); // Selecciona todos los elementos con la clase .img-hover
+  
+  allImgHover.forEach((element) => {
+    if (element === img) {
+      if(!img.classList.contains('selected'))
+          element.classList.add('selected'); // Agrega la clase para aumentar tamaño
+      else
+         element.classList.remove('selected');
+    } else {
+      element.classList.remove('selected'); // Remueve la clase para disminuir tamaño
+    }
+  });
   var allTextElements = document.querySelectorAll('.textos');
 
   // Encuentra el elemento de texto correspondiente
