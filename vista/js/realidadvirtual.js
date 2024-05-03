@@ -1,17 +1,8 @@
 let menu = document.querySelector('.containerCabecera');
-var div = menu.querySelector('ul');
 var cuadro = document.querySelector('#imgContent');
 
-document.addEventListener('scroll', function() {
-    var div = document.querySelector('#imgContent');
-    var mitadAltura = div.offsetHeight / 2;
-
-    if (window.scrollY >= mitadAltura) {
-        menu.classList.remove('oculto');
-    } else {
-        menu.classList.add('oculto');
-    }
-});
+var menuLinks = document.querySelectorAll('nav ul li a');
+  
     const inputs = document.querySelectorAll('input[name="slide"]');
     const descriptions = document.querySelectorAll('.texto .description');
     function aplicarEstilosSegunTamanoPantalla() {
@@ -20,10 +11,16 @@ document.addEventListener('scroll', function() {
         try {
             if (ratio > 1 || isHorizontal) {
                 menu.classList.add('oculto');
+                cuadro.style.marginTop = '0px';
             } else {
                 menu.classList.remove('oculto');
-                var altura = div.clientHeight;
-                cuadro.style.marginTop = altura + 'px';
+                cuadro.style.marginTop = menu.clientHeight + 'px';
+                menuLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                      // Desmarcar el checkbox para ocultar el menú
+                      document.getElementById("check").checked = false;
+                    });
+                  });
             }
         } catch (error) {
             alert("Error al aplicar estilos:", error);

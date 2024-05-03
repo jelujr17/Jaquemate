@@ -66,12 +66,12 @@
     </a>
     
     <ul class="primary">
-    <li><a href="index.php">Inicio</a></li>
-      <li><a href="index.php#potenciar">Potenciamos tu marca</a></li>
+      <li><a href="https://jaquemate.es/">Inicio</a></li>
+      <li><a href="https://jaquemate.es/#potenciar">Potenciamos tu marca</a></li>
       <li><a href="realidadvirtual.php">Realidad Virtual</a></li>
-      <li><a href="index.php#solucionar">Soluciones</a></li>
+      <li><a href="https://jaquemate.es/#solucionar">Soluciones</a></li>
       <li><a href="https://store.jaquemate.es/">Venta Online</a></li>
-      <li><a href="index.php#contactar">Contacto</a></li>
+      <li><a href="https://jaquemate.es/#contactar">Contacto</a></li>
     </ul>
   </nav>
 	

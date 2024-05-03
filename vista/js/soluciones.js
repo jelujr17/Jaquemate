@@ -1,7 +1,4 @@
-var div = document.querySelector('.containerCabecera ul');
-var cuadro = document.querySelector('#cuadroDiv');
-var altura = div.clientHeight;
-cuadro.style.marginTop = altura + 'px';
+
 const inputs = document.querySelectorAll('input[name="slide"]');
 const descriptions = document.querySelectorAll('.texto .description');
   

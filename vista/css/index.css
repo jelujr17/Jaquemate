@@ -758,6 +758,9 @@ html{
          /* Opcional: Ajusta el ancho al 100% del div principal */
         top: 35vh;
     }
+    .digital{
+      font-size: 1.6rem !important;
+    }
     
 
     .boton{

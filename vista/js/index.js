@@ -9,6 +9,8 @@ const descriptions = document.querySelectorAll('.texto .description');
 var cuadroDiv = document.getElementById('cuadroDiv');
 var form = document.querySelector('.container-form');
 var ordenador = document.getElementById('ordenador');
+var menuLinks = document.querySelectorAll('nav ul li a');
+
 
 function aplicarEstilosSegunTamanoPantalla() {
     const ratio = screen.width / screen.height;
@@ -23,6 +25,12 @@ function aplicarEstilosSegunTamanoPantalla() {
         } else {
             marcasHeading.style.fontSize = "10vw";
             ordenador.style.display = "none";
+            menuLinks.forEach(function(link) {
+              link.addEventListener('click', function() {
+                // Desmarcar el checkbox para ocultar el menú
+                document.getElementById("check").checked = false;
+              });
+            });
         }
     } catch (error) {
         console.error("Error al aplicar estilos:", error);
