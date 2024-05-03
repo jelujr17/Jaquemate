@@ -323,11 +323,12 @@ html{
     color: #ffffff;
     font-style: italic;
     font-weight: bold;
-    text-shadow: 3px 5px 12px #000000e9;
-    animation: slideIn 2s ease-in-out forwards;
+    text-shadow: 4px 5px 12px #000000ef;
+    
     max-width: 90%; /* Limita el ancho del texto al 90% del ancho del contenedor */
     text-align: center; /* Centra el texto horizontalmente */
 }
+
 .blurry-background {  
     position: absolute;
     top: 0;
@@ -337,8 +338,14 @@ html{
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
+}
 
-    animation: slideOn 2s ease-in-out forwards;
+h1.active {
+  animation: slideIn 3s ease-in-out forwards !important;
+}
+
+.blurry-background.active {
+  animation: slideOn 3s ease-in-out forwards !important;
 }
 
 @keyframes slideIn {

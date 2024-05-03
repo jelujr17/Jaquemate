@@ -112,7 +112,7 @@
 </div>
 <div id="texto2" class="pt-5 mb-5 pb-5 container-fluid">
         <p class="titulo mb-5 pb-5">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo, ¡sin coste adicional!</p>
-        <a class="ver" href="contacto.php">CONTACTA YA!!</a>
+        <a class="ver" href="#contactar">CONTACTA YA!!</a>
 </div>
 <div id="solucionar" class="mb-5 pb-5"></div>
 <div id="cuadroDiv" class="container-fluid marketing mt-5 pt-5 pb-3 mb-4">

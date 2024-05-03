@@ -10,7 +10,7 @@ var cuadroDiv = document.getElementById('cuadroDiv');
 var form = document.querySelector('.container-form');
 var ordenador = document.getElementById('ordenador');
 var menuLinks = document.querySelectorAll('nav ul li a');
-
+var marcas = document.getElementById("marcas");
 
 function aplicarEstilosSegunTamanoPantalla() {
     const ratio = screen.width / screen.height;
@@ -36,6 +36,31 @@ function aplicarEstilosSegunTamanoPantalla() {
         console.error("Error al aplicar estilos:", error);
     }
 }
+
+function activateAnimation() {
+  var position = marcas.getBoundingClientRect();  // Obtener posición del elemento
+
+  if (position.top < window.innerHeight && position.bottom >= 0) {
+
+    marcas.classList.add("active");
+  }
+  if (marcas.classList.contains("active")) {
+    // Selecciona el elemento hermano <h1> y añade la clase para activar la animación
+    var heading = document.querySelector("#marcas h1");
+    if (heading) {
+      heading.classList.add("active");
+    }
+
+    // Selecciona el elemento hermano con la clase .blurry-background
+    var blurryBackground = document.querySelector("#marcas .blurry-background");
+    if (blurryBackground) {
+      blurryBackground.classList.add("active");
+    }
+  }
+}
+
+// Puedes activar la función cuando ocurra un evento, como un clic, un desplazamiento, etc.
+
 
 function toggleText(id) {
   var allTextElements = document.querySelectorAll('.textos');
@@ -88,5 +113,6 @@ textarea.addEventListener('input', () => {
     contador.textContent = caracteresEscritos + '/700';
 });
 
+document.addEventListener("scroll", activateAnimation);
 window.addEventListener('load', aplicarEstilosSegunTamanoPantalla);
 window.addEventListener('resize', aplicarEstilosSegunTamanoPantalla);
