@@ -21,7 +21,7 @@
         $jsonData = json_encode($datosJson);
     
         // Enviar datos a la API externa
-        $ch = curl_init('http://192.168.0.59:8081/sendmail');
+        $ch = curl_init('http://jmvidareal.synology.me:8081/sendmail');
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
         curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

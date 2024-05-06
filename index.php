@@ -80,9 +80,11 @@
   </div>
 </div>
 <div id="potenciar" class="mb-5 pb-5"></div>
-<div id="marcas" class="">
-    <div class="blurry-background"></div>
-    <h1 class="text-center">CONSIGUE LAS VENTAS DE TUS SUEÑOS, GRATIS</h1>
+<div id="segundo">
+  <h1 id="gratis" class="text-center m-0">CONSIGUE LAS VENTAS DE TUS SUEÑOS, GRATIS</h1>
+  <div id="marcas" class="">
+      <div class="blurry-background"></div>
+  </div>
 </div>  
 <div id="texto" class="pt-5 mb-4 pb-4 container-fluid">
         <p class="titulo">¿Desearías exponer tu marca establecida a un mercado nuevo? ¿Verla en las corrientes de venta populares? <br> ¿Querrías vender donde venden las más grandes marcas? ¿Esperarías poder conseguir todo esto gratuitamente?</p>
@@ -93,19 +95,15 @@
       <div class="mitad">
         <div class="img-hover" data-id="1">
           <p class="texto-hover">Win-Win</p>
-          <p class="texto-nohover"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 20 20">
+          <p class="texto-nohover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 21 20">
   <path d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0"/>
 </svg></p>
         </div>
         <div class="img-hover" data-id="2" >
           <p class="texto-hover">Mundo de oportunidades</p>
-          <p class="texto-nohover"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 20 20">
+          <p class="texto-nohover">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 21 20">
             <path d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0"/>
           </svg></p>
         </div>
@@ -131,7 +129,7 @@
       </a>
 </div>
 <div id="solucionar" class="mb-5 pb-5"></div>
-<div id="cuadroDiv" class="container-fluid marketing mt-5 pt-5 pb-3 mb-4">
+<div id="cuadroDiv" class="container-fluid marketing pt-5 pb-3 mb-4">
     <div class="row featurette">
       <div class="col-7 text">
         <h2 class="featurette-heading fw-normal">¿Tienes algún problema que no sabes resolver?</h2>

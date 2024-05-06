@@ -3,17 +3,15 @@ const menu = document.querySelector('nav');
 const div = document.querySelector('.fondoimagen');
 const jaque = document.querySelector('#jaque');
 var marketing = document.getElementById('marcas');
-var marcasHeading = marketing.querySelector('h1');
+var marcasHeading = document.getElementById('gratis');
 const inputs = document.querySelectorAll('input[name="slide"]');
 const descriptions = document.querySelectorAll('.texto .description');
 var cuadroDiv = document.getElementById('cuadroDiv');
 var form = document.querySelector('.container-form');
 var ordenador = document.getElementById('ordenador');
 var menuLinks = document.querySelectorAll('nav ul li a');
-var nohover = document.querySelectorAll('.texto-nohover');
-var nohover1 = nohover[0].querySelectorAll('svg');
-var nohover2 = nohover[1].querySelectorAll('svg');
 var marcas = document.getElementById("marcas");
+var segundo = document.getElementById("segundo");
 
 function aplicarEstilosSegunTamanoPantalla() {
     const ratio = screen.width / screen.height;
@@ -23,15 +21,11 @@ function aplicarEstilosSegunTamanoPantalla() {
 
     try {
         if (ratio > 1 || isHorizontal) {
-            nohover1[0].style.display="none";
-            nohover2[0].style.display="none";
-            marcasHeading.style.fontSize = "6vw";
+          marcasHeading.style.fontSize = "4vw";
             ordenador.style.display = "block";
         } else {
-            marcasHeading.style.fontSize = "10vw";
+            marcasHeading.style.fontSize = "8vw";
             ordenador.style.display = "none";
-            nohover1[1].style.display="none";
-            nohover2[1].style.display="none";
             menuLinks.forEach(function(link) {
               link.addEventListener('click', function() {
                 // Desmarcar el checkbox para ocultar el menú
@@ -53,10 +47,12 @@ function activateAnimation() {
   }
   if (marcas.classList.contains("active")) {
     // Selecciona el elemento hermano <h1> y añade la clase para activar la animación
-    var heading = document.querySelector("#marcas h1");
+    var heading = document.querySelector("#gratis");
     if (heading) {
       heading.classList.add("active");
     }
+
+    segundo.classList.add("active");
 
     // Selecciona el elemento hermano con la clase .blurry-background
     var blurryBackground = document.querySelector("#marcas .blurry-background");

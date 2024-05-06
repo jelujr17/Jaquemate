@@ -3,6 +3,22 @@
   PANTALLAS PEQUEÑAS
   -----------------*/
 @media only screen and (orientation: portrait), (max-aspect-ratio: 1/1) {
+  .ver:before {
+    width: 100px !important; /* Inicia con un ancho de 0 */
+    height: 100px !important; /* Ajusta la altura para cubrir el contenido */
+  }
+  
+
+  .ver span {
+    font-size: 60px !important;
+    letter-spacing: 0.05em;
+  }
+  
+  .ver svg {
+    margin-left: 10px; /* Espacio entre el texto y el SVG */
+    width: 60px !important; /* Ajusta para mantener proporción con el texto */
+    transform: translateX(-5px);
+  }
   .mitad{
     height: 20% !important;
   }
@@ -93,7 +109,7 @@
       height: auto;
     }
     
-    .text-container p {
+    .text-container p{
       text-shadow: 7px 2px 8px rgba(0, 0, 0, 0.2);
       color: rgb(255, 175, 46);
       font-family: "grotesk";
@@ -116,6 +132,9 @@
     }
     .blurry-background {
       background-image: url('../assets/logos2.png');
+  }
+  #segundo{
+    margin-bottom: 3vh;
   }
   #texto, #texto2{
       width: 95vw;
@@ -338,68 +357,75 @@ html{
     }
   }
 
-  #marcas {
-    position: relative;
-    width: 100%;
-    height: 30%;
-    overflow: hidden; /* Evita que el contenido excedente se muestre fuera del contenedor */
-    display: flex; /* Usa flexbox para centrar verticalmente el contenido */
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido */
-}
-
-#marcas h1 {
-    color: #ffffff;
-    font-style: italic;
-    font-weight: bold;
-    text-shadow: 4px 5px 12px #000000ef;
-    -webkit-text-stroke: .5px rgb(0, 0, 0); /* Borde negro de 1px */
-    max-width: 90%; /* Limita el ancho del texto al 90% del ancho del contenedor */
-    text-align: center; /* Centra el texto horizontalmente */
-}
-
 .blurry-background {  
     position: absolute;
-    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: center;
+    filter: blur(3px);
 }
 
-h1.active {
-  animation: slideIn 3s ease-in-out forwards !important;
+#segundo {
+  opacity: 0;
+}
+
+#gratis {
+  color: #ffffff;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 4px 5px 12px #000000ef;
+  -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* Borde negro */
+  text-align: center;
+  margin-bottom: 0; /* Reduce el margen inferior */
+  padding: 0 !important;
+}
+
+#marcas {
+  position: relative;
+  width: 100%;
+  height: 30%; /* Puedes ajustar este valor según necesites */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0; /* Reduce el margen superior para acercar al h1 */
+}
+
+#segundo.active {
+  animation: aparece 2.5s ease-in-out forwards !important;
 }
 
 .blurry-background.active {
   animation: slideOn 3s ease-in-out forwards !important;
 }
 
-@keyframes slideIn {
-    0% {
-        transform: translateX(-60%);
-        opacity: 0;
-    }
-    70% {
-      opacity: 0.0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+@keyframes aparece {
+  0% {
+      transform: translateX(-60%);
+      opacity: 0;
+  }
+  70% {
+    opacity: 0.0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
 }
+
 
 @keyframes slideOn {
     0% {
-        
+      filter: blur(3px);   
     }
-    30% {
-        filter: blur(1px);
+    70% {
+        filter: blur(2px);
     }
     100% {
-        filter: blur(2px);
+        filter: blur(0px);
     }
 }
 
@@ -440,6 +466,7 @@ h1.active {
 
 .ver {
   width: max-content;
+  top: 5vh;
   margin: 0 auto;
   position: relative; /* Necesario para que el pseudoelemento pueda usar posicionamiento absoluto */
   display: flex; /* Permite alinear internamente el texto y el SVG */
@@ -829,12 +856,9 @@ h1.active {
 
 }
 .texto-nohover svg{
-  padding-top: 3px !important;
+
   stroke: black;
   fill: white;
-}
-
-.texto-nohover svg{
   width: 20% !important;
   height: auto;
 }
