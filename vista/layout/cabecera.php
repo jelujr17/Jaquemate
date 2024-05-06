@@ -61,8 +61,8 @@
     <label for="check" class="checkbtn">
       <li class="fas fa-bars"></li>
     </label>
-    <a href="index.php" class="enlace">
-      <img src="vista/assets/icono.png" alt="" class="logo m-1">
+    <a href="https://jaquemate.es/" class="enlace">
+      <img src="vista/assets/logo5.jpg" alt="" class="logo m-1">
     </a>
     
     <ul class="primary">

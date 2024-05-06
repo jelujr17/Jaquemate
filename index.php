@@ -5,7 +5,7 @@
 <div class="py-lg-5 fondoimagen position-relative h-100" id="custom-cards">
   <div id="index" class="row row-cols-lg-3 align-items-stretch g-5 py-5 start-50 translate-middle-x divSecundario">
     <div class="col-12 appear-from-bottom">
-      <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg opacidad">
+      <div class="card card-cover overflow-hidden rounded-4 shadow-lg opacidad">
         <div class="d-lg-flex flex-lg-column p-3 pt-lg-4 text-white">
         <div class="movil">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
@@ -29,7 +29,7 @@
     </div>
 
     <div class="col-12 appear-from-bottom ">
-      <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg opacidad">
+      <div class="card card-cover overflow-hidden rounded-4 shadow-lg opacidad">
         <div class="d-lg-flex flex-lg-column p-4 pt-lg-4 text-white text-shadow-1">
         <div class="movil">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-headset-vr" viewBox="0 0 16 16">
@@ -54,7 +54,7 @@
     </div>
 
     <div class="col-12 appear-from-bottom">
-      <div class="card card-cover overflow-hidden text-bg-dark rounded-4 shadow-lg opacidad">
+      <div class="card card-cover overflow-hidden rounded-4 shadow-lg opacidad">
         <div class="d-lg-flex flex-column p-4 pt-lg-4 text-shadow-1">
         <div class="movil">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
@@ -91,13 +91,23 @@
 <div id="fondoDiv" class="p-3 mb-5">
     <div class="color mt-4 p-2">
       <div class="mitad">
-        <div class="img-hover" onclick="toggleText(this, 1)">
+        <div class="img-hover" data-id="1">
           <p class="texto-hover">Win-Win</p>
-          <p class="texto-nohover">...</p>
+          <p class="texto-nohover"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 20 20">
+  <path d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0"/>
+</svg></p>
         </div>
-        <div class="img-hover" onclick="toggleText(this, 2)" >
+        <div class="img-hover" data-id="2" >
           <p class="texto-hover">Mundo de oportunidades</p>
-          <p class="texto-nohover">...</p>
+          <p class="texto-nohover"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 20 20">
+            <path d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0"/>
+          </svg></p>
         </div>
       </div>
       <div class="textos-container">
@@ -112,7 +122,13 @@
 </div>
 <div id="texto2" class="pt-5 mb-5 pb-5 container-fluid">
       <p class="titulo mb-5 pb-5">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo, ¡sin coste adicional!</p>
-      <a class="ver" href="#contactar">CONTACTA YA!!</a>
+      <a class="ver" href="#contactar">
+        <span>CONTACTA YA!!</span>
+        <svg width="15px" height="10px" viewBox="0 0 13 10">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </a>
 </div>
 <div id="solucionar" class="mb-5 pb-5"></div>
 <div id="cuadroDiv" class="container-fluid marketing mt-5 pt-5 pb-3 mb-4">

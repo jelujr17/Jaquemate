@@ -136,10 +136,7 @@
   }
 
 
-  .ver{
-      padding: 20px 40px;
-      font-size: 3.5rem;
-  }
+  
   #texto2 p:not(.titulo) {
       margin: 0 auto;
       font-size: 2.7rem;
@@ -235,10 +232,13 @@ html{
 }
 
 .fondoimagen{
-    background-image: url('../assets/empresa.png');
-    background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
-    background-position: center; /* Centra la imagen de fondo */
+    background-image: url('../assets/fondo.jpeg');
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
 }
+
+
 #jaque{
     position: absolute;
     letter-spacing: 10px;
@@ -249,18 +249,26 @@ html{
 }
 
 #index{
-  bottom: 0;
+  bottom: 0;  
     position: absolute;
     width: 85%;
     margin: 0 auto !important;
 }
   .opacidad{
-    opacity: 0.95;
+    background-color: #33333368;
 }
 
 #index .row{
   margin: 10px;
+  color: #ffffff !important;
 }
+.divSecundario{
+  color: #ffffff !important;
+}
+.movil{
+  color: #ffffff !important;
+}
+
 .divSecundario a{
   text-decoration: none;
 }
@@ -345,7 +353,7 @@ html{
     font-style: italic;
     font-weight: bold;
     text-shadow: 4px 5px 12px #000000ef;
-    
+    -webkit-text-stroke: .5px rgb(0, 0, 0); /* Borde negro de 1px */
     max-width: 90%; /* Limita el ancho del texto al 90% del ancho del contenedor */
     text-align: center; /* Centra el texto horizontalmente */
 }
@@ -430,23 +438,72 @@ h1.active {
     text-align: center;
 }
 
-.ver{
-    text-decoration: none;
-    width: 100% !important;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #333;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #ffc107;
-    transition: background-color 0.3s, color 0.3s;
-    border: 2px solid #333;
+.ver {
+  width: max-content;
+  margin: 0 auto;
+  position: relative; /* Necesario para que el pseudoelemento pueda usar posicionamiento absoluto */
+  display: flex; /* Permite alinear internamente el texto y el SVG */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 12px 18px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease; /* Transición suave */
 }
 
-.ver:hover{
-    background-color: #333;
-    color: #ffc107;
+.ver:before {
+  content: ""; /* El pseudoelemento comienza con tamaño mínimo */
+  position: absolute; /* Absoluto para ocupar todo el ancho */
+  top: 50%; /* Para centrar verticalmente */
+  left: 0;
+  transform: translateY(-50%); /* Para centrar verticalmente */
+  border-radius: 50px; /* Opcional para darle forma redondeada */
+  background: #b1dae7; /* Color del fondo del pseudoelemento */
+  width: 60px; /* Inicia con un ancho de 0 */
+  height: 60px; /* Ajusta la altura para cubrir el contenido */
+  transition: all 0.3s ease; /* Transición suave */
 }
+
+
+
+.ver span {
+  position: relative; /* Permite ajustar en relación al contenedor flex */
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.ver svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px; /* Espacio entre el texto y el SVG */
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  width: 30px; /* Ajusta para mantener proporción con el texto */
+  height: auto;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.ver:hover:before {
+  width: 100%; /* Al hacer hover, el pseudoelemento ocupa todo el ancho */
+}
+
+.ver:hover svg {
+  transform: translateX(0); /* Remueve el desplazamiento para centrar */
+}
+
+.ver:active {
+  transform: scale(0.95); /* Efecto de presión */
+}
+
 
 .mitad {
   width: 100%;
@@ -487,7 +544,6 @@ h1.active {
 }
 
 .img-hover.selected ~ 
-
 .img-hover:not(.selected) {
   flex: 2; /* Disminuye el tamaño del contenedor cuando no está seleccionado */
 }
@@ -746,11 +802,6 @@ h1.active {
 .img-hover.selected .texto-nohover {
   opacity: 0;
 }
-/* Al hacer hover, la opacidad cambia, pero solo si no está seleccionado */
-.img-hover:hover::after {
-  opacity: 1; /* Hace visible el ::after cuando se pasa el ratón por encima */
-}
-
 /* Cuando el elemento tiene la clase 'selected', se mantiene visible */
 .img-hover.selected::after {
   opacity: 1; /* La opacidad se mantiene en 1 cuando está seleccionado */
@@ -765,10 +816,8 @@ h1.active {
   position: absolute; /* Absoluto para mantener el texto dentro de la imagen */
   bottom: 0; /* Alinea con la parte inferior */
   left: 50%; /* Centra horizontalmente */
-  width: 95%;
+  width: 60%;
   transform: translateX(-50%); /* Ajusta la posición para centrar */
-  color: #ffffff; /* Contraste para visibilidad */
-  font-size: 5rem; /* Tamaño de fuente adecuado */
   text-align: center !important; /* Centra el texto */
   padding: 0.5em; /* Añade padding para legibilidad */
   margin: 0 !important;
@@ -776,7 +825,20 @@ h1.active {
   transition: opacity 0.3s;
   opacity: 1; /* Por defecto, el texto está oculto */
   z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+  overflow: visible !important; /* Evita que el contenido del SVG se corte */
+
 }
+.texto-nohover svg{
+  padding-top: 3px !important;
+  stroke: black;
+  fill: white;
+}
+
+.texto-nohover svg{
+  width: 20% !important;
+  height: auto;
+}
+
 
 .texto-nohover::before {
   content: attr(data-contour);  
@@ -805,12 +867,6 @@ h1.active {
   z-index: 1; /* Asegura que el texto esté por encima de la imagen */
 }
 
-.img-hover:hover .texto-hover {
-  opacity: 1;
-}
-.img-hover:hover .texto-nohover {
-  opacity: 0;
-}
 
 .img-hover:last-child {
   margin-right: 0;  /* El último elemento no necesita margen adicional */
@@ -907,10 +963,7 @@ h1.active {
       margin: 2rem;
       text-align: center;
   }
-  .ver{
-      padding: 10px 20px;
-      font-size: 2.8rem;
-  }
+
   #texto2 .titulo {
       font-size: 2rem;
   }
