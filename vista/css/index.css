@@ -487,7 +487,7 @@ html{
   left: 0;
   transform: translateY(-50%); /* Para centrar verticalmente */
   border-radius: 50px; /* Opcional para darle forma redondeada */
-  background: #b1dae7; /* Color del fondo del pseudoelemento */
+  background:  rgb(255, 175, 46); /* Color del fondo del pseudoelemento */
   width: 60px; /* Inicia con un ancho de 0 */
   height: 60px; /* Ajusta la altura para cubrir el contenido */
   transition: all 0.3s ease; /* Transición suave */

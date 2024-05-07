@@ -13,6 +13,47 @@ var menuLinks = document.querySelectorAll('nav ul li a');
 var marcas = document.getElementById("marcas");
 var segundo = document.getElementById("segundo");
 
+
+document.getElementById('formulario').addEventListener('submit', function (event) {
+  event.preventDefault(); // Previene el envío del formulario por defecto
+
+  const datosFormulario = {
+      nombre: document.getElementById('nombre').value,
+      email: document.getElementById('email').value,
+      asunto: document.getElementById('asunto').value,
+      mensaje: document.getElementById('mensaje').value,
+  };
+
+  const xhr = new XMLHttpRequest();
+
+  xhr.open('POST', 'correo.php', true);
+  xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+
+  // Agrega un listener para el evento 'readystatechange' para manejar la respuesta cuando esté lista
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4) {
+          // Verifica que la solicitud se haya completado satisfactoriamente
+          const response = JSON.parse(xhr.responseText);
+          if (response.success) {
+              console.log('La solicitud se completó correctamente.');
+              document.getElementById('nombre').value = '';
+              document.getElementById('email').value  = '';
+              document.getElementById('asunto').value = '';
+              document.getElementById('mensaje').value = '';
+              // Aquí puedes manejar la respuesta del servidor si es necesario
+          } else {
+              console.log('Error al enviar la solicitud. Código de estado:', xhr.status);
+          }
+      }
+  };
+
+  // Envía los datos del formulario como JSON
+  xhr.send(JSON.stringify(datosFormulario));
+});
+
+
+
 function aplicarEstilosSegunTamanoPantalla() {
     const ratio = screen.width / screen.height;
     const isHorizontal = window.matchMedia("(orientation: landscape)").matches;
