@@ -1,4 +1,4 @@
-<!--?php
+<?php /*
     if ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest' && $_SERVER['REQUEST_METHOD'] === 'POST') {
         // Obtener el JSON del cuerpo de la solicitud
         $json = file_get_contents('php://input');
@@ -42,8 +42,8 @@
     
         // Cerrar la sesión cURL
         curl_close($ch);
-    }
-?>-->
+    }*/
+?>
 
 <?php
 //Import PHPMailer classes into the global namespace
