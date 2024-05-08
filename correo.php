@@ -21,9 +21,9 @@ if ($_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest' && $_SERVER['REQUEST_
     $email = $data->email;
     $asunto = $data->asunto;
     $mensaje = $data->mensaje;
-    $mail->CharSet = "UTF-8";
+    
     $mail = new PHPMailer(true);
-
+    $mail->CharSet = "UTF-8";
 try {
     //Server settings
     $mail->SMTPDebug = 0;                      //Enable verbose debug output
