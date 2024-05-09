@@ -84,18 +84,13 @@
     <div class="bordes"></div>
     <div class="carousel"></div>
 </div>  
-<table id="texto" class="pt-5 mb-4 pb-4 container-fluid">
-  <tr>
-    <td>¿Desearías exponer tu marca establecida a un mercado nuevo?</td>
-    <td>¿Verla en las corrientes de venta populares?</td>
-  </tr>
-  <tr>
-    <td>¿Querrías vender donde venden las más grandes marcas?</td>
-    <td>¿Esperarías poder conseguir todo esto gratuitamente?</td>
-  </tr>
-  
-</table>
 
+<div id="texto" class="pt-5 mb-4 pb-4 container-fluid">
+    <p class="p1">¿Desearías exponer tu marca establecida a un mercado nuevo?</p>
+    <p class="p2">¿Verla en las corrientes de venta populares?</p>
+    <p class="p3">¿Querrías vender donde venden las más grandes marcas?</p>
+    <p class="p4">¿Esperarías poder conseguir todo esto gratuitamente?</p>
+</div>
 <div id="fondoDiv" class="p-3 mb-5">
     <div class="color mt-4 p-2">
       <div class="mitad">

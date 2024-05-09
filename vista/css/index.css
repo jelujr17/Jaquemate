@@ -400,15 +400,18 @@ html{
 }
 #texto{
   width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
 }
 #texto p {
-  width: auto;
+  line-height: 1.2; /* Reducir el espacio entre líneas */
     text-align: center; /* Centra el texto de los títulos */
     color: #343a40; /* Color del texto */
     font-style: italic;
     margin-bottom: 2vh !important;
     font-weight: 400;
+    box-sizing: border-box;
 }
 #texto2 .titulo {
   margin: 0 auto;
@@ -416,6 +419,7 @@ html{
 .p1 ,.p3 {
   float: right !important;
 }
+
 
 .aa{
     margin: 5rem;
