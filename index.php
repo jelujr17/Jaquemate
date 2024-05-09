@@ -79,33 +79,33 @@
     </div>
   </div>
 </div>
-<div id="potenciar" class="mb-5 pb-5"></div>
-<div id="segundo">
-  <h1 id="gratis" class="text-center m-0">CONSIGUE LAS VENTAS DE TUS SUEÑOS, GRATIS</h1>
+<div id="potenciar" class="mb-5 pb-1"></div>
   <div id="marcas" class="">
-      <div class="blurry-background"></div>
-  </div>
+    <div class="bordes"></div>
+    <div class="carousel"></div>
 </div>  
-<div id="texto" class="pt-5 mb-4 pb-4 container-fluid">
-        <p class="titulo">¿Desearías exponer tu marca establecida a un mercado nuevo? ¿Verla en las corrientes de venta populares? <br> ¿Querrías vender donde venden las más grandes marcas? ¿Esperarías poder conseguir todo esto gratuitamente?</p>
-        <p id="ordenador" class="mt-5">Imagínate tener acceso directo a una red que ya tiene todo listo para distribuir tus productos en Europa. Todos los contactos, recursos y logística están ahí para que los uses, ¡y sin que te cueste nada! Con nosotros, no solo podrás aprovechar una infraestructura probada, sino también contar con un equipo que se encarga de todo, desde el almacenamiento hasta la entrega al cliente.</p>
-</div>
+<table id="texto" class="pt-5 mb-4 pb-4 container-fluid">
+  <tr>
+    <td>¿Desearías exponer tu marca establecida a un mercado nuevo?</td>
+    <td>¿Verla en las corrientes de venta populares?</td>
+  </tr>
+  <tr>
+    <td>¿Querrías vender donde venden las más grandes marcas?</td>
+    <td>¿Esperarías poder conseguir todo esto gratuitamente?</td>
+  </tr>
+  
+</table>
+
 <div id="fondoDiv" class="p-3 mb-5">
     <div class="color mt-4 p-2">
       <div class="mitad">
         <div class="img-hover" data-id="1">
           <p class="texto-hover">Win-Win</p>
-          <p class="texto-nohover">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 21 20">
-  <path d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0"/>
-</svg></p>
+          <p class="texto-nohover">...</p>
         </div>
         <div class="img-hover" data-id="2" >
           <p class="texto-hover">Mundo de oportunidades</p>
-          <p class="texto-nohover">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-hand-index-thumb-fill" viewBox="0 0 21 20">
-            <path d="M8.5 1.75v2.716l.047-.002c.312-.012.742-.016 1.051.046.28.056.543.18.738.288.273.152.456.385.56.642l.132-.012c.312-.024.794-.038 1.158.108.37.148.689.487.88.716q.113.137.195.248h.582a2 2 0 0 1 1.99 2.199l-.272 2.715a3.5 3.5 0 0 1-.444 1.389l-1.395 2.441A1.5 1.5 0 0 1 12.42 16H6.118a1.5 1.5 0 0 1-1.342-.83l-1.215-2.43L1.07 8.589a1.517 1.517 0 0 1 2.373-1.852L5 8.293V1.75a1.75 1.75 0 0 1 3.5 0"/>
-          </svg></p>
+          <p class="texto-nohover">...</p>
         </div>
       </div>
       <div class="textos-container">
@@ -118,10 +118,10 @@
       </div>
     </div>
 </div>
-<div id="texto2" class="pt-5 mb-5 pb-5 container-fluid">
-      <p class="titulo mb-5 pb-5">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo, ¡sin coste adicional!</p>
+<div id="texto2" class="pt-5 container-fluid">
+      <p class="titulo mb-1">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo, ¡sin coste adicional!</p>
       <a class="ver" href="#contactar">
-        <span>CONTACTA YA!!</span>
+        <span>CONTACTA YA</span>
         <svg width="15px" height="10px" viewBox="0 0 13 10">
           <path d="M1,5 L11,5"></path>
           <polyline points="8 1 12 5 8 9"></polyline>
@@ -145,10 +145,10 @@
             <input type="radio" name="slide" id="c2" >
             <label for="c2" class="card"><h4>¿Qué aplicación necesitas? <br> ¡Nosotros nos encargamos!</h4></label>
             <input type="radio" name="slide" id="c3" >
-            <label for="c3" class="card"><h4>Globalization</h4></label>
+            <label for="c3" class="card"><h4>Globalización</h4></label>
         </div>
     </div>
-    <div class="texto mt-5">
+    <div class="texto mt-1">
       <div class="description" id="description-c1">
         <p>Utiliza programas, herramientas y soluciones ingeniadas por nosotros, y preparadas para moldearse a tu situación. Desde herramientas de gestión de stock, gestión de usuarios y permisos para empresa, APIs especializadas y mucho más.</p>
       </div>
@@ -156,7 +156,8 @@
         <p>¿Tu empresa necesita de software especializado? ¿Quieres automatizar procesos que normalmente se llevan manualmente? ¿Has soñado con una aplicación que te permita vivir echado en una hamaca con un piña colada en mano? Nuestro equipo de desarrollo de aplicaciones hará tu idea realidad, a tu medida, para tu entorno, accesible y preparado para pisar mercado. </p>
       </div>
       <div class="description" id="description-c3">
-        <p>Winter has so much to offer -creative activities</p>
+      <p>Imagínate tener acceso directo a una red que ya tiene todo listo para distribuir tus productos en Europa. Todos los contactos, recursos y logística están ahí para que los uses, ¡y sin que te cueste nada! Con nosotros, no solo podrás aprovechar una infraestructura probada, sino también contar con un equipo que se encarga de todo, desde el almacenamiento hasta la entrega al cliente.</p>
+
       </div>
     </div>
     

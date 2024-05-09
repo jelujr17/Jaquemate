@@ -130,9 +130,7 @@
       font-family: "grotesk";
       letter-spacing: 7px;
     }
-    .blurry-background {
-      background-image: url('../assets/logos2.png');
-  }
+
   #segundo{
     margin-bottom: 3vh;
   }
@@ -155,13 +153,6 @@
   }
 
 
-  
-  #texto2 p:not(.titulo) {
-      margin: 0 auto;
-      font-size: 2.7rem;
-      line-height: 1.5; /* Altura de línea */
-      width: 80%;
-  }
   .checkbtn{
     display: block;
 
@@ -357,106 +348,73 @@ html{
     }
   }
 
-.blurry-background {  
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    background-position: center;
-    filter: blur(3px);
-}
-
-#segundo {
-  opacity: 0;
-}
-
-#gratis {
-  color: #ffffff;
-  font-style: italic;
-  font-weight: bold;
-  text-shadow: 4px 5px 12px #000000ef;
-  -webkit-text-stroke: 0.5px rgb(0, 0, 0); /* Borde negro */
-  text-align: center;
-  margin-bottom: 0; /* Reduce el margen inferior */
-  padding: 0 !important;
-}
-
 #marcas {
+  overflow: hidden; /* Oculta el contenido que sale del área visible */
+  height: 200px; /* Altura del contenedor */
   position: relative;
-  width: 100%;
-  height: 30%; /* Puedes ajustar este valor según necesites */
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0; /* Reduce el margen superior para acercar al h1 */
+  display: flex; /* Flexbox para centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+      align-items: center; /* Centrar verticalmente */
 }
 
-#segundo.active {
-  animation: aparece 2.5s ease-in-out forwards !important;
+.bordes{
+  position: absolute;
+  
+  height: 200px;
+  width: 90%;
+  margin: 0 auto;
+  border-top:10px solid #212529;
+  border-bottom:10px solid #212529;
+  margin: 0 auto; /* Centra horizontalmente */
 }
 
-.blurry-background.active {
-  animation: slideOn 3s ease-in-out forwards !important;
+/* Carrusel animado */
+.carousel {
+  width: 100vw !important;
+  white-space: nowrap; /* Mantiene elementos en una fila */
+  animation: slide 30s linear infinite; /* Animación continua */
 }
 
-@keyframes aparece {
-  0% {
-      transform: translateX(-60%);
-      opacity: 0;
+/* Imágenes dentro del carrusel */
+.carousel img {
+  margin: 2em;
+  display: inline-block; /* Mantener en línea */
+  height: 100px; /* Altura de las imágenes */
+  margin-right: 10px; /* Espacio entre imágenes */
+}
+
+/* Definición del movimiento para la animación */
+@keyframes slide {
+  from {
+      transform: translateX(0); /* Inicia desde la posición original */
   }
-  70% {
-    opacity: 0.0;
-  }
-  100% {
-      transform: translateX(0);
-      opacity: 1;
+  to {
+      transform: translateX(-100%); /* Mueve hacia la izquierda */
   }
 }
 
-
-@keyframes slideOn {
-    0% {
-      filter: blur(3px);   
-    }
-    70% {
-        filter: blur(2px);
-    }
-    100% {
-        filter: blur(0px);
-    }
-}
-
-#texto, #texto2 {
+#texto2 {
     text-align: center !important;
     font-family: "Segoe UI", sans-serif;
     padding: 20px;
 }
-#texto .titulo {
+#texto{
+  width: 80%;
+
+}
+#texto p {
+  width: auto;
     text-align: center; /* Centra el texto de los títulos */
     color: #343a40; /* Color del texto */
     font-style: italic;
+    margin-bottom: 2vh !important;
     font-weight: 400;
-    line-height: 1.6; /* Altura de línea */
 }
-#texto #ordenador {
-    border-radius: 5px;
-    color: #3a3e43; /* Color del texto */
-    line-height: 1.5; /* Altura de línea */
+#texto2 .titulo {
+  margin: 0 auto;
 }
-
-#texto2 p:not(.titulo) {
-    border-radius: 5px;
-    color: #3a3e43; /* Color del texto */
-    line-height: 1.5; /* Altura de línea */
-    text-align: center;
-    width: 80%;
-}
-
-#texto p:last-child {
-    margin-bottom: 0; /* Eliminar espaciado inferior del último párrafo */
+.p1 ,.p3 {
+  float: right !important;
 }
 
 .aa{
@@ -487,7 +445,7 @@ html{
   left: 0;
   transform: translateY(-50%); /* Para centrar verticalmente */
   border-radius: 50px; /* Opcional para darle forma redondeada */
-  background:  rgb(255, 175, 46); /* Color del fondo del pseudoelemento */
+  background:  #ffd136; /* Color del fondo del pseudoelemento */
   width: 60px; /* Inicia con un ancho de 0 */
   height: 60px; /* Ajusta la altura para cubrir el contenido */
   transition: all 0.3s ease; /* Transición suave */
@@ -501,7 +459,7 @@ html{
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #234567;
+  color: #212529;
 }
 
 .ver svg {
@@ -511,7 +469,7 @@ html{
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #234567;
+  stroke: #212529;
   width: 30px; /* Ajusta para mantener proporción con el texto */
   height: auto;
   stroke-width: 2;
@@ -793,7 +751,6 @@ html{
   
   margin: 0 auto;
   align-items: center; /* Centra verticalmente los elementos */
-  border: 2px solid #cccccc43;
   background-color: #f3f4f5;
   border-radius: 10px;
   
@@ -820,6 +777,7 @@ html{
   right: 0;
   bottom: 0;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7));
+  border-radius: 10px;
   transition: opacity 0.3s;
   opacity: 0; /* Por defecto, el ::after es invisible */
 }
@@ -839,12 +797,25 @@ html{
   opacity: 1; /* Mantén la opacidad constante para 'selected' */
 }
 
+.img-hover:hover::after {
+  opacity: 1; /* La opacidad se mantiene en 1 cuando está seleccionado */
+}
+.img-hover:hover .texto-hover {
+  opacity: 1;
+}
+.img-hover:hover .texto-nohover {
+  opacity: 0;
+}
+
+
 .texto-nohover {
   position: absolute; /* Absoluto para mantener el texto dentro de la imagen */
   bottom: 0; /* Alinea con la parte inferior */
   left: 50%; /* Centra horizontalmente */
-  width: 60%;
+  width: 95%;
   transform: translateX(-50%); /* Ajusta la posición para centrar */
+  color: #ffffff; /* Contraste para visibilidad */
+  font-size: 5rem; /* Tamaño de fuente adecuado */
   text-align: center !important; /* Centra el texto */
   padding: 0.5em; /* Añade padding para legibilidad */
   margin: 0 !important;
@@ -852,16 +823,9 @@ html{
   transition: opacity 0.3s;
   opacity: 1; /* Por defecto, el texto está oculto */
   z-index: 1; /* Asegura que el texto esté por encima de la imagen */
-  overflow: visible !important; /* Evita que el contenido del SVG se corte */
-
+  padding-bottom: 0 !important;
 }
-.texto-nohover svg{
 
-  stroke: black;
-  fill: white;
-  width: 20% !important;
-  height: auto;
-}
 
 
 .texto-nohover::before {
@@ -901,7 +865,6 @@ html{
   font-family: 'Raleway', sans-serif;
   font-size: 1.4rem !important;
 }
-
 .textos {
   max-height: 0; /* Oculto por defecto, sin espacio visible */
   overflow: hidden; /* Asegura que el contenido no salga de la caja */
@@ -928,6 +891,10 @@ html{
     .color{
       width: 70%;
     }
+    #texto2 .titulo{
+      width: 80%;
+    }
+
     #jaque h3{
       font-size: 3.5vw;
     }
@@ -969,9 +936,7 @@ html{
       padding: 0;
       margin: 0;
     }
-    .blurry-background {  
-      background-image: url('../assets/logos.png');
-  }
+
   #texto .titulo {
       font-size: 2rem;
   }
@@ -990,11 +955,6 @@ html{
 
   #texto2 .titulo {
       font-size: 2rem;
-  }
-  #texto2 p:not(.titulo) {
-      font-size: 1.6rem;
-      margin-left: 3%;
-      width: 80%;
   }
   .wrapper {
     padding-top: 5vh;
