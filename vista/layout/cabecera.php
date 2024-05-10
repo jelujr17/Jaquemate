@@ -70,7 +70,7 @@
       <li><a href="https://jaquemate.es/#potenciar">Potenciamos tu marca</a></li>
       <li><a href="realidadvirtual.php">Realidad Virtual</a></li>
       <li><a href="https://jaquemate.es/#solucionar">Soluciones</a></li>
-      <li><a href="https://store.jaquemate.es/">Venta Online</a></li>
+      <!--<li><a href="https://store.jaquemate.es/">Venta Online</a></li>-->
       <li><a href="https://jaquemate.es/#contactar">Contacto</a></li>
     </ul>
   </nav>
