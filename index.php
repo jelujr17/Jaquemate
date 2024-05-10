@@ -80,18 +80,45 @@
   </div>
 </div>
 <div id="potenciar" class="mb-5 pb-1"></div>
-  <div id="marcas" class="">
+<div id="marcas" class="">
     <div class="bordes"></div>
-    <div class="carousel"></div>
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="vista/assets/logos/logo.svg" />
+        <img src="vista/assets/logos/grefusa.svg" />
+        <img src="vista/assets/logos/kalisee.svg" />
+        <img src="vista/assets/logos/pico.svg" />
+        <img src="vista/assets/logos/apple.svg" />
+        <img src="vista/assets/logos/carrefour.svg" />
+        <img src="vista/assets/logos/coca-cola.svg" />
+        <img src="vista/assets/logos/digital-bros.svg" />
+        <img src="vista/assets/logos/ea.svg" />
+        <img src="vista/assets/logos/fnac.svg" />
+        <img src="vista/assets/logos/haribo.svg" />
+        <img src="vista/assets/logos/konami.svg" />
+        <img src="vista/assets/logos/nintendo.svg" />
+        <img src="vista/assets/logos/pc-componentes.svg" />
+        <img src="vista/assets/logos/sony.svg" />
+        <img src="vista/assets/logos/toshiba.svg" />
+      </div>
+    </div>
 </div>  
 
-<div id="texto" class="pt-5 mb-4 pb-4 container-fluid">
-    <p class="p1">¿Desearías exponer tu marca establecida a un mercado nuevo?</p>
-    <p class="p2">¿Verla en las corrientes de venta populares?</p>
+<div id="texto">
+  <div id="izq">
+    <p class="p1">¿Te gustaría llevar tu marca a un mercado nuevo?</p>
     <p class="p3">¿Querrías vender donde venden las más grandes marcas?</p>
-    <p class="p4">¿Esperarías poder conseguir todo esto gratuitamente?</p>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+</svg>
+  <div id="der">
+    <p class="p2">¿Verla en las corrientes de venta populares?</p>
+    <p class="p4">¿Sueñas con conseguirlo algún día?</p>
+  </div>
 </div>
-<div id="fondoDiv" class="p-3 mb-5">
+<div id="fondoDiv" class="p-3 pt-0 mb-5">
     <div class="color mt-4 p-2">
       <div class="mitad">
         <div class="img-hover" data-id="1">
@@ -114,7 +141,7 @@
     </div>
 </div>
 <div id="texto2" class="pt-5 container-fluid">
-      <p class="titulo mb-1">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo, ¡sin coste adicional!</p>
+      <p class="titulo mb-1">¿Quieres llevar tu negocio al siguiente nivel sin gastar más? Únete a nosotros y descubre cómo nuestra experiencia y red de distribución pueden ayudarte a triunfar en el mercado europeo.</p>
       <a class="ver" href="#contactar">
         <span>CONTACTA YA</span>
         <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -156,8 +183,8 @@
       </div>
     </div>
     
-    
-    <div id="contactar" class="container-form h-auto">
+    <div id="contactar"></div>
+    <div class="container-form h-auto">
         <div class="info-form">
             <h2>Contáctanos</h2>
             <a><i class="fa fa-phone mt-3"></i><img src="vista/assets/telefono2.png"></a>

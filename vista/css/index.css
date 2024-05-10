@@ -7,6 +7,9 @@
     width: 100px !important; /* Inicia con un ancho de 0 */
     height: 100px !important; /* Ajusta la altura para cubrir el contenido */
   }
+  html{
+    overflow-x: hidden;
+  }
   
 
   .ver span {
@@ -47,6 +50,25 @@
     width: auto; /* Mantiene la proporción */
     object-fit: cover; /* Ajusta para cubrir todo el área */
     transition: all 0.6s cubic-bezier(.28, -0.03, 0, .99);
+  }
+
+  #texto {
+    grid-template-columns: 1fr !important;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+    height: auto;
+  }
+
+  #texto p{
+    margin: .5em;
+    padding: 0 !important;
+    font-size: inherit;
+    text-align: center !important;
+  }
+
+  #texto svg{
+    width: 80px;
+    height: auto;
   }
   
   
@@ -347,77 +369,129 @@ html{
         margin-left: 0%;
     }
   }
-
-#marcas {
-  overflow: hidden; /* Oculta el contenido que sale del área visible */
-  height: 200px; /* Altura del contenedor */
-  position: relative;
-  display: flex; /* Flexbox para centrar verticalmente */
-  justify-content: center; /* Centrar horizontalmente */
-      align-items: center; /* Centrar verticalmente */
-}
+  #marcas {
+    height: 200px; /* Altura del contenedor */
+    position: relative;
+    overflow: hidden;
+  }
 
 .bordes{
-  position: absolute;
-  
+
   height: 200px;
-  width: 90%;
-  margin: 0 auto;
-  border-top:10px solid #212529;
-  border-bottom:10px solid #212529;
-  margin: 0 auto; /* Centra horizontalmente */
+    width: 90%;
+    border-top: 10px solid #212529;
+    border-bottom: 10px solid #212529;
+    position: absolute;
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Alineación precisa */
+  
 }
 
-/* Carrusel animado */
-.carousel {
-  width: 100vw !important;
-  white-space: nowrap; /* Mantiene elementos en una fila */
-  animation: slide 30s linear infinite; /* Animación continua */
-}
-
-/* Imágenes dentro del carrusel */
-.carousel img {
-  margin: 2em;
-  display: inline-block; /* Mantener en línea */
-  height: 100px; /* Altura de las imágenes */
-  margin-right: 10px; /* Espacio entre imágenes */
-}
-
-/* Definición del movimiento para la animación */
 @keyframes slide {
   from {
-      transform: translateX(0); /* Inicia desde la posición original */
+    transform: translateX(0);
   }
   to {
-      transform: translateX(-100%); /* Mueve hacia la izquierda */
+    transform: translateX(-100%);
   }
 }
+
+.logos {
+  overflow: hidden;
+  height: 200px;
+  background: white;
+  white-space: nowrap;
+  display: flex; /* Uso de Flexbox para centrar horizontal y verticalmente */
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+
+.logos-slide {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+  animation-delay: 0.3s;
+  height: auto;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
+
 
 #texto2 {
     text-align: center !important;
     font-family: "Segoe UI", sans-serif;
     padding: 20px;
 }
-#texto{
-  width: 80%;
+
+#texto {
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto 1fr; /* El SVG tiene tamaño auto */
+  grid-auto-rows: minmax(auto);
+}
+
+#izq {
+  width: 100% !important;
+  text-align: right; /* Opcional: centrar texto horizontalmente */
+  display: grid;  
+  grid-template-columns: repeat(1, 1fr);
+}
+
+#der {
+  width: 100% !important;
+  text-align: left; /* Opcional: centrar texto horizontalmente */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.svg {
+  display: flex; /* Uso de flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+#texto p{
+  font-weight: 600;
+  padding: 1em;
+  font-size: 1.6em;
 
 }
-#texto p {
-  line-height: 1.2; /* Reducir el espacio entre líneas */
-    text-align: center; /* Centra el texto de los títulos */
-    color: #343a40; /* Color del texto */
-    font-style: italic;
-    margin-bottom: 2vh !important;
-    font-weight: 400;
-    box-sizing: border-box;
+
+.p1, .p3 {
+  
 }
+.p2, .p4{
+  
+}
+
 #texto2 .titulo {
   margin: 0 auto;
-}
-.p1 ,.p3 {
-  float: right !important;
 }
 
 
@@ -571,6 +645,7 @@ html{
   align-items: center; 
 }
 .wrapper .card h4{
+  opacity: 0;
   display: none;
   color: #fff;
   overflow: hidden;
@@ -579,6 +654,7 @@ html{
   width: 100%;
   pointer-events: none;
   animation: appearFromBottom2 1.5s ease forwards;
+  animation-delay: 0.3s;
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
   margin: 0;
   padding: .2em;
@@ -645,6 +721,7 @@ html{
 }
 .carousel-item-expanded {
     transition: height 2s ease; /* Agrega una transición suave */
+    transition-delay: .3s;
 }
 
 .texto-oculto-contenedor {
@@ -652,6 +729,7 @@ html{
     height: 0; /* Establece la altura inicial del texto oculto en 0 */
     overflow: hidden; /* Oculta el exceso de contenido */
     transition: height 0.5s ease; /* Agrega una transición suave para la altura del texto oculto */
+    transition-delay: .3s;
 }
 .texto-oculto-contenedor p{
     color: aliceblue;
@@ -766,6 +844,7 @@ html{
   cursor: pointer;
   margin-right: 20px;  /* Añade margen derecho para separar elementos */
   transition: transform 0.3s;
+  
 }
 
 .img-hover img {
@@ -873,14 +952,17 @@ html{
   max-height: 0; /* Oculto por defecto, sin espacio visible */
   overflow: hidden; /* Asegura que el contenido no salga de la caja */
   padding: 0; /* Sin espacio por defecto */
-  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; /* Transición suave */
+  opacity: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Transición suave */
 }
 
 /* Cuando el texto está visible */
 .textos.mostrar {
   max-height: fit-content; /* Ajusta el valor según lo necesario, dependiendo de cuánto se necesita expandir */
-  padding: 1.2em; /* Restaura el padding cuando se muestra */
-  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; /* Transición más lenta para expansión */
+  padding: 1.2em;
+  opacity: 1;
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out; /* Transición más lenta para expansión */
+  transition-delay: 0.15s;
 }
 
 /* -----------------------------
@@ -924,6 +1006,16 @@ html{
       height: auto;
   }
 
+  #texto {
+    height: 30%;
+  }
+
+  #texto p{
+    padding: 1em;
+    font-size: 1.6em !important;
+  }
+
+
     .text-container h3 {
 
       color: rgb(255, 175, 46); /* Aplica el color deseado */
@@ -941,15 +1033,7 @@ html{
       margin: 0;
     }
 
-  #texto .titulo {
-      font-size: 2rem;
-  }
-  #texto p:not(.titulo) {
-    margin: 0 auto;
-      font-size: 1.5rem;
-      width: 80%;
-      
-  }
+  
 
   
   .aa{

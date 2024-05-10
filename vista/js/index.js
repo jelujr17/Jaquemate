@@ -49,18 +49,9 @@ document.getElementById('formulario').addEventListener('submit', function (event
   xhr.send(JSON.stringify(datosFormulario));
 });
 
-const carousel = document.querySelector('.carousel');
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
 
-        // Ejemplo con datos obtenidos del backend (simulando con una lista estática)
-        const images = ['logo.svg','grefusa.svg', 'kalisee.svg', 'pico.svg', 'apple.svg', 'carrefour.svg', 'coca-cola.svg', 'digital-bros.svg', 'ea.svg', 'fnac.svg', 'haribo.svg', 'konami.svg', 'nintendo.svg', 'pc-componentes.svg', 'sony.svg', 'toshiba.svg'];
-
-        images.forEach(image => {
-            const imgElement = document.createElement('img');
-            imgElement.src = `vista/assets/logos/${image}`; // Ruta de la imagen
-            carousel.appendChild(imgElement); // Añadir imagen al carrusel
-        });
-        const clonedContent = carousel.innerHTML; // Clonar el contenido del carrusel
-        carousel.innerHTML += clonedContent; // Agregar contenido clonado al final
 
 function aplicarEstilosSegunTamanoPantalla() {
     const ratio = screen.width / screen.height;
