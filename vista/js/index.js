@@ -13,13 +13,23 @@ var marcas = document.getElementById("marcas");
 
 document.getElementById('formulario').addEventListener('submit', function (event) {
   event.preventDefault(); // Previene el envío del formulario por defecto
-
   const datosFormulario = {
       nombre: document.getElementById('nombre').value,
       email: document.getElementById('email').value,
       asunto: document.getElementById('asunto').value,
       mensaje: document.getElementById('mensaje').value,
   };
+  for (let campo in datosFormulario) {
+    if (datosFormulario[campo] === "") {
+      alert('Por favor, rellene todos los campos.');
+      return false;
+    }
+  }
+  console.log(datosFormulario);
+  if (Array.isArray(datosFormulario) && datosFormulario.length === 0){
+    alert('Por favor, rellene todos los campos.');
+    return false;
+  }
 
   const xhr = new XMLHttpRequest();
 
