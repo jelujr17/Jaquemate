@@ -21,7 +21,7 @@
               <li class="col">Alcanza tus metas</li>
             </ul>
             <ul class="list-unstyled mt-4">
-                <li><a href="potenciar.php" class="boton">GRATIS</a></li>
+                <li><a href="#potenciar" class="boton">GRATIS</a></li>
             </ul>
           </div>
         </div>
@@ -71,7 +71,7 @@
             <li class="col">La nueva realidad</li>
           </ul>
           <ul class="list-unstyled mt-4">
-            <li><a href="soluciones.php" class="boton">PARA TÍ</a></li>
+            <li><a href="#solucionar" class="boton">PARA TÍ</a></li>
           </ul>
         </div>
         </div>
