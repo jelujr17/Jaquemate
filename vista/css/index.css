@@ -197,20 +197,13 @@
 }
 
 .info-form h2{
-    font-size: 9vw !important;
+    font-size: 10vw !important;
 }
-.info-form p{
-    padding-top: 3%;
-    font-size: 4vw !important;
-    width: 70%;
-    text-align: left;
-    margin: 2rem;
-    margin: 0 auto;
-}
+
 .info-form a{
     padding-top: 3%;
-    font-size: 4vw !important;
-    width: 70% !important;
+    font-size: 4.5vw !important;
+    width: 75% !important;
     text-align: left;
     margin: 2rem;
     margin: 0 auto;
@@ -219,7 +212,7 @@
     font-size: 4vw !important;
 }
 .info-form img{
-  width: 70%;
+  width: 75% !important;
   transform-origin: center;
 }
 
@@ -228,18 +221,18 @@
 }
 .contenedor-textarea {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     position: relative;
 }
 .container-form form .campo{
-    width: 80% !important;
+    width: 90% !important;
     padding: 1.8rem 2rem !important;
-    font-size: 3.8vw !important;
+    font-size: 4vw !important;
     
 }
 #mensaje {
     padding: 1.8rem 2rem !important;
-    font-size: 3.8vw !important;
+    font-size: 4vw !important;
     width: 100% !important;
     height: 400px !important;
 }
@@ -259,6 +252,7 @@
   }
   
 }
+
 html{
   width: 100% !important;
 }
