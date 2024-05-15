@@ -82,27 +82,29 @@
 <div id="potenciar" class="mb-5 pb-1"></div>
 <div id="marcas" class="">
     <div class="bordes"></div>
-    <div class="logos">
-      <div class="logos-slide">
-        <img src="vista/assets/logos/logo.svg" />
-        <img src="vista/assets/logos/grefusa.svg" />
-        <img src="vista/assets/logos/kalisee.svg" />
-        <img src="vista/assets/logos/pico.svg" />
-        <img src="vista/assets/logos/apple.svg" />
-        <img src="vista/assets/logos/carrefour.svg" />
-        <img src="vista/assets/logos/coca-cola.svg" />
-        <img src="vista/assets/logos/digital-bros.svg" />
-        <img src="vista/assets/logos/ea.svg" />
-        <img src="vista/assets/logos/fnac.svg" />
-        <img src="vista/assets/logos/haribo.svg" />
-        <img src="vista/assets/logos/konami.svg" />
-        <img src="vista/assets/logos/nintendo.svg" />
-        <img src="vista/assets/logos/pc-componentes.svg" />
-        <img src="vista/assets/logos/sony.svg" />
-        <img src="vista/assets/logos/toshiba.svg" />
+    <div class="scrollDiv">
+      <div class="scroller" data-direction="left" data-animated="true" data-speed="fast">
+        <div class="scroller__inner">
+            <img src="vista/assets/logos/logo.svg" />
+            <img src="vista/assets/logos/grefusa.svg" />
+            <img src="vista/assets/logos/kalisee.svg" />
+            <img src="vista/assets/logos/pico.svg" />
+            <img src="vista/assets/logos/apple.svg" />
+            <img src="vista/assets/logos/carrefour.svg" />
+            <img src="vista/assets/logos/coca-cola.svg" />
+            <img src="vista/assets/logos/digital-bros.svg" />
+            <img src="vista/assets/logos/ea.svg" />
+            <img src="vista/assets/logos/fnac.svg" />
+            <img src="vista/assets/logos/haribo.svg" />
+            <img src="vista/assets/logos/konami.svg" />
+            <img src="vista/assets/logos/nintendo.svg" />
+            <img src="vista/assets/logos/pc-componentes.svg" />
+            <img src="vista/assets/logos/sony.svg" />
+            <img src="vista/assets/logos/toshiba.svg" />
+        </div>
       </div>
     </div>
-</div>  
+</div>
 
 <div id="texto">
   <div id="izq">
