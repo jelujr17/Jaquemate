@@ -9,9 +9,6 @@
           <p>
             <a href="Quienes-Somos" class="text-white" style="text-decoration: none;"> Quiénes somos</a>
           </p>
-          <p>
-            <a href="Practica-con-Nosotros" class="text-white" style="text-decoration: none;"> Practica con nosotros</a>
-          </p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4 mt-3 text-center" id = "opcionesContacto">

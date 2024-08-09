@@ -83,7 +83,7 @@
 <div id="marcas" class="">
     <div class="bordes"></div>
     <div class="scrollDiv">
-      <div class="scroller" data-direction="left" data-animated="true" data-speed="fast">
+      <div class="scroller" data-direction="left" data-animated="true" data-speed="slow">
         <div class="scroller__inner">
             <img src="vista/assets/logos/logo.svg" />
             <img src="vista/assets/logos/grefusa.svg" />
